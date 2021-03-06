@@ -1,4 +1,5 @@
 import React from 'react';
+import clsx from 'clsx';
 import Container from '@material-ui/core/Container';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -10,11 +11,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Jumbotron({ children }) {
+function Jumbotron({ children, className }) {
   const classes = useStyles();
 
   return (
-    <section className={classes.root}>
+    <section className={clsx(classes.root, className)}>
       <Container>
         {children}
       </Container>
