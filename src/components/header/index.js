@@ -19,6 +19,9 @@ const useStyles = makeStyles((theme) => ({
   menuButton: {
     marginRight: theme.spacing(2),
   },
+  menuItems: {
+    color: '#fff',
+  },
   sectionDesktop: {
     display: 'none',
     [theme.breakpoints.up('md')]: {
@@ -57,13 +60,13 @@ export default function Header() {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      <MenuItem component={Link} to={'/about'}>
+      <MenuItem className={classes.menuItems} component={Link} to={'/about'}>
         About
       </MenuItem>
-      <MenuItem component={Link} to={'/portfolio'}>
+      <MenuItem className={classes.menuItems} component={Link} to={'/portfolio'}>
         Portfolio
       </MenuItem>
-      <MenuItem component={Link} to={'/labs'}>
+      <MenuItem className={classes.menuItems} component={Link} to={'/labs'}>
         Labs
       </MenuItem>
     </Menu>
@@ -91,13 +94,13 @@ export default function Header() {
           <div className={classes.grow} />
         
           <div className={classes.sectionDesktop}>
-            <Button component={Link} to={'/about'} color="inherit">
+            <Button component={Link} className={classes.menuItems} to={'/about'} color="inherit">
               About
             </Button>
-            <Button component={Link} to={'/portfolio'} color="inherit">
+            <Button component={Link} className={classes.menuItems} to={'/portfolio'} color="inherit">
               Portfolio
             </Button>
-            <Button component={Link} to={'/labs'} color="inherit">
+            <Button component={Link} className={classes.menuItems} to={'/labs'} color="inherit">
               Labs
             </Button>
           </div>
