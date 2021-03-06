@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#EFEFEF;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:url(#Rectangle-5_1_);}
+	.st3{fill:url(#Rectangle-5-2_1_);}
+	.st4{fill:url(#Rectangle-5-3_1_);}
+	.st5{fill:url(#Rectangle-5-4_1_);}
+</style>
+<g id="레이어_2">
+</g>
+<g id="레이어_1">
+	<g>
+		<path id="Combined-Shape" class="st0" d="M199.8,291.1h81.5l-81.5-141.8l0,0V63.3l159.6,273.4H199.8V291.1z"/>
+		<path id="Combined-Shape-2" class="st1" d="M199.8,291.1h-81.5l81.4-141.8l0,0V63.3L40.1,336.7h159.6V291.1z"/>
+		<polygon id="Triangle-5" class="st1" points="199.8,185 199.8,276.7 149.9,276.8 		"/>
+		<polygon id="Triangle-5-2" class="st0" points="199.8,185 199.8,276.7 249.7,276.8 		"/>
+		
+			<linearGradient id="Rectangle-5_1_" gradientUnits="userSpaceOnUse" x1="4.4972" y1="-85.4339" x2="5.6021" y2="-85.4339" gradientTransform="matrix(98 0 0 47 -436.5 4214.1094)">
+			<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
+			<stop  offset="1" style="stop-color:#FFFFFF"/>
+		</linearGradient>
+		<polygon id="Rectangle-5" class="st2" points="4.2,148.8 199.8,239.2 199.8,248.6 4.2,205.8 		"/>
+		
+			<linearGradient id="Rectangle-5-2_1_" gradientUnits="userSpaceOnUse" x1="2.5293" y1="-87.7278" x2="3.7835" y2="-87.7278" gradientTransform="matrix(-98 0 0 60 641.5 5446.1094)">
+			<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
+			<stop  offset="1" style="stop-color:#F2F2F2"/>
+		</linearGradient>
+		<polygon id="Rectangle-5-2" class="st3" points="395.8,122.5 199.8,239.2 199.8,242.3 395.8,160.2 		"/>
+		
+			<linearGradient id="Rectangle-5-3_1_" gradientUnits="userSpaceOnUse" x1="2.4995" y1="-114.236" x2="3.5148" y2="-114.236" gradientTransform="matrix(-98 0 0 -26 641.5 -2746.8896)">
+			<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
+			<stop  offset="1" style="stop-color:#D6D6D6"/>
+		</linearGradient>
+		<polygon id="Rectangle-5-3" class="st4" points="395.8,235.5 199.8,248.6 199.8,245.5 395.8,197.8 		"/>
+		
+			<linearGradient id="Rectangle-5-4_1_" gradientUnits="userSpaceOnUse" x1="2.4995" y1="-84.4249" x2="3.694" y2="-84.4249" gradientTransform="matrix(-98 0 0 43 641.5 3833.1094)">
+			<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
+			<stop  offset="1" style="stop-color:#E5E5E5"/>
+		</linearGradient>
+		<polygon id="Rectangle-5-4" class="st5" points="395.8,160.2 199.8,242.3 199.8,245.5 395.8,197.8 		"/>
+	</g>
+</g>
+</svg>
