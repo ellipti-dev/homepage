@@ -49,55 +49,55 @@ const IndexPage = () => {
         <Grid container spacing={2} alignItems="stretch">
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-             image='/logo/dydx.svg'
+             image='/portfolio/dydx.svg'
              name='dYdX'
             />
           </Grid>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-              image='/logo/linear.svg'
+              image='/portfolio/linear.svg'
               name='Linear Finance'
             />
           </Grid>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-              image='/logo/basis_cash.svg'
+              image='/portfolio/basis_cash.svg'
               name='Basis Cash'
             />
           </Grid>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-              image='/logo/dhedge.svg'
+              image='/portfolio/dhedge.svg'
               name='dHedge'
             />
           </Grid>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-              image='/logo/injective.svg'
+              image='/portfolio/injective.svg'
               name='Injective Protocol'
             />
           </Grid>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-             image='/logo/ramp.svg'
+             image='/portfolio/ramp.svg'
              name='RAMP DeFi'
             />
           </Grid>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-             image='/logo/aave.svg'
+             image='/portfolio/aave.svg'
              name='Aave'
             />
           </Grid>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-             image='/logo/synthetix.svg'
+             image='/portfolio/synthetix.svg'
              name='Synthetix'
             />
           </Grid>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-             image='/logo/kava.svg'
+             image='/portfolio/kava.svg'
              name='KAVA'
             />
           </Grid>
@@ -113,31 +113,31 @@ const IndexPage = () => {
         <Grid container spacing={2}>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-              image='/logo/cere.svg'
+              image='/portfolio/cere.svg'
               name='Cere Network'
             />
           </Grid>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-             image='/logo/akash.svg'
+             image='/portfolio/akash.svg'
              name='Akash Network'
             />
           </Grid>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-              image='/logo/human.svg'
+              image='/portfolio/human.svg'
               name='Human Protocol'
             />
           </Grid>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-              image='/logo/lambda.svg'
+              image='/portfolio/lambda.svg'
               name='Lambda'
             />
           </Grid>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-              image='/logo/ocean.svg'
+              image='/portfolio/ocean.svg'
               name='Ocean Protocol'
             />
           </Grid>
@@ -154,25 +154,25 @@ const IndexPage = () => {
         <Grid container spacing={2}>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-             image='/logo/efforce.svg'
+             image='/portfolio/efforce.svg'
              name='Efforce'
             />
           </Grid>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-              image='/logo/get.svg'
+              image='/portfolio/get.svg'
               name='Get Protocol'
             />
           </Grid>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-              image='/logo/kleros.svg'
+              image='/portfolio/kleros.svg'
               name='Kleros'
             />
           </Grid>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-              image='/logo/contentos.svg'
+              image='/portfolio/contentos.svg'
               name='Contentos'
             />
           </Grid>
@@ -188,19 +188,19 @@ const IndexPage = () => {
         <Grid container spacing={2}>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-              image='/logo/tokamak.svg'
+              image='/portfolio/tokamak.svg'
               name='Tokamak Network'
             />
           </Grid>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-              image='/logo/cartesi.svg'
+              image='/portfolio/cartesi.svg'
               name='Cartesi'
             />
           </Grid>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-              image='/logo/matic.svg'
+              image='/portfolio/matic.svg'
               name='Matic'
             />
           </Grid>
@@ -216,13 +216,13 @@ const IndexPage = () => {
         <Grid container spacing={2}>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-              image='/logo/beam.svg'
+              image='/portfolio/beam.svg'
               name='Beam'
             />
           </Grid>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-              image='/logo/dash.svg'
+              image='/portfolio/dash.svg'
               name='Dash'
             />
           </Grid>
@@ -238,61 +238,61 @@ const IndexPage = () => {
         <Grid container spacing={2}>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-              image='/logo/meter.svg'
+              image='/portfolio/meter.svg'
               name='Meter'
             />
           </Grid>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-              image='/logo/klaytn.svg'
+              image='/portfolio/klaytn.svg'
               name='Klaytn'
             />
           </Grid>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-              image='/logo/elrond.svg'
+              image='/portfolio/elrond.svg'
               name='Elrond'
             />
           </Grid>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-              image='/logo/stacks.svg'
+              image='/portfolio/stacks.svg'
               name='Blockstack'
             />
           </Grid>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-              image='/logo/vite.svg'
+              image='/portfolio/vite.svg'
               name='VITE Labs'
             />
           </Grid>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-              image='/logo/nebulas.svg'
+              image='/portfolio/nebulas.svg'
               name='Nebulas'
             />
           </Grid>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-              image='/logo/nuls.svg'
+              image='/portfolio/nuls.svg'
               name='NULS'
             />
           </Grid>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-              image='/logo/harmony.svg'
+              image='/portfolio/harmony.svg'
               name='Harmony'
             />
           </Grid>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-              image='/logo/iota.svg'
+              image='/portfolio/iota.svg'
               name='IOTA'
             />
           </Grid>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-              image='/logo/nem.svg'
+              image='/portfolio/nem.svg'
               name='NEM'
             />
           </Grid>
@@ -307,7 +307,7 @@ const IndexPage = () => {
         <Grid container spacing={2}>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <ProjectItem
-              image='/logo/dappcom.svg'
+              image='/portfolio/dappcom.svg'
               name='Dapp.com'
             />
           </Grid>

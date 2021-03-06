@@ -139,55 +139,55 @@ const AboutPage = () => {
             <Grid item xs={2} md={1}>
               <CompanyItem
                 name='EEA'
-                image='/logo/eea.svg'
+                image='/portfolio/eea.svg'
               />
             </Grid>
             <Grid item xs={2} md={1}>
               <CompanyItem
                 name='Consensys'
-                image='/logo/consensys.svg'
+                image='/portfolio/consensys.svg'
               />
             </Grid>
             <Grid item xs={2} md={1}>
               <CompanyItem
                 name='Parity'
-                image='/logo/parity.svg'
+                image='/portfolio/parity.svg'
               />
             </Grid>
             <Grid item xs={2} md={1}>
               <CompanyItem
                 name='Bitmain'
-                image='/logo/bitmain.svg'
+                image='/portfolio/bitmain.svg'
               />
             </Grid>
             <Grid item xs={2} md={1}>
               <CompanyItem
                 name='Monero'
-                image='/logo/monero.svg'
+                image='/portfolio/monero.svg'
               />
             </Grid>
             <Grid item xs={2} md={1}>
               <CompanyItem
                 name='Solana'
-                image='/logo/solana.svg'
+                image='/portfolio/solana.svg'
               />
             </Grid>
             <Grid item xs={2} md={1}>
               <CompanyItem
                 name='Status'
-                image='/logo/status.svg'
+                image='/portfolio/status.svg'
               />
             </Grid>
             <Grid item xs={2} md={1}>
               <CompanyItem
                 name='CryptoKitties'
-                image='/logo/cryptokitties.svg'
+                image='/portfolio/cryptokitties.svg'
               />
             </Grid>
             <Grid item xs={2} md={1}>
               <CompanyItem
                 name='Blockgeeks'
-                image='/logo/blockgeeks.svg'
+                image='/portfolio/blockgeeks.svg'
               />
             </Grid>
           </Grid>

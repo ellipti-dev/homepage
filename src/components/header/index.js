@@ -11,7 +11,7 @@ import MoreIcon from '@material-ui/icons/MoreVert';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    background: 'rgba(48, 48, 48, 0.95)',
+    background: '#000',
   },
   grow: {
     flexGrow: 1,
@@ -75,7 +75,7 @@ export default function Header() {
         position="fixed"
         color="transparent"
         classes={{ root: classes.root }}
-        elevation={2}
+        elevation={0}
       >
         <Toolbar>
           <Button
@@ -85,7 +85,7 @@ export default function Header() {
             color="inherit"
             aria-label="open drawer"
           >
-            Ellipti
+            <img src='/logo/ellipti.svg' alt='ellipti logo' />
           </Button>
 
           <div className={classes.grow} />

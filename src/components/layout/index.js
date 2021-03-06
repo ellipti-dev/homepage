@@ -1,6 +1,5 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
 import Header from '../../components/header';
@@ -14,7 +13,6 @@ import "@fontsource/roboto-slab/300.css"
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    marginTop: 56,
   },
 }));
 
@@ -25,12 +23,7 @@ function Layout({ children }) {
     <>
       <CssBaseline />
       <Header />
-      <Container
-        component='main'
-        className={classes.root}
-      >
-        {children}
-      </Container>
+      {children}
       <Footer />
     </>
   );
