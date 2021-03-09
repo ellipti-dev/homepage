@@ -22,8 +22,10 @@ import {
 
 const useStyles = makeStyles((theme) => ({
   root: {},
-  jumbotron: {
-    marginBottom: 114,
+    jumbotron: {
+    backgroundImage: "url('/svg/portfolio1.svg')",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "right 20% bottom 50px",
   },
   jumbotronTitle: {
     color: "#fff",
@@ -31,15 +33,17 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 500,
     fontFamily: "Roboto",
   },
-  JumbotronDescription: {
+  jumbotronDescription: {
+    width: "45%",
+    fontFamily: "'Roboto slab', serif",
     color: "#fff",
     fontSize: 26,
   },
   section: {
-    marginTop: 90,
+    paddingTop: 90,
 
     "&:last-child": {
-      marginBottom: 90,
+      paddingBottom: 160,
     },
   },
   sectionTitle: {
@@ -58,14 +62,13 @@ const IndexPage = () => {
         <Typography
           className={classes.jumbotronTitle}
           component="h1"
-          gutterBottom
         >
           Portfolio
         </Typography>
+        <img src="/svg/title-divider.svg" />
         <Typography
-          className={classes.JumbotronDescription}
+          className={classes.jumbotronDescription}
           component="p"
-          gutterBottom
         >
           {
             "Building the solid & sustainable decentralized ecosystem, with the right teams."

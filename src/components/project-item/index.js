@@ -7,21 +7,33 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
   root: {
     border: '1px solid #D9D9D9',
-    height: '100%',
     backgroundColor: theme.palette.background.default,
-
   },
   imageSection: {
+    position: 'relative',
+    height: '100%',
+    paddingTop: '100%', // aspect ratio 1:1
     width: '100%',
-    padding: theme.spacing(4),
     borderBottom: '1px solid #D9D9D9',
+
     '& img': {
       width: '100%',
+      position: 'absolute',
+      padding: theme.spacing(4),
+      top: 0,
     },
   },
+  projectNameSection: {
+    padding: 11,
+  },
   projectName: {
+    fontSize: 14,
     fontWeight: 500,
-  }
+    marginBottom: 11,
+  },
+  projectCategory: {
+    fontSize: 11,
+  },
 }));
 
 const ProjectItem = ({
@@ -37,7 +49,7 @@ const ProjectItem = ({
       <div className={classes.imageSection}>
         <img src={image} alt={name} />
       </div>
-      <div>
+      <div className={classes.projectNameSection}>
         <Typography
           variant="body1"
           component='p'
@@ -48,7 +60,7 @@ const ProjectItem = ({
           <Typography
           variant="body1"
           component='p'
-          className={classes.span}
+          className={classes.projectCategory}
         >
           Tbd
         </Typography>
