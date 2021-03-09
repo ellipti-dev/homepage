@@ -3,7 +3,7 @@
 <svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
 	 y="0px" viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#FFFFFF;stroke-width:18;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#000;stroke-width:18;stroke-miterlimit:10;}
 </style>
 <path class="st0" d="M122,61.4C73.6,88.7,41,140.5,41,200c0,87.8,71.2,159,159,159s159-71.2,159-159S287.8,41,200,41
 	C171.7,41,145,48.4,122,61.4z M122,61.4v219.1 M280,279c0,43.6-35.4,79-79,79s-79-35.4-79-79s35.4-79,79-79S280,235.4,280,279z"/>

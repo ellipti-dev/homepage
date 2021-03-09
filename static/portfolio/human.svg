@@ -4,8 +4,8 @@
 	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
 <style type="text/css">
 	.st0{filter:url(#Adobe_OpacityMaskFilter);}
-	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
-	.st2{mask:url(#mask-2_2_);fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#000000;}
+	.st2{mask:url(#mask-2_2_);fill-rule:evenodd;clip-rule:evenodd;fill:#000000;}
 </style>
 <g id="레이어_2">
 </g>
