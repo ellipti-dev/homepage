@@ -1,4 +1,6 @@
-import * as React from "react";
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
@@ -12,13 +14,20 @@ import FloatingActionButton from "../components/fab";
 
 const useStyles = makeStyles((theme) => ({
   root: {},
+  jumbotron: {
+    backgroundImage: "url('/svg/about1.svg')",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "right 20% center",
+  },
   jumbotronTitle: {
     color: "#fff",
     fontSize: 20,
     fontWeight: 500,
     fontFamily: "Roboto",
   },
-  JumbotronDescription: {
+  jumbotronDescription: {
+    width: "45%",
+    fontFamily: "'Roboto slab', serif",
     color: "#fff",
     fontSize: 26,
   },
@@ -38,12 +47,15 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 10,
   },
   sectionTitle: {
+    fontFamily: "'Roboto slab', serif",
     fontSize: 38,
   },
   sectionDescription: {
     fontSize: 20,
   },
   itemDescription: {
+    fontFamily: "'Roboto', sans-serif",
+    fontWeight: 300,
     color: "#4D5256",
     textAlign: "left",
     marginBottom: 20,
@@ -52,30 +64,68 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: 194,
   },
   summitTitle: {
-    color: '#292929',
+    color: "#292929",
     fontWeight: 500,
     fontSize: 16,
   },
   divider: {
     marginBottom: 20,
-  }
+  },
 }));
 // markup
 const AboutPage = () => {
   const classes = useStyles();
+  const {
+    strategyImg,
+    implementationOperationsImg,
+    publicRelationImg,
+    miceImg,
+  } = useStaticQuery(graphql`
+    query {
+      strategyImg: file(relativePath: { eq: "about/strategy.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      implementationOperationsImg: file(
+        relativePath: { eq: "about/implementation_and_operations.png" }
+      ) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      publicRelationImg: file(
+        relativePath: { eq: "about/public_relation.png" }
+      ) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      miceImg: file(relativePath: { eq: "about/mice.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
 
   return (
     <Layout>
-      <Jumbotron>
-        <Typography
-          className={classes.jumbotronTitle}
-          component="h1"
-          gutterBottom
-        >
+      <Jumbotron className={classes.jumbotron}>
+        <Typography className={classes.jumbotronTitle} component="h1">
           About
         </Typography>
+        <img src="/svg/title-divider.svg" />
         <Typography
-          className={classes.JumbotronDescription}
+          className={classes.jumbotronDescription}
           component="p"
           gutterBottom
         >
@@ -86,11 +136,7 @@ const AboutPage = () => {
 
       <section className={classes.section}>
         <Container>
-          <Typography
-            className={classes.sectionTitle}
-            component="h2"
-            gutterBottom
-          >
+          <Typography className={classes.sectionTitle} component="h2">
             Strategy
           </Typography>
           <Typography
@@ -102,9 +148,9 @@ const AboutPage = () => {
           </Typography>
           <Grid className={classes.grid} container spacing={8}>
             <Grid item xs={12} sm={6}>
-              <img
-                src="https://dummyimage.com/600x400/000/fff&text=TBD"
-                alt="tbd"
+              <Img
+                fluid={strategyImg.childImageSharp.fluid}
+                alt="ellipti's strategy"
               />
             </Grid>
             <Grid item xs={12} sm={6}>
@@ -133,11 +179,7 @@ const AboutPage = () => {
 
       <section className={classes.section}>
         <Container>
-          <Typography
-            className={classes.sectionTitle}
-            component="h2"
-            gutterBottom
-          >
+          <Typography className={classes.sectionTitle} component="h2">
             {"Implementation & Operations"}
           </Typography>
           <Typography
@@ -149,9 +191,9 @@ const AboutPage = () => {
           </Typography>
           <Grid className={classes.grid} container spacing={8}>
             <Grid item xs={12} sm={6}>
-              <img
-                src="https://dummyimage.com/600x400/000/fff&text=TBD"
-                alt="tbd"
+              <Img
+                fluid={implementationOperationsImg.childImageSharp.fluid}
+                alt="ellipti's Implementation and Operations"
               />
             </Grid>
             <Grid item xs={12} sm={6}>
@@ -180,11 +222,7 @@ const AboutPage = () => {
 
       <section className={classes.section}>
         <Container>
-          <Typography
-            className={classes.sectionTitle}
-            component="h2"
-            gutterBottom
-          >
+          <Typography className={classes.sectionTitle} component="h2">
             Public Relations
           </Typography>
           <Typography
@@ -196,9 +234,9 @@ const AboutPage = () => {
           </Typography>
           <Grid className={classes.grid} container spacing={8}>
             <Grid item xs={12} sm={6}>
-              <img
-                src="https://dummyimage.com/600x400/000/fff&text=TBD"
-                alt="tbd"
+              <Img
+                fluid={publicRelationImg.childImageSharp.fluid}
+                alt="ellipti's strategy"
               />
             </Grid>
             <Grid item xs={12} sm={6}>
@@ -226,11 +264,7 @@ const AboutPage = () => {
 
       <section className={classes.section}>
         <Container>
-          <Typography
-            className={classes.sectionTitle}
-            component="h2"
-            gutterBottom
-          >
+          <Typography className={classes.sectionTitle} component="h2">
             MICE
           </Typography>
           <Typography
@@ -242,9 +276,9 @@ const AboutPage = () => {
           </Typography>
           <Grid className={classes.grid} container spacing={8}>
             <Grid item xs={12} sm={6}>
-              <img
-                src="https://dummyimage.com/600x400/000/fff&text=TBD"
-                alt="tbd"
+              <Img
+                fluid={miceImg.childImageSharp.fluid}
+                alt="ellipti's strategy"
               />
             </Grid>
             <Grid item xs={12} sm={6}>
