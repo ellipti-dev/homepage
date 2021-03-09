@@ -18,34 +18,28 @@ const theme = createMuiTheme({
     }
   },
   typography: {
-    fontFamily: '"Epilogue"',
+    fontFamily: '"Roboto", "Roboto Slab"',
     htmlFontSize: 14,
     h1: {
-      fontFamily: '"Roboto Slab", "Helvetica", "Arial", serif',
       fontWeight: 100,
       fontSize: "6rem",
       lineHeight: 1.167,
     },
     h2: {
-      fontFamily: '"Roboto Slab", "Helvetica", "Arial", serif',
       fontWeight: 300,
     },
     h3: {
-      fontFamily: '"Roboto Slab", "Helvetica", "Arial", serif',
       fontWeight: 300,
     },
     h4: {
-      fontFamily: '"Roboto Slab", "Helvetica", "Arial", serif',
       fontWeight: 300,
     },
     body1: {
-      fontFamily: '"Epilogue", "Helvetica", "Arial", sans-serif',
       fontWeight: 400,
       fontSize: "1rem",
       lineHeight: 1.5,
     },
     body2: {
-      fontFamily: '"Epilogue", "Helvetica", "Arial", sans-serif',
       fontWeight: 400,
       fontSize: "1rem",
       lineHeight: 1.5,
