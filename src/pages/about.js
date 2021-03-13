@@ -123,7 +123,7 @@ const AboutPage = () => {
         <Typography className={classes.jumbotronTitle} component="h1">
           About
         </Typography>
-        <img src="/svg/title-divider.svg" />
+        <img src="/svg/title-divider.svg" alt="divider" />
         <Typography
           className={classes.jumbotronDescription}
           component="p"

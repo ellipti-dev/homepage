@@ -64,7 +64,7 @@ const IndexPage = () => {
         >
           Portfolio
         </Typography>
-        <img src="/svg/title-divider.svg" />
+        <img src="/svg/title-divider.svg" alt="divider" />
         <Typography
           className={classes.jumbotronDescription}
           component="p"

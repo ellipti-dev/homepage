@@ -1,25 +1,22 @@
-import React, { useState } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Fab from '@material-ui/core/Fab';
-import TocIcon from '@material-ui/icons/Toc';
-import Menu from '@material-ui/core/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
-import {navigate} from 'gatsby'; //import navigate from gatsby
+import React, { useState } from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import Fab from "@material-ui/core/Fab";
+import TocIcon from "@material-ui/icons/Toc";
+import Menu from "@material-ui/core/Menu";
+import MenuItem from "@material-ui/core/MenuItem";
 
-import scrollTo from 'gatsby-plugin-smoothscroll';
+// import {navigate} from 'gatsby'; //import navigate from gatsby
+// import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const useStyles = makeStyles((theme) => ({
   fab: {
-    position: 'fixed',
+    position: "fixed",
     bottom: theme.spacing(2),
     right: theme.spacing(2),
-  }
+  },
 }));
 
-
-const FloatingActionButton = ({
-  items,
-}) => {
+const FloatingActionButton = ({ items }) => {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = useState(null);
 
@@ -35,8 +32,8 @@ const FloatingActionButton = ({
     // e.preventDefault();
     setAnchorEl(null);
     // scrollTo(`#${item}`)
-  }
-  
+  };
+
   return (
     <>
       <Fab
@@ -57,17 +54,17 @@ const FloatingActionButton = ({
         open={Boolean(anchorEl)}
         onClose={handleClose}
         anchorOrigin={{
-          vertical: 'top',
-          horizontal: 'left',
+          vertical: "top",
+          horizontal: "left",
         }}
         transformOrigin={{
-          vertical: 'bottom',
-          horizontal: 'center',
+          vertical: "bottom",
+          horizontal: "center",
         }}
       >
         {items.map((item) => (
           <MenuItem
-            component='a'
+            component="a"
             href={`#${item.anchor}`}
             key={item.anchor}
             onClick={handleClickItem}
@@ -78,6 +75,6 @@ const FloatingActionButton = ({
       </Menu>
     </>
   );
-}
+};
 
 export default FloatingActionButton;

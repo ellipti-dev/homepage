@@ -1,11 +1,6 @@
 import * as React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
-import Divider from "@material-ui/core/Divider";
-import Paper from "@material-ui/core/Paper";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemText from "@material-ui/core/ListItemText";
 import Grid from "@material-ui/core/Grid";
 import Jumbotron from "../components/jumbotron";
 import Container from "@material-ui/core/Container";
@@ -74,7 +69,11 @@ const LabsPage = () => {
           <Typography className={classes.jumbotronTitle} component="h1">
             Labs
           </Typography>
-          <img src="/svg/title-divider.svg" />
+          <img
+            className={classes.sectionIcon}
+            src="/svg/title-divider.svg"
+            alt="divider"
+          />
           <Typography className={classes.jumbotronDescription} component="p">
             Ellipti Labs is research-based fund to invest and empower
             early-stage blockchain projects, focusing on the long-term growth.
@@ -86,7 +85,11 @@ const LabsPage = () => {
             <Grid container spacing={3}>
               <Grid item container md={3} justify="flex-end">
                 <Typography className={classes.sectionTitle} component="h2">
-                  <img className={classes.sectionIcon} src="/svg/labs2.svg" />
+                  <img
+                    className={classes.sectionIcon}
+                    src="/svg/labs2.svg"
+                    alt="heading"
+                  />
                   Research
                 </Typography>
               </Grid>
@@ -134,7 +137,11 @@ const LabsPage = () => {
             <Grid container spacing={3}>
               <Grid item container md={3} justify="flex-end">
                 <Typography className={classes.sectionTitle} component="h2">
-                  <img className={classes.sectionIcon} src="/svg/labs3.svg" />
+                  <img
+                    className={classes.sectionIcon}
+                    src="/svg/labs3.svg"
+                    alt="heading"
+                  />
                   Investment
                 </Typography>
               </Grid>
