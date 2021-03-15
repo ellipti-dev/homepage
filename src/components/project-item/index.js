@@ -84,7 +84,7 @@ const ProjectItem = ({ item }) => {
           component='p'
           className={classes.projectCategory}
         >
-          Tbd
+          Over-collateralized staking derivatives with a SDK Uniswap module over IBC and a fully supported UX.
         </Typography>
       </a>
     </Paper>

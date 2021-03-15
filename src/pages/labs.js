@@ -8,6 +8,7 @@ import Container from "@material-ui/core/Container";
 import Layout from "../components/layout";
 import FloatingActionButton from "../components/fab";
 import Main from "../components/main";
+import Award from "../components/award";
 
 import { research, investment } from "../data/labs";
 
@@ -135,6 +136,16 @@ const LabsPage = () => {
                       </Typography>
                     </div>
                   ))}
+                  <Award
+                    title='1st Prize'
+                    lead='@ HackAtom Seoul 2019'
+                    description='Over-collateralized staking derivatives with a SDK Uniswap module over IBC and a fully supported UX.'
+                  />
+                  <Award
+                    title='1st Prize'
+                    lead='@ SF DeFi Hackathon 2019'
+                    description={'Liquid Staking Position (LSP) NFTs, an additional token that has governance rights & receives rewards.'}
+                  />
                 </Grid>
               </Grid>
             </Container>
