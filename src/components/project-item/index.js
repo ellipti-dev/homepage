@@ -57,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
 
 const ProjectItem = ({ item }) => {
   const classes = useStyles();
-  const { name, image, link } = item;
+  const { name, image, link, type } = item;
 
   return (
     <Paper
@@ -84,7 +84,7 @@ const ProjectItem = ({ item }) => {
           component='p'
           className={classes.projectCategory}
         >
-          Over-collateralized staking derivatives with a SDK Uniswap module over IBC and a fully supported UX.
+          {type}
         </Typography>
       </a>
     </Paper>
