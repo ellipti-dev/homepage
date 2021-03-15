@@ -24,7 +24,13 @@ const useStyles = makeStyles((theme) => ({
     color: "rgb(255, 255, 255, 0.7)",
   },
   menuButton: {
-    marginRight: theme.spacing(2),
+    padding: 0,
+    display: 'flex',
+    alignItems: 'center',
+
+    '& img': {
+      height: '20px',
+    }
   },
   menuItem: {
     margin: "0 14px",
@@ -117,15 +123,14 @@ export default function Header() {
       >
         <Container maxWidth="md">
           <Toolbar className={classes.toolbar}>
-            <Button
-              component={Link}
+            <Link
               to={"/"}
               className={classes.menuButton}
               color="inherit"
               aria-label="open drawer"
             >
               <img src="/logo/ellipti.svg" alt="ellipti logo" />
-            </Button>
+            </Link>
 
             <div className={classes.grow} />
 
