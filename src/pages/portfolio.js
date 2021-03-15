@@ -18,6 +18,7 @@ import {
   Infrastructure,
   Privacy,
   Layer1,
+  Analytics,
 } from "../data/portfolio";
 
 const useStyles = makeStyles((theme) => ({
@@ -86,7 +87,7 @@ const IndexPage = () => {
             <Grid container spacing={2} alignItems="stretch">
               {Defi.map((item) => (
                 <Grid key={item.name} item xs={6} sm={4} md={3} lg={2}>
-                  <ProjectItem image={item.image} name={item.name} />
+                  <ProjectItem item={item} />
                 </Grid>
               ))}
             </Grid>
@@ -102,7 +103,7 @@ const IndexPage = () => {
             <Grid container spacing={2}>
               {Data.map((item) => (
                 <Grid key={item.name} item xs={6} sm={4} md={3} lg={2}>
-                  <ProjectItem image={item.image} name={item.name} />
+                  <ProjectItem item={item} />
                 </Grid>
               ))}
             </Grid>
@@ -118,7 +119,7 @@ const IndexPage = () => {
             <Grid container spacing={2}>
               {Application.map((item) => (
                 <Grid key={item.name} item xs={6} sm={4} md={3} lg={2}>
-                  <ProjectItem image={item.image} name={item.name} />
+                  <ProjectItem item={item} />
                 </Grid>
               ))}
             </Grid>
@@ -134,7 +135,7 @@ const IndexPage = () => {
             <Grid container spacing={2}>
               {Infrastructure.map((item) => (
                 <Grid key={item.name} item xs={6} sm={4} md={3} lg={2}>
-                  <ProjectItem image={item.image} name={item.name} />
+                  <ProjectItem item={item} />
                 </Grid>
               ))}
             </Grid>
@@ -150,7 +151,7 @@ const IndexPage = () => {
             <Grid container spacing={2}>
               {Privacy.map((item) => (
                 <Grid key={item.name} item xs={6} sm={4} md={3} lg={2}>
-                  <ProjectItem image={item.image} name={item.name} />
+                  <ProjectItem item={item} />
                 </Grid>
               ))}
             </Grid>
@@ -166,7 +167,7 @@ const IndexPage = () => {
             <Grid container spacing={2}>
               {Layer1.map((item) => (
                 <Grid key={item.name} item xs={6} sm={4} md={3} lg={2}>
-                  <ProjectItem image={item.image} name={item.name} />
+                  <ProjectItem item={item} />
                 </Grid>
               ))}
             </Grid>
@@ -179,9 +180,11 @@ const IndexPage = () => {
             </Typography>
 
             <Grid container spacing={2}>
-              <Grid item xs={6} sm={4} md={3} lg={2}>
-                <ProjectItem image="/portfolio/dappcom.svg" name="Dapp.com" />
-              </Grid>
+              {Analytics.map((item) => (
+                <Grid key={item.name} item xs={6} sm={4} md={3} lg={2}>
+                  <ProjectItem item={item} />
+                </Grid>
+              ))}
             </Grid>
           </Container>
         </section>

@@ -18,13 +18,32 @@ const useStyles = makeStyles((theme) => ({
 
     '& img': {
       width: '100%',
-      position: 'absolute',
       padding: theme.spacing(4),
+      position: 'absolute',
+      margin: 'auto',
       top: 0,
+      right: 0,
+      bottom: 0,
+      left: 0,
     },
   },
   projectNameSection: {
+    display: 'block',
     padding: 11,
+    cursor: 'pointer',
+    textDecoration: 'none',
+
+    '&:hover': {
+      backgroundColor: 'skyblue',
+
+      '& $projectName': {
+        color: 'red',
+        textDecoration: 'underline',
+      },
+      '& $projectCategory': {
+        color: 'purple',
+      }
+    }
   },
   projectName: {
     fontSize: 14,
@@ -36,11 +55,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const ProjectItem = ({
-  name,
-  image,
-}) => {
+const ProjectItem = ({ item }) => {
   const classes = useStyles();
+  const { name, image, link } = item;
 
   return (
     <Paper
@@ -49,7 +66,12 @@ const ProjectItem = ({
       <div className={classes.imageSection}>
         <img src={image} alt={name} />
       </div>
-      <div className={classes.projectNameSection}>
+      <a 
+        className={classes.projectNameSection}
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <Typography
           variant="body1"
           component='p'
@@ -64,7 +86,7 @@ const ProjectItem = ({
         >
           Tbd
         </Typography>
-      </div>
+      </a>
     </Paper>
   )
 }
