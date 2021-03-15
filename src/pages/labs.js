@@ -36,10 +36,17 @@ const useStyles = makeStyles((theme) => ({
   sectionIcon: {
     margin: "0 12px",
   },
+  sectionNumber: {
+    fontSize: 16,
+    top: 0,
+    left: '-10px',
+    position: 'absolute',
+  },
   sectionTitle: {
     fontFamily: "'Roboto slab', serif",
     fontSize: 38,
     color: "#292929",
+    position: 'relative'
   },
   sectionDescription: {
     textAlign: "right",
@@ -85,11 +92,7 @@ const LabsPage = () => {
             <Grid container spacing={3}>
               <Grid item container md={3} justify="flex-end">
                 <Typography className={classes.sectionTitle} component="h2">
-                  <img
-                    className={classes.sectionIcon}
-                    src="/svg/labs2.svg"
-                    alt="heading"
-                  />
+                  <sup className={classes.sectionNumber}>1</sup>
                   Research
                 </Typography>
               </Grid>
@@ -107,7 +110,7 @@ const LabsPage = () => {
               </Grid>
               <Grid item md={9}>
                 {research.map((item) => (
-                  <div>
+                  <div key={item.title}>
                     <Typography className={classes.contentTitle} component="h3">
                       {item.title}
                     </Typography>
@@ -137,11 +140,7 @@ const LabsPage = () => {
             <Grid container spacing={3}>
               <Grid item container md={3} justify="flex-end">
                 <Typography className={classes.sectionTitle} component="h2">
-                  <img
-                    className={classes.sectionIcon}
-                    src="/svg/labs3.svg"
-                    alt="heading"
-                  />
+                  <sup className={classes.sectionNumber}>2</sup>
                   Investment
                 </Typography>
               </Grid>
@@ -158,7 +157,7 @@ const LabsPage = () => {
               </Grid>
               <Grid item md={9}>
                 {investment.map((item) => (
-                  <div>
+                  <div key={item.title}>
                     <Typography className={classes.contentTitle} component="h3">
                       {item.title}
                     </Typography>
