@@ -75,7 +75,7 @@ const PublicPage = () => {
         </Jumbotron>
 
         <section id="presence" className={classes.section}>
-          <Container>
+          <Container maxWidth="md">
             <Typography className={classes.sectionTitle} component="h2">
               Presence
             </Typography>
@@ -97,7 +97,7 @@ const PublicPage = () => {
 
 
         <section id="quote" className={classes.section}>
-          <Container>
+          <Container maxWidth="md">
             <Typography className={classes.sectionTitle} component="h2">
               Quote
             </Typography>

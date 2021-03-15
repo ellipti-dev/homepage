@@ -115,7 +115,7 @@ export default function Header() {
         classes={{ root: classes.root }}
         elevation={0}
       >
-        <Container>
+        <Container maxWidth="md">
           <Toolbar className={classes.toolbar}>
             <Button
               component={Link}

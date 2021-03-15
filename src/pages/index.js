@@ -86,7 +86,7 @@ const IndexPage = () => {
       </Jumbotron>
 
       <section className={classes.visionSection}>
-        <Container>
+        <Container maxWidth="md">
           <Grid container>
             <Grid item xs={12} sm={2}>
               <Typography
@@ -113,7 +113,7 @@ const IndexPage = () => {
       </section>
 
       <section className={classes.valueSection}>
-        <Container>
+        <Container maxWidth="md">
           <Typography
             className={classes.valueTitle}
             component="h2"

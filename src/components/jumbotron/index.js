@@ -17,7 +17,7 @@ function Jumbotron({ children, className }) {
 
   return (
     <section className={clsx(classes.root, className)}>
-      <Container>
+      <Container maxWidth="md">
         {children}
       </Container>
     </section>

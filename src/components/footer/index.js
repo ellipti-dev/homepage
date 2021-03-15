@@ -47,7 +47,7 @@ const Footer = () => {
   const classes = useStyles();
   return (
     <footer className={classes.root} elevation={0}>
-      <Container>
+      <Container maxWidth="md">
         <Grid container alignItems="flex-start">
           <Grid item container xs={6} alignItems="center">
             <img width={64} src="/logo/ellipti.svg" alt="ellipti" />

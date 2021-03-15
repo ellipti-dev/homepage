@@ -88,7 +88,7 @@ const LabsPage = () => {
         </Jumbotron>
 
         <section id="research" className={classes.section}>
-          <Container>
+          <Container maxWidth="md">
             <Grid container spacing={3}>
               <Grid item container md={3} justify="flex-end">
                 <Typography className={classes.sectionTitle} component="h2">
@@ -136,7 +136,7 @@ const LabsPage = () => {
         </section>
 
         <section id="investment" className={classes.section}>
-          <Container>
+          <Container maxWidth="md">
             <Grid container spacing={3}>
               <Grid item container md={3} justify="flex-end">
                 <Typography className={classes.sectionTitle} component="h2">

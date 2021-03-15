@@ -76,7 +76,7 @@ const IndexPage = () => {
       </Jumbotron>
 
       <section id="defi" className={classes.section}>
-        <Container>
+        <Container maxWidth="md">
           <Typography className={classes.sectionTitle} component="h2">
             DeFi
           </Typography>
@@ -92,7 +92,7 @@ const IndexPage = () => {
       </section>
 
       <section id="data-storage-ai" className={classes.section}>
-        <Container>
+        <Container maxWidth="md">
           <Typography className={classes.sectionTitle} component="h2">
             Data / Storage / AI
           </Typography>
@@ -108,7 +108,7 @@ const IndexPage = () => {
       </section>
 
       <section id="application" className={classes.section}>
-        <Container>
+        <Container maxWidth="md">
           <Typography className={classes.sectionTitle} component="h2">
             Application
           </Typography>
@@ -124,7 +124,7 @@ const IndexPage = () => {
       </section>
 
       <section id="infrastructure" className={classes.section}>
-        <Container>
+        <Container maxWidth="md">
           <Typography className={classes.sectionTitle} component="h2">
             Infrastructure
           </Typography>
@@ -140,7 +140,7 @@ const IndexPage = () => {
       </section>
 
       <section id="privacy" className={classes.section}>
-        <Container>
+        <Container maxWidth="md">
           <Typography className={classes.sectionTitle} component="h2">
             Privacy
           </Typography>
@@ -156,7 +156,7 @@ const IndexPage = () => {
       </section>
 
       <section id="layer1" className={classes.section}>
-        <Container>
+        <Container maxWidth="md">
           <Typography className={classes.sectionTitle} component="h2">
             Layer1
           </Typography>
@@ -171,7 +171,7 @@ const IndexPage = () => {
         </Container>
       </section>
       <section id="analytics" className={classes.section}>
-        <Container>
+        <Container maxWidth="md">
           <Typography className={classes.sectionTitle} component="h2">
             Analytics
           </Typography>
