@@ -8,6 +8,7 @@ import Button from "@material-ui/core/Button";
 import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
 import MoreIcon from "@material-ui/icons/MoreVert";
+import Container from "@material-ui/core/Container";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -15,6 +16,9 @@ const useStyles = makeStyles((theme) => ({
   },
   grow: {
     flexGrow: 1,
+  },
+  toolbar: {
+    padding: 0,
   },
   expandButton: {
     color: "rgb(255, 255, 255, 0.7)",
@@ -111,61 +115,63 @@ export default function Header() {
         classes={{ root: classes.root }}
         elevation={0}
       >
-        <Toolbar>
-          <Button
-            component={Link}
-            to={"/"}
-            className={classes.menuButton}
-            color="inherit"
-            aria-label="open drawer"
-          >
-            <img src="/logo/ellipti.svg" alt="ellipti logo" />
-          </Button>
+        <Container>
+          <Toolbar className={classes.toolbar}>
+            <Button
+              component={Link}
+              to={"/"}
+              className={classes.menuButton}
+              color="inherit"
+              aria-label="open drawer"
+            >
+              <img src="/logo/ellipti.svg" alt="ellipti logo" />
+            </Button>
 
-          <div className={classes.grow} />
+            <div className={classes.grow} />
 
-          <div className={classes.sectionDesktop}>
-            <Link
-              to={"/about"}
-              className={classes.menuItem}
-              activeClassName={classes.menuItemActive}
-            >
-              About
-            </Link>
-            <Link
-              to={"/portfolio"}
-              className={classes.menuItem}
-              activeClassName={classes.menuItemActive}
-            >
-              Portfolio
-            </Link>
-            <Link
-              to={"/labs"}
-              className={classes.menuItem}
-              activeClassName={classes.menuItemActive}
-            >
-              Labs
-            </Link>
-            <Link
-              to={"/public"}
-              className={classes.menuItem}
-              activeClassName={classes.menuItemActive}
-            >
-              Public
-            </Link>
-          </div>
-          <div className={classes.sectionMobile}>
-            <IconButton
-              className={classes.expandButton}
-              aria-label="show more"
-              aria-controls={mobileMenuId}
-              aria-haspopup="true"
-              onClick={handleMobileMenuOpen}
-            >
-              <MoreIcon />
-            </IconButton>
-          </div>
-        </Toolbar>
+            <div className={classes.sectionDesktop}>
+              <Link
+                to={"/about"}
+                className={classes.menuItem}
+                activeClassName={classes.menuItemActive}
+              >
+                About
+              </Link>
+              <Link
+                to={"/portfolio"}
+                className={classes.menuItem}
+                activeClassName={classes.menuItemActive}
+              >
+                Portfolio
+              </Link>
+              <Link
+                to={"/labs"}
+                className={classes.menuItem}
+                activeClassName={classes.menuItemActive}
+              >
+                Labs
+              </Link>
+              <Link
+                to={"/public"}
+                className={classes.menuItem}
+                activeClassName={classes.menuItemActive}
+              >
+                Public
+              </Link>
+            </div>
+            <div className={classes.sectionMobile}>
+              <IconButton
+                className={classes.expandButton}
+                aria-label="show more"
+                aria-controls={mobileMenuId}
+                aria-haspopup="true"
+                onClick={handleMobileMenuOpen}
+              >
+                <MoreIcon />
+              </IconButton>
+            </div>
+          </Toolbar>
+        </Container>
       </AppBar>
       {renderMobileMenu}
     </div>
