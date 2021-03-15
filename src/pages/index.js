@@ -14,15 +14,21 @@ const useStyles = makeStyles((theme) => ({
     backgroundImage: "url('/svg/index1.svg')",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "right 20% center",
+    height: "480px",
+  },
+  beginning_word: {
+    fontSize : 12,
+    fontFamily: "Roboto",
+    fontWeight: 500,
+    color: "#fff",
   },
   title: {
-    fontSize: "60px",
+    fontSize: "40px",
     color: "#fff",
     fontFamily: '"Roboto Slab", serif',
     fontWeight: "normal",
     lineHeight: 1.3,
-    textDecoration: "underline",
-    width: "60%",
+    width: "350px",
   },
   visionSection: {
     paddingTop: 73,
@@ -55,7 +61,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "normal",
   },
   valueDescription: {
-    fontSize: 14,
+    fontSize: 16,
     fontWeight: 300,
   },
   valueContainer: {
@@ -71,6 +77,9 @@ const IndexPage = () => {
   return (
     <Layout className={classes.root}>
       <Jumbotron className={classes.jumbotron}>
+        <Typography className={classes.beginning_word}>
+          WE ARE
+        </Typography>
         <Typography className={classes.title} component={"h1"} gutterBottom>
           Building with the founders, accelerate the shift
         </Typography>
