@@ -307,7 +307,7 @@ const AboutPage = () => {
             Provenance Summit 2018
           </Typography>
           <Grid className={classes.grid} container spacing={2}>
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={12} md={6}>
               <Typography
                 className={classes.itemDescription}
                 component="p"
@@ -328,41 +328,44 @@ const AboutPage = () => {
                 development.
               </Typography>
             </Grid>
-            <Grid container item xs={12} sm={6} spacing={1}>
+            <Grid container item xs={12} md={6} spacing={1}>
               <Grid item xs={2}>
-                <CompanyItem name="EEA" image="/portfolio/eea.svg" />
+                <CompanyItem />
+              </Grid>
+              <Grid item xs={2}>
+                <CompanyItem name="EEA" image="/summit/eea.svg" />
               </Grid>
               <Grid item xs={2}>
                 <CompanyItem
                   name="Consensys"
-                  image="/portfolio/consensys.svg"
+                  image="/summit/consensys.svg"
                 />
               </Grid>
               <Grid item xs={2}>
-                <CompanyItem name="Parity" image="/portfolio/parity.svg" />
+                <CompanyItem name="Parity" image="/summit/parity.svg" />
               </Grid>
               <Grid item xs={2}>
-                <CompanyItem name="Bitmain" image="/portfolio/bitmain.svg" />
+                <CompanyItem name="Bitmain" image="/summit/bitmain.svg" />
               </Grid>
               <Grid item xs={2}>
-                <CompanyItem name="Monero" image="/portfolio/monero.svg" />
+                <CompanyItem name="Monero" image="/summit/monero.svg" />
               </Grid>
               <Grid item xs={2}>
-                <CompanyItem name="Solana" image="/portfolio/solana.svg" />
+                <CompanyItem name="Solana" image="/summit/solana.svg" />
               </Grid>
               <Grid item xs={2}>
-                <CompanyItem name="Status" image="/portfolio/status.svg" />
+                <CompanyItem name="Status" image="/summit/status.svg" />
               </Grid>
               <Grid item xs={2}>
                 <CompanyItem
                   name="CryptoKitties"
-                  image="/portfolio/cryptokitties.svg"
+                  image="/summit/cryptokitties.svg"
                 />
               </Grid>
               <Grid item xs={2}>
                 <CompanyItem
                   name="Blockgeeks"
-                  image="/portfolio/blockgeeks.svg"
+                  image="/summit/blockgeeks.svg"
                 />
               </Grid>
             </Grid>
