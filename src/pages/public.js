@@ -8,6 +8,7 @@ import Jumbotron from "../components/jumbotron";
 import QuoteItem from '../components/quote-item'
 import Layout from "../components/layout";
 import FloatingActionButton from "../components/fab";
+import Main from "../components/main";
 
 import { presence, quote } from "../data/public";
 
@@ -31,8 +32,11 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 26,
   },
   section: {
-    paddingTop: 90,
-    paddingBottom: 180,
+    paddingBottom: 90,
+
+    "&:last-child": {
+      paddingBottom: 0,
+    },
   },
   sectionTitle: {
     fontSize: 38,
@@ -74,42 +78,44 @@ const PublicPage = () => {
           </Typography>
         </Jumbotron>
 
-        <section id="presence" className={classes.section}>
-          <Container maxWidth="md">
-            <Typography className={classes.sectionTitle} component="h2">
-              Presence
-            </Typography>
-            {presence.map(item => (
-              <div className={classes.presenceDiv}>
-                <Typography component="h3" className={classes.presenceTitle}>
-                  {item.title}
-                </Typography>
-
-                {item.content && item.content.map(subItem => (
-                  <Typography component='p' className={classes.presenceDescription}>
-                    {subItem}
+        <Main>
+          <section id="presence" className={classes.section}>
+            <Container maxWidth="md">
+              <Typography className={classes.sectionTitle} component="h2">
+                Presence
+              </Typography>
+              {presence.map(item => (
+                <div className={classes.presenceDiv}>
+                  <Typography component="h3" className={classes.presenceTitle}>
+                    {item.title}
                   </Typography>
-                ))}
-              </div>
-            ))}
-          </Container>
-        </section>
 
-
-        <section id="quote" className={classes.section}>
-          <Container maxWidth="md">
-            <Typography className={classes.sectionTitle} component="h2">
-              Quote
-            </Typography>
-            <Grid container spacing={2}>
-              {quote.map((item, index) => (
-                <Grid item xs={6} sm={4} md={3}>
-                  <QuoteItem item={item} index={index} />
-                </Grid>
+                  {item.content && item.content.map(subItem => (
+                    <Typography component='p' className={classes.presenceDescription}>
+                      {subItem}
+                    </Typography>
+                  ))}
+                </div>
               ))}
-            </Grid>
-          </Container>
-        </section>
+            </Container>
+          </section>
+
+
+          <section id="quote" className={classes.section}>
+            <Container maxWidth="md">
+              <Typography className={classes.sectionTitle} component="h2">
+                Quote
+              </Typography>
+              <Grid container spacing={2}>
+                {quote.map((item, index) => (
+                  <Grid item xs={6} sm={4} md={3}>
+                    <QuoteItem item={item} index={index} />
+                  </Grid>
+                ))}
+              </Grid>
+            </Container>
+          </section>
+        </Main>
 
         <FloatingActionButton
           items={[

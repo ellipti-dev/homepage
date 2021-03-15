@@ -7,6 +7,7 @@ import Grid from "@material-ui/core/Grid";
 
 import Layout from "../components/layout";
 import Jumbotron from "../components/jumbotron";
+import Main from "../components/main";
 
 const useStyles = makeStyles((theme) => ({
   root: {},
@@ -44,10 +45,8 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 16,
     fontWeight: 300,
   },
-  valueSection: {
-    paddingTop: 44,
-    paddingBottom: 160,
 
+  valueSection: {
     '& $valueContainer:nth-child(2n+1)': {
       flexDirection: 'row-reverse',
     },
@@ -80,11 +79,10 @@ const IndexPage = () => {
         <Typography className={classes.beginning_word}>
           WE ARE
         </Typography>
-        <Typography className={classes.title} component={"h1"} gutterBottom>
+        <Typography className={classes.title} component={"h1"}>
           Building with the founders, accelerate the shift
         </Typography>
       </Jumbotron>
-
       <section className={classes.visionSection}>
         <Container maxWidth="md">
           <Grid container>
@@ -92,7 +90,6 @@ const IndexPage = () => {
               <Typography
                 className={classes.visionTitle}
                 component="h2"
-                gutterBottom
               >
                 Vision
               </Typography>
@@ -101,7 +98,6 @@ const IndexPage = () => {
               <Typography
                 className={classes.visionDescription}
                 component="p"
-                gutterBottom
               >
                 Ecosystem builder for the blockchain companies to navigate the
                 market pursuing excellence with the right strategy and
@@ -111,63 +107,63 @@ const IndexPage = () => {
           </Grid>
         </Container>
       </section>
+      <Main>
+        <section className={classes.valueSection}>
+          <Container maxWidth="md">
+            <Typography
+              className={classes.valueTitle}
+              component="h2"
+              align={"center"}
+            >
+              What is <br />
+              Ellipti’s value proposition?
+            </Typography>
 
-      <section className={classes.valueSection}>
-        <Container maxWidth="md">
-          <Typography
-            className={classes.valueTitle}
-            component="h2"
-            align={"center"}
-            gutterBottom
-          >
-            What is <br />
-            Ellipti’s value proposition?
-          </Typography>
+            <Grid className={classes.valueContainer} container spacing={8}>
+              <Grid item xs={12} sm={6}>
+                <img src="/svg/index2.svg" alt="tbd" />
+              </Grid>
+              <Grid item xs={12} sm={6}>
+                <Typography
+                  className={classes.valueDescription}
+                  align={"left"}
+                >
+                  {
+                    "From a project to the company with sustainable growth backed by generalists & specialists."
+                  }
+                </Typography>
+              </Grid>
+            </Grid>
 
-          <Grid className={classes.valueContainer} container spacing={8}>
-            <Grid item xs={12} sm={6}>
-              <img src="/svg/index2.svg" alt="tbd" />
+            <Grid className={classes.valueContainer} container spacing={8}>
+              <Grid item xs={12} sm={6}>
+                <img src="/svg/index3.svg" alt="tbd" />
+              </Grid>
+              <Grid item xs={12} sm={6}>
+                <Typography className={classes.valueDescription}>
+                  {
+                    "Ellipti covers overall necessities in the crypto market with the expertise and various experiences"
+                  }
+                </Typography>
+              </Grid>
             </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography
-                className={classes.valueDescription}
-                align={"left"}
-                gutterBottom
-              >
-                {
-                  "From a project to the company with sustainable growth backed by generalists & specialists."
-                }
-              </Typography>
-            </Grid>
-          </Grid>
 
-          <Grid className={classes.valueContainer} container spacing={8}>
-            <Grid item xs={12} sm={6}>
-              <img src="/svg/index3.svg" alt="tbd" />
+            <Grid className={classes.valueContainer} container spacing={8}>
+              <Grid item xs={12} sm={6}>
+                <img src="/svg/index4.svg" alt="tbd" />
+              </Grid>
+              <Grid item xs={12} sm={6}>
+                <Typography className={classes.valueDescription}>
+                  {
+                    "Ellipti advisory & Ellipti labs accelerate teams mainly in the Korean market, further to the other major local markets, aiming to grow the sustainable & strong ecosystem"
+                  }
+                </Typography>
+              </Grid>
             </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography className={classes.valueDescription} gutterBottom>
-                {
-                  "Ellipti covers overall necessities in the crypto market with the expertise and various experiences"
-                }
-              </Typography>
-            </Grid>
-          </Grid>
+          </Container>
+        </section>
 
-          <Grid className={classes.valueContainer} container spacing={8}>
-            <Grid item xs={12} sm={6}>
-              <img src="/svg/index4.svg" alt="tbd" />
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography className={classes.valueDescription} gutterBottom>
-                {
-                  "Ellipti advisory & Ellipti labs accelerate teams mainly in the Korean market, further to the other major local markets, aiming to grow the sustainable & strong ecosystem"
-                }
-              </Typography>
-            </Grid>
-          </Grid>
-        </Container>
-      </section>
+      </Main>
     </Layout>
   );
 };

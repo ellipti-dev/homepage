@@ -7,6 +7,7 @@ import Container from "@material-ui/core/Container";
 
 import Layout from "../components/layout";
 import FloatingActionButton from "../components/fab";
+import Main from "../components/main";
 
 import { research, investment } from "../data/labs";
 
@@ -30,8 +31,11 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 26,
   },
   section: {
-    paddingTop: 90,
-    paddingBottom: 180,
+    paddingBottom: 90,
+
+    "&:last-child": {
+      paddingBottom: 0,
+    },
   },
   sectionIcon: {
     margin: "0 12px",
@@ -87,100 +91,102 @@ const LabsPage = () => {
           </Typography>
         </Jumbotron>
 
-        <section id="research" className={classes.section}>
-          <Container maxWidth="md">
-            <Grid container spacing={3}>
-              <Grid item container md={3} justify="flex-end">
-                <Typography className={classes.sectionTitle} component="h2">
-                  <sup className={classes.sectionNumber}>1</sup>
-                  Research
-                </Typography>
-              </Grid>
-              <Grid item md={9} />
-              {/* contents */}
-              <Grid item container md={3} justify="flex-end">
-                <Typography
-                  className={classes.sectionDescription}
-                  component="p"
-                >
-                  {
-                    "With the comprehensive research based on technical & business perspectives, excavating the winning projects"
-                  }
-                </Typography>
-              </Grid>
-              <Grid item md={9}>
-                {research.map((item) => (
-                  <div key={item.title}>
-                    <Typography className={classes.contentTitle} component="h3">
-                      {item.title}
-                    </Typography>
-                    {item.subTitle && (
-                      <Typography
-                        className={classes.contentSubtitle}
-                        component="h4"
-                      >
-                        {item.subTitle}
+        <Main>
+          <section id="research" className={classes.section}>
+            <Container maxWidth="md">
+              <Grid container spacing={3}>
+                <Grid item container md={3} justify="flex-end">
+                  <Typography className={classes.sectionTitle} component="h2">
+                    <sup className={classes.sectionNumber}>1</sup>
+                    Research
+                  </Typography>
+                </Grid>
+                <Grid item md={9} />
+                {/* contents */}
+                <Grid item container md={3} justify="flex-end">
+                  <Typography
+                    className={classes.sectionDescription}
+                    component="p"
+                  >
+                    {
+                      "With the comprehensive research based on technical & business perspectives, excavating the winning projects"
+                    }
+                  </Typography>
+                </Grid>
+                <Grid item md={9}>
+                  {research.map((item) => (
+                    <div key={item.title}>
+                      <Typography className={classes.contentTitle} component="h3">
+                        {item.title}
                       </Typography>
-                    )}
-                    <Typography
-                      className={classes.contentDescription}
-                      component="p"
-                    >
-                      {item.content}
-                    </Typography>
-                  </div>
-                ))}
+                      {item.subTitle && (
+                        <Typography
+                          className={classes.contentSubtitle}
+                          component="h4"
+                        >
+                          {item.subTitle}
+                        </Typography>
+                      )}
+                      <Typography
+                        className={classes.contentDescription}
+                        component="p"
+                      >
+                        {item.content}
+                      </Typography>
+                    </div>
+                  ))}
+                </Grid>
               </Grid>
-            </Grid>
-          </Container>
-        </section>
+            </Container>
+          </section>
 
-        <section id="investment" className={classes.section}>
-          <Container maxWidth="md">
-            <Grid container spacing={3}>
-              <Grid item container md={3} justify="flex-end">
-                <Typography className={classes.sectionTitle} component="h2">
-                  <sup className={classes.sectionNumber}>2</sup>
-                  Investment
-                </Typography>
-              </Grid>
-              <Grid item md={9} />
-              {/* contents */}
-              <Grid item container md={3} justify="flex-end">
-                <Typography
-                  className={classes.sectionDescription}
-                  component="p"
-                >
-                  Choose and support the right projects, bringing ideas into
-                  reality
-                </Typography>
-              </Grid>
-              <Grid item md={9}>
-                {investment.map((item) => (
-                  <div key={item.title}>
-                    <Typography className={classes.contentTitle} component="h3">
-                      {item.title}
-                    </Typography>
-                    {item.subTitle && (
-                      <Typography
-                        className={classes.contentSubtitle}
-                        component="h4"
-                      >
-                        {item.subTitle}
+          <section id="investment" className={classes.section}>
+            <Container maxWidth="md">
+              <Grid container spacing={3}>
+                <Grid item container md={3} justify="flex-end">
+                  <Typography className={classes.sectionTitle} component="h2">
+                    <sup className={classes.sectionNumber}>2</sup>
+                    Investment
+                  </Typography>
+                </Grid>
+                <Grid item md={9} />
+                {/* contents */}
+                <Grid item container md={3} justify="flex-end">
+                  <Typography
+                    className={classes.sectionDescription}
+                    component="p"
+                  >
+                    Choose and support the right projects, bringing ideas into
+                    reality
+                  </Typography>
+                </Grid>
+                <Grid item md={9}>
+                  {investment.map((item) => (
+                    <div key={item.title}>
+                      <Typography className={classes.contentTitle} component="h3">
+                        {item.title}
                       </Typography>
-                    )}
-                    <Typography
-                      className={classes.contentDescription}
-                      component="p"
-                    >
-                      {item.content}
-                    </Typography>
-                  </div>
-                ))}
+                      {item.subTitle && (
+                        <Typography
+                          className={classes.contentSubtitle}
+                          component="h4"
+                        >
+                          {item.subTitle}
+                        </Typography>
+                      )}
+                      <Typography
+                        className={classes.contentDescription}
+                        component="p"
+                      >
+                        {item.content}
+                      </Typography>
+                    </div>
+                  ))}
+                </Grid>
               </Grid>
-            </Grid>
-          </Container>
-        </section>
+            </Container>
+          </section>
+        </Main>
 
         <FloatingActionButton
           items={[

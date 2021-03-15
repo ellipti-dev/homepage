@@ -9,6 +9,7 @@ import Layout from "../components/layout";
 import Jumbotron from "../components/jumbotron";
 import ProjectItem from "../components/project-item";
 import FloatingActionButton from "../components/fab";
+import Main from "../components/main";
 
 import {
   Defi,
@@ -39,10 +40,10 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 26,
   },
   section: {
-    paddingTop: 90,
+    paddingBottom: 90,
 
     "&:last-child": {
-      paddingBottom: 160,
+      paddingBottom: 0,
     },
   },
   sectionTitle: {
@@ -75,115 +76,117 @@ const IndexPage = () => {
         </Typography>
       </Jumbotron>
 
-      <section id="defi" className={classes.section}>
-        <Container maxWidth="md">
-          <Typography className={classes.sectionTitle} component="h2">
-            DeFi
-          </Typography>
+      <Main>
+        <section id="defi" className={classes.section}>
+          <Container maxWidth="md">
+            <Typography className={classes.sectionTitle} component="h2">
+              DeFi
+            </Typography>
 
-          <Grid container spacing={2} alignItems="stretch">
-            {Defi.map((item) => (
-              <Grid key={item.name} item xs={6} sm={4} md={3} lg={2}>
-                <ProjectItem image={item.image} name={item.name} />
-              </Grid>
-            ))}
-          </Grid>
-        </Container>
-      </section>
-
-      <section id="data-storage-ai" className={classes.section}>
-        <Container maxWidth="md">
-          <Typography className={classes.sectionTitle} component="h2">
-            Data / Storage / AI
-          </Typography>
-
-          <Grid container spacing={2}>
-            {Data.map((item) => (
-              <Grid key={item.name} item xs={6} sm={4} md={3} lg={2}>
-                <ProjectItem image={item.image} name={item.name} />
-              </Grid>
-            ))}
-          </Grid>
-        </Container>
-      </section>
-
-      <section id="application" className={classes.section}>
-        <Container maxWidth="md">
-          <Typography className={classes.sectionTitle} component="h2">
-            Application
-          </Typography>
-
-          <Grid container spacing={2}>
-            {Application.map((item) => (
-              <Grid key={item.name} item xs={6} sm={4} md={3} lg={2}>
-                <ProjectItem image={item.image} name={item.name} />
-              </Grid>
-            ))}
-          </Grid>
-        </Container>
-      </section>
-
-      <section id="infrastructure" className={classes.section}>
-        <Container maxWidth="md">
-          <Typography className={classes.sectionTitle} component="h2">
-            Infrastructure
-          </Typography>
-
-          <Grid container spacing={2}>
-            {Infrastructure.map((item) => (
-              <Grid key={item.name} item xs={6} sm={4} md={3} lg={2}>
-                <ProjectItem image={item.image} name={item.name} />
-              </Grid>
-            ))}
-          </Grid>
-        </Container>
-      </section>
-
-      <section id="privacy" className={classes.section}>
-        <Container maxWidth="md">
-          <Typography className={classes.sectionTitle} component="h2">
-            Privacy
-          </Typography>
-
-          <Grid container spacing={2}>
-            {Privacy.map((item) => (
-              <Grid key={item.name} item xs={6} sm={4} md={3} lg={2}>
-                <ProjectItem image={item.image} name={item.name} />
-              </Grid>
-            ))}
-          </Grid>
-        </Container>
-      </section>
-
-      <section id="layer1" className={classes.section}>
-        <Container maxWidth="md">
-          <Typography className={classes.sectionTitle} component="h2">
-            Layer1
-          </Typography>
-
-          <Grid container spacing={2}>
-            {Layer1.map((item) => (
-              <Grid key={item.name} item xs={6} sm={4} md={3} lg={2}>
-                <ProjectItem image={item.image} name={item.name} />
-              </Grid>
-            ))}
-          </Grid>
-        </Container>
-      </section>
-      <section id="analytics" className={classes.section}>
-        <Container maxWidth="md">
-          <Typography className={classes.sectionTitle} component="h2">
-            Analytics
-          </Typography>
-
-          <Grid container spacing={2}>
-            <Grid item xs={6} sm={4} md={3} lg={2}>
-              <ProjectItem image="/portfolio/dappcom.svg" name="Dapp.com" />
+            <Grid container spacing={2} alignItems="stretch">
+              {Defi.map((item) => (
+                <Grid key={item.name} item xs={6} sm={4} md={3} lg={2}>
+                  <ProjectItem image={item.image} name={item.name} />
+                </Grid>
+              ))}
             </Grid>
-          </Grid>
-        </Container>
-      </section>
+          </Container>
+        </section>
 
+        <section id="data-storage-ai" className={classes.section}>
+          <Container maxWidth="md">
+            <Typography className={classes.sectionTitle} component="h2">
+              Data / Storage / AI
+            </Typography>
+
+            <Grid container spacing={2}>
+              {Data.map((item) => (
+                <Grid key={item.name} item xs={6} sm={4} md={3} lg={2}>
+                  <ProjectItem image={item.image} name={item.name} />
+                </Grid>
+              ))}
+            </Grid>
+          </Container>
+        </section>
+
+        <section id="application" className={classes.section}>
+          <Container maxWidth="md">
+            <Typography className={classes.sectionTitle} component="h2">
+              Application
+            </Typography>
+
+            <Grid container spacing={2}>
+              {Application.map((item) => (
+                <Grid key={item.name} item xs={6} sm={4} md={3} lg={2}>
+                  <ProjectItem image={item.image} name={item.name} />
+                </Grid>
+              ))}
+            </Grid>
+          </Container>
+        </section>
+
+        <section id="infrastructure" className={classes.section}>
+          <Container maxWidth="md">
+            <Typography className={classes.sectionTitle} component="h2">
+              Infrastructure
+            </Typography>
+
+            <Grid container spacing={2}>
+              {Infrastructure.map((item) => (
+                <Grid key={item.name} item xs={6} sm={4} md={3} lg={2}>
+                  <ProjectItem image={item.image} name={item.name} />
+                </Grid>
+              ))}
+            </Grid>
+          </Container>
+        </section>
+
+        <section id="privacy" className={classes.section}>
+          <Container maxWidth="md">
+            <Typography className={classes.sectionTitle} component="h2">
+              Privacy
+            </Typography>
+
+            <Grid container spacing={2}>
+              {Privacy.map((item) => (
+                <Grid key={item.name} item xs={6} sm={4} md={3} lg={2}>
+                  <ProjectItem image={item.image} name={item.name} />
+                </Grid>
+              ))}
+            </Grid>
+          </Container>
+        </section>
+
+        <section id="layer1" className={classes.section}>
+          <Container maxWidth="md">
+            <Typography className={classes.sectionTitle} component="h2">
+              Layer1
+            </Typography>
+
+            <Grid container spacing={2}>
+              {Layer1.map((item) => (
+                <Grid key={item.name} item xs={6} sm={4} md={3} lg={2}>
+                  <ProjectItem image={item.image} name={item.name} />
+                </Grid>
+              ))}
+            </Grid>
+          </Container>
+        </section>
+        <section id="analytics" className={classes.section}>
+          <Container maxWidth="md">
+            <Typography className={classes.sectionTitle} component="h2">
+              Analytics
+            </Typography>
+
+            <Grid container spacing={2}>
+              <Grid item xs={6} sm={4} md={3} lg={2}>
+                <ProjectItem image="/portfolio/dappcom.svg" name="Dapp.com" />
+              </Grid>
+            </Grid>
+          </Container>
+        </section>
+      </Main>
+      
       <FloatingActionButton
         items={[
           { label: "DeFi", anchor: "defi" },
