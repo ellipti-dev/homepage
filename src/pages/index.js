@@ -31,6 +31,14 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: 1.3,
     width: "350px",
   },
+  valueGridWrapper: {
+    // sm보다 클때만 보이도록 수정
+    [theme.breakpoints.up('sm')]: {
+      backgroundImage: "url('/svg/horizontal-divider.svg')",
+      backgroundRepeat: "repeat-y",
+      backgroundPosition: "center center",
+    }
+  },
   visionSection: {
     paddingTop: 73,
     paddingBottom: 86,
@@ -64,7 +72,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 300,
   },
   valueContainer: {
-    paddingTop: 81,
+    marginTop: 81,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -119,47 +127,49 @@ const IndexPage = () => {
               Ellipti’s value proposition?
             </Typography>
 
-            <Grid className={classes.valueContainer} container spacing={8}>
-              <Grid item xs={12} sm={6}>
-                <img src="/svg/index2.svg" alt="tbd" />
+            <div className={classes.valueGridWrapper}>
+              <Grid className={classes.valueContainer} container spacing={8}>
+                <Grid item xs={12} sm={6}>
+                  <img src="/svg/index2.svg" alt="tbd" />
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <Typography
+                    className={classes.valueDescription}
+                    align={"left"}
+                  >
+                    {
+                      "From a project to the company with sustainable growth backed by generalists & specialists."
+                    }
+                  </Typography>
+                </Grid>
               </Grid>
-              <Grid item xs={12} sm={6}>
-                <Typography
-                  className={classes.valueDescription}
-                  align={"left"}
-                >
-                  {
-                    "From a project to the company with sustainable growth backed by generalists & specialists."
-                  }
-                </Typography>
-              </Grid>
-            </Grid>
 
-            <Grid className={classes.valueContainer} container spacing={8}>
-              <Grid item xs={12} sm={6}>
-                <img src="/svg/index3.svg" alt="tbd" />
+              <Grid className={classes.valueContainer} container spacing={8}>
+                <Grid item xs={12} sm={6}>
+                  <img src="/svg/index3.svg" alt="tbd" />
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <Typography className={classes.valueDescription}>
+                    {
+                      "Ellipti covers overall necessities in the crypto market with the expertise and various experiences"
+                    }
+                  </Typography>
+                </Grid>
               </Grid>
-              <Grid item xs={12} sm={6}>
-                <Typography className={classes.valueDescription}>
-                  {
-                    "Ellipti covers overall necessities in the crypto market with the expertise and various experiences"
-                  }
-                </Typography>
-              </Grid>
-            </Grid>
 
-            <Grid className={classes.valueContainer} container spacing={8}>
-              <Grid item xs={12} sm={6}>
-                <img src="/svg/index4.svg" alt="tbd" />
+              <Grid className={classes.valueContainer} container spacing={8}>
+                <Grid item xs={12} sm={6}>
+                  <img src="/svg/index4.svg" alt="tbd" />
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <Typography className={classes.valueDescription}>
+                    {
+                      "Ellipti advisory & Ellipti labs accelerate teams mainly in the Korean market, further to the other major local markets, aiming to grow the sustainable & strong ecosystem"
+                    }
+                  </Typography>
+                </Grid>
               </Grid>
-              <Grid item xs={12} sm={6}>
-                <Typography className={classes.valueDescription}>
-                  {
-                    "Ellipti advisory & Ellipti labs accelerate teams mainly in the Korean market, further to the other major local markets, aiming to grow the sustainable & strong ecosystem"
-                  }
-                </Typography>
-              </Grid>
-            </Grid>
+            </div>
           </Container>
         </section>
 
