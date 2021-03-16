@@ -53,8 +53,9 @@ const useStyles = makeStyles((theme) => ({
     }
   },
   visionSection: {
-    padding: '60px 0',
+    padding: '80px 0',
     backgroundColor: "#E4E9EB",
+    backgroundImage: "url('/svg/vision-bg.svg')",
   },
   vision_width: {
     maxWidth: '860px',
@@ -62,34 +63,41 @@ const useStyles = makeStyles((theme) => ({
   visionTitle: {
     fontSize: 20,
     fontFamily: '"Roboto Slab", serif',
-    fontWeight: "normal",
+    fontWeight: 500,
   },
   visionDescription: {
     fontSize: 16,
-    fontWeight: 300,
+    fontWeight: 400,
+    color: '#4D5256',
   },
 
   valueSection: {
     '& $valueContainer:nth-child(2n+1)': {
-      flexDirection: 'row-reverse',
     },
     '& $valueContainer:nth-child(2n) img': {
-      float: 'right',
     }
   },
   valueTitle: {
     fontSize: 20,
     fontFamily: '"Roboto Slab", serif',
-    fontWeight: "normal",
+    fontWeight: 500,
+    lineHeight: 1.2,
   },
   valueDescription: {
     fontSize: 16,
-    fontWeight: 300,
+    fontWeight: 400,
+    lineHeight: 1.4,
+    color: '#4D5256',
   },
   valueContainer: {
-    marginTop: 81,
+    marginTop: 30,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  valueimg: {
+    display: 'flex',
+    justifyContent: 'center',
+    height: 180,
   },
 }));
 
@@ -147,7 +155,7 @@ const IndexPage = () => {
 
             <div className={classes.valueGridWrapper}>
               <Grid className={classes.valueContainer} container spacing={8}>
-                <Grid item xs={12} sm={6}>
+                <Grid className={classes.valueimg} item xs={12} sm={6}>
                   <img src="/svg/index2.svg" alt="tbd" />
                 </Grid>
                 <Grid item xs={12} sm={6}>
@@ -163,7 +171,7 @@ const IndexPage = () => {
               </Grid>
 
               <Grid className={classes.valueContainer} container spacing={8}>
-                <Grid item xs={12} sm={6}>
+                <Grid className={classes.valueimg} item xs={12} sm={6}>
                   <img src="/svg/index3.svg" alt="tbd" />
                 </Grid>
                 <Grid item xs={12} sm={6}>
@@ -176,7 +184,7 @@ const IndexPage = () => {
               </Grid>
 
               <Grid className={classes.valueContainer} container spacing={8}>
-                <Grid item xs={12} sm={6}>
+                <Grid className={classes.valueimg} item xs={12} sm={6}>
                   <img src="/svg/index4.svg" alt="tbd" />
                 </Grid>
                 <Grid item xs={12} sm={6}>
