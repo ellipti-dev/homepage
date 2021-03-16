@@ -69,8 +69,6 @@ const ProjectItem = ({ item }) => {
   return (
     <Paper
       className={classes.root}
-      elevation={3}
-      // 여기다가 호버시 희망하는 엘레베이션 레벨을 주석으로 남겨주세요
     >
       <div className={classes.imageSection}>
         <img src={image} alt={name} />
