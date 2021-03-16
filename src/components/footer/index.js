@@ -9,19 +9,24 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: "#000",
+    backgroundColor: "#191919",
     paddingTop: 60,
-    paddingBottom: theme.spacing(5),
+    paddingBottom: 120,
+  },
+  footer_logo: {
+    opacity: '.54',
   },
   copyright: {
     paddingLeft: 5,
-    color: "#fff",
+    fontWeight: 500,
+    color: "rgba(255,255,255,.54)",
   },
   contact: {
     color: "#fff",
     fontSize: 16,
     fontWeight: 500,
-    marginBottom: 20,
+    letterSpacing: -0.3,
+    marginBottom: 40,
   },
   list: {
     listStyle: "none",
@@ -31,14 +36,18 @@ const useStyles = makeStyles((theme) => ({
   outLink: {
     display: "flex",
     alignItems: "center",
-    color: "#fff",
+    color: "rgba(255,255,255,.7)",
+    fontSize: 14,
     textDecoration: "none",
-    marginBottom: 9,
+    marginBottom: 6,
     "&:hover": {
-      color: theme.palette.secondary.main,
+      color: '#fff',
+      textDecoration: 'underline',
     },
     "& > svg": {
+      width: 18,
       marginRight: 9,
+      opacity: '.7',
     },
   },
 }));
@@ -50,7 +59,7 @@ const Footer = () => {
       <Container maxWidth="md">
         <Grid container alignItems="flex-start">
           <Grid item container xs={6} alignItems="center">
-            <img width={64} src="/logo/ellipti.svg" alt="ellipti" />
+            <img className={classes.footer_logo} width={42} src="/logo/ellipti.svg" alt="ellipti" />
             <Typography className={classes.copyright} component="p">
               {` © ${new Date().getFullYear()}.`}
             </Typography>

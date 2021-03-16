@@ -12,7 +12,7 @@ import Container from "@material-ui/core/Container";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    background: "#000",
+    background: "#191919",
   },
   grow: {
     flexGrow: 1,
@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
 
     color: "rgb(255, 255, 255, 0.65)",
     fontWeight: 500,
-    letterSpacing: -0.5,
+    letterSpacing: -0.3,
     textDecoration: "none",
     "&:hover": {
       color: "#fff",
@@ -134,7 +134,7 @@ export default function Header() {
               color="inherit"
               aria-label="open drawer"
             >
-              <img src="/logo/ellipti.svg" alt="ellipti logo" />
+              <img width={54} src="/logo/ellipti.svg" alt="ellipti logo" />
             </Link>
 
             <div className={classes.grow} />
