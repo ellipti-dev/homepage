@@ -32,6 +32,9 @@ const useStyles = makeStyles((theme) => ({
     color: "#fff",
     fontSize: 26,
   },
+  titleDivider: {
+    fill: "#2C74E0",
+  },
   section: {
     paddingBottom: 90,
 
@@ -53,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
   },
   sectionTitle: {
     fontFamily: "'Roboto slab', serif",
-    fontSize: 38,
+    fontSize: 26,
   },
   sectionDescription: {
     fontSize: 20,
@@ -73,6 +76,9 @@ const useStyles = makeStyles((theme) => ({
   },
   divider: {
     marginBottom: 20,
+  },
+  fitContent: {
+    height: "fit-content",
   },
 }));
 // markup
@@ -126,7 +132,7 @@ const AboutPage = () => {
         <Typography className={classes.jumbotronTitle} component="h1">
           About
         </Typography>
-        <img src="/svg/title-divider.svg" alt="divider" />
+        <img className={classes.titleDivider} src="/svg/title-divider.svg" alt="divider" />
         <Typography
           className={classes.jumbotronDescription}
           component="p"
@@ -317,7 +323,7 @@ const AboutPage = () => {
                   development.
                 </Typography>
               </Grid>
-              <Grid container item xs={12} md={6} spacing={1}>
+              <Grid className={classes.fitContent} container item xs={12} md={6} spacing={1}>
                 <Grid item xs={2}>
                   <CompanyItem />
                 </Grid>
