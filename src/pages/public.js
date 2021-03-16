@@ -15,7 +15,7 @@ import { presence, quote } from "../data/public";
 const useStyles = makeStyles((theme) => ({
   root: {},
   jumbotron: {
-    backgroundImage: "url('/svg/labs1.svg')",
+    backgroundImage: "url('/svg/public1.svg')",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "right 20% bottom 50px",
   },
