@@ -111,9 +111,9 @@ const IndexPage = () => {
           WE ARE
         </Typography>
         <Typography className={classes.title} component={"h1"}>
-          Building <br></br> 
-          with the founders,<br></br> 
-          accelerate <br></br> 
+          Building <br /> 
+          with the founders,<br />
+          accelerate <br />
           the shift
         </Typography>
       </Jumbotron>
