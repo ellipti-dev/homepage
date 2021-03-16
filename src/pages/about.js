@@ -143,7 +143,7 @@ const AboutPage = () => {
       </Jumbotron>
       
       <Main>
-        <section className={classes.section}>
+        <section className={classes.section} id='strategy'>
           <Container maxWidth="md">
             <Typography className={classes.sectionTitle} component="h2">
               Strategy
@@ -183,7 +183,7 @@ const AboutPage = () => {
           </Container>
         </section>
 
-        <section className={classes.section}>
+        <section className={classes.section} id='implementation-operations'>
           <Container maxWidth="md">
             <Typography className={classes.sectionTitle} component="h2">
               {"Implementation & Operations"}
@@ -223,7 +223,7 @@ const AboutPage = () => {
           </Container>
         </section>
 
-        <section className={classes.section}>
+        <section className={classes.section} id='public-relations'>
           <Container maxWidth="md">
             <Typography className={classes.sectionTitle} component="h2">
               Public Relations
@@ -262,7 +262,7 @@ const AboutPage = () => {
           </Container>
         </section>
 
-        <section className={classes.section}>
+        <section className={classes.section} id='mice'>
           <Container maxWidth="md">
             <Typography className={classes.sectionTitle} component="h2">
               MICE
@@ -378,7 +378,6 @@ const AboutPage = () => {
           },
           { label: "Public relations", anchor: "public-relations" },
           { label: "MICE", anchor: "mice" },
-          { label: "Contact Us", anchor: "contact-us" },
         ]}
       />
     </Layout>

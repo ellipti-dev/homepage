@@ -14,7 +14,7 @@ import "@fontsource/roboto-slab/300.css";
 import "@fontsource/roboto-slab/400.css";
 import "@fontsource/roboto-slab/500.css";
 
-
+import './layout.css';
 
 function Layout({ children }) {
 
