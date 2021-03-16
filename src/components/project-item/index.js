@@ -7,7 +7,9 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
   root: {
     border: '1px solid #D9D9D9',
+    borderRadius: 3,
     backgroundColor: theme.palette.background.default,
+    boxShadow: 'none',
   },
   imageSection: {
     position: 'relative',
@@ -18,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 
     '& img': {
       width: '100%',
-      padding: theme.spacing(4),
+      padding: '36px',
       position: 'absolute',
       margin: 'auto',
       top: 0,
@@ -34,24 +36,27 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: 'none',
 
     '&:hover': {
-      backgroundColor: 'skyblue',
-
+      '& $root': {
+        boxShadow: '0 2 6 rgba(0,0,0,.06)',
+      },
       '& $projectName': {
-        color: 'red',
         textDecoration: 'underline',
       },
       '& $projectCategory': {
-        color: 'purple',
+        textDecoration: 'underline',
       }
     }
   },
   projectName: {
     fontSize: 14,
+    color: '#292929',
     fontWeight: 500,
-    marginBottom: 11,
+    marginBottom: 4,
   },
   projectCategory: {
-    fontSize: 11,
+    fontSize: 12,
+    lineHeight: 1,
+    color: '#4D5256',
   },
 }));
 

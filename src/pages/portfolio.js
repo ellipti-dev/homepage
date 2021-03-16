@@ -48,7 +48,9 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   sectionTitle: {
-    fontSize: 20, 
+    fontSize: 20,
+    fontWeight: 500, 
+    fontFamily: "'Roboto slab', serif",
     marginBottom: 20,
   }
 }));
