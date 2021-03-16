@@ -33,15 +33,20 @@ const useStyles = makeStyles((theme) => ({
     }
   },
   menuItem: {
-    margin: "0 14px",
-    padding: "2px 0",
+    margin: "0 20px 8px",
 
-    color: "rgb(255, 255, 255, 0.7)",
+    color: "rgb(255, 255, 255, 0.65)",
+    fontWeight: 500,
+    letterSpacing: -0.5,
     textDecoration: "none",
+    "&:hover": {
+      color: "#fff",
+      borderBottom: "1px solid #fff",
+    },
   },
   menuItemActive: {
-    borderBottom: "2px solid white",
     color: "#fff",
+    borderBottom: "1px solid #fff",
   },
   mobileMenuItem: {},
   sectionDesktop: {
