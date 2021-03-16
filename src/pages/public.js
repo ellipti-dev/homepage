@@ -63,7 +63,7 @@ const PublicPage = () => {
   return (
     <>
       <Layout>
-        <Jumbotron className={classes.jumbotron}>
+        <Jumbotron className={classes.jumbotron} isShowArrow>
           <Typography className={classes.jumbotronTitle} component="h1">
             Public
           </Typography>

@@ -14,7 +14,10 @@ const Main = ({ children, className }) => {
   const classes = useStyles();
 
   return (
-    <main className={clsx(classes.root, className)}>
+    <main
+      id='main'
+      className={clsx(classes.root, className)}
+    >
       {children}
     </main>
   )
