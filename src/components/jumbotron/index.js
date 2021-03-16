@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     paddingTop: 128,
     paddingBottom: 64,
-    background: '#000',
+    background: '#191919',
     height: 480,
   },
 }));

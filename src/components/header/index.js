@@ -32,6 +32,11 @@ const useStyles = makeStyles((theme) => ({
       height: '20px',
     }
   },
+  menuLogo: {
+    "&:hover": {
+      opacity: .7,
+    }
+  },
   menuItem: {
     margin: "0 20px 8px",
 
@@ -43,6 +48,9 @@ const useStyles = makeStyles((theme) => ({
       color: "#fff",
       borderBottom: "1px solid #fff",
     },
+    '&:last-child': {
+      margin: "0 0 8px 20px",
+    }
   },
   menuItemActive: {
     color: "#fff",
@@ -134,7 +142,12 @@ export default function Header() {
               color="inherit"
               aria-label="open drawer"
             >
-              <img width={54} src="/logo/ellipti.svg" alt="ellipti logo" />
+              <img 
+                className={classes.menuLogo} 
+                width={54} 
+                src="/logo/ellipti.svg" 
+                alt="ellipti logo" 
+              />
             </Link>
 
             <div className={classes.grow} />

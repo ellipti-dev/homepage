@@ -9,8 +9,10 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto-slab';
-import "@fontsource/roboto-slab/100.css"
-import "@fontsource/roboto-slab/300.css"
+import "@fontsource/roboto-slab/100.css";
+import "@fontsource/roboto-slab/300.css";
+import "@fontsource/roboto-slab/400.css";
+import "@fontsource/roboto-slab/500.css";
 
 
 

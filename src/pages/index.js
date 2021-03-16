@@ -14,22 +14,35 @@ const useStyles = makeStyles((theme) => ({
   jumbotron: {
     backgroundImage: "url('/svg/index1.svg')",
     backgroundRepeat: "no-repeat",
-    backgroundPosition: "right 20% center",
-    height: "480px",
+    backgroundPosition: "right 20% bottom 35%",
+    backgroundSize: '400px auto',
+    height: "500px",
   },
   beginning_word: {
-    fontSize : 12,
+    marginTop: 20,
+
+    fontSize : 14,
     fontFamily: "Roboto",
     fontWeight: 500,
     color: "#fff",
+
+    "&::selection": {
+      backgroundColor: '#ffde03',
+    }
   },
   title: {
-    fontSize: "40px",
+    fontSize: "56px",
     color: "#fff",
     fontFamily: '"Roboto Slab", serif',
-    fontWeight: "normal",
-    lineHeight: 1.3,
-    width: "350px",
+    fontWeight: 400,
+    lineHeight: 1,
+    maxWidth: "1000px",
+    "&:hover": {
+      textDecoration: 'underline',
+    },
+    "&::selection": {
+      backgroundColor: '#ffde03',
+    }
   },
   valueGridWrapper: {
     // sm보다 클때만 보이도록 수정
@@ -40,9 +53,11 @@ const useStyles = makeStyles((theme) => ({
     }
   },
   visionSection: {
-    paddingTop: 73,
-    paddingBottom: 86,
+    padding: '60px 0',
     backgroundColor: "#E4E9EB",
+  },
+  vision_width: {
+    maxWidth: '860px',
   },
   visionTitle: {
     fontSize: 20,
@@ -88,11 +103,14 @@ const IndexPage = () => {
           WE ARE
         </Typography>
         <Typography className={classes.title} component={"h1"}>
-          Building with the founders, accelerate the shift
+          Building <br></br> 
+          with the founders,<br></br> 
+          accelerate <br></br> 
+          the shift
         </Typography>
       </Jumbotron>
       <section className={classes.visionSection}>
-        <Container maxWidth="md">
+        <Container maxWidth="md" className={classes.vision_width}>
           <Grid container>
             <Grid item xs={12} sm={2}>
               <Typography
