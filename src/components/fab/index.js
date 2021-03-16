@@ -13,33 +13,37 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: '3px',
   },
   header: {
-    padding: '9px 20px',
+    padding: '10px 12px',
     display: 'flex',
-    justifyContent: 'center',
-    borderBottom: '1px solid #EAEAEA',
+    justifyContent: 'flex-start',
+    borderBottom: '1px solid #D9D9D9',
   },
   title: {
     fontStyle: 'italic',
-    fontSize: 10,
+    fontSize: 13,
+    fontWeight: 500,
+    color: '#878787',
   },
   itemWrapper: {
     margin: 0,
     listStyle: 'none',
-    padding: '12px 8px 0px 8px',
+    padding: '16px 12px 10px 12px',
   },
   item: {
     display: 'block',
-    fontSize: 11,
-    color: '#878787',
-    lineHeight: 1,
-    marginBottom: 10,
+    fontSize: 12,
+    fontWeight: 500,
+    color: '#292929',
+
+    letterSpacing: -0.3,
+    lineHeight: 1.2,
+    marginBottom: 12,
     textDecoration: 'none',
     display: 'flex',
     alignItems: 'top',
 
     '&:hover': {
-      fontWeight: 500,
-      color: '#000000',
+      color: '#878787',
     }
   },
 }));
@@ -52,7 +56,7 @@ const FloatingActionButton = ({ items }) => {
       <Paper
         className={classes.root}
         component='nav'
-        elevation={4}
+        elevation={5}
       >
         <div className={classes.header}>
           <Typography className={classes.title} component="h3">
