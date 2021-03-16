@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
   imageSection: {
     position: 'relative',
     height: '100%',
-    paddingTop: '100%', // aspect ratio 1:1
+    paddingTop: '80%', // aspect ratio 1:1
     width: '100%',
     borderBottom: '1px solid #D9D9D9',
 
@@ -32,10 +32,12 @@ const useStyles = makeStyles((theme) => ({
   projectNameSection: {
     display: 'block',
     padding: 11,
+    height: 74,
     cursor: 'pointer',
     textDecoration: 'none',
 
     '&:hover': {
+      // 호버시 감싸는 전체 박스에 그림자 생기기
       '& $root': {
         boxShadow: '0 2 6 rgba(0,0,0,.06)',
       },
@@ -55,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
   },
   projectCategory: {
     fontSize: 12,
-    lineHeight: 1,
+    lineHeight: 1.2,
     color: '#4D5256',
   },
 }));

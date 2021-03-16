@@ -177,7 +177,7 @@ const IndexPage = () => {
                 <Grid item xs={12} sm={6}>
                   <Typography className={classes.valueDescription}>
                     {
-                      "Ellipti covers overall necessities in the crypto market with the expertise and various experiences"
+                      "Ellipti covers overall necessities in the crypto market with the expertise and various experiences."
                     }
                   </Typography>
                 </Grid>
@@ -190,7 +190,7 @@ const IndexPage = () => {
                 <Grid item xs={12} sm={6}>
                   <Typography className={classes.valueDescription}>
                     {
-                      "Ellipti advisory & Ellipti labs accelerate teams mainly in the Korean market, further to the other major local markets, aiming to grow the sustainable & strong ecosystem"
+                      "Ellipti advisory & Ellipti labs accelerate teams mainly in the Korean market, further to the other major local markets, aiming to grow the sustainable & strong ecosystem."
                     }
                   </Typography>
                 </Grid>
