@@ -17,11 +17,12 @@ const useStyles = makeStyles((theme) => ({
   jumbotron: {
     backgroundImage: "url('/svg/labs1.svg')",
     backgroundRepeat: "no-repeat",
-    backgroundPosition: "right 20% bottom 50px",
+    backgroundPosition: "right 20% bottom 90px",
+    backgroundSize: '360px auto',
   },
   jumbotronTitle: {
     color: "#fff",
-    fontSize: 20,
+    fontSize: 16,
     fontWeight: 500,
     fontFamily: "Roboto",
   },
@@ -30,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "'Roboto slab', serif",
     color: "#fff",
     fontSize: 26,
+    textShadow: 'black 1px 2px 8px',
   },
   section: {
     paddingBottom: 90,
@@ -38,36 +40,38 @@ const useStyles = makeStyles((theme) => ({
       paddingBottom: 0,
     },
   },
-  sectionIcon: {
-    margin: "0 12px",
-  },
   sectionNumber: {
-    fontSize: 16,
-    top: 0,
-    left: '-10px',
+    fontSize: 14,
+    top: -5,
+    left: '-14px',
     position: 'absolute',
   },
   sectionTitle: {
     fontFamily: "'Roboto slab', serif",
-    fontSize: 38,
+    fontSize: 26,
     color: "#292929",
     position: 'relative'
   },
   sectionDescription: {
     textAlign: "right",
+    fontSize: 14,
+    lineHeight: 1.3,
+    color: "#878D91",
   },
   contentTitle: {
     fontSize: 20,
+    fontWeight: 500,
     marginBottom: 4,
   },
   contentSubtitle: {
     fontSize: 16,
-    marginBottom: 8,
+    fontWeight: 500,
+    marginBottom: 4,
   },
   contentDescription: {
     fontSize: 16,
     color: "#4D5256",
-    marginBottom: 30,
+    marginBottom: 20,
   },
 }));
 
@@ -82,8 +86,7 @@ const LabsPage = () => {
             Labs
           </Typography>
           <img
-            className={classes.sectionIcon}
-            src="/svg/title-divider.svg"
+            src="/svg/labs-divider.svg"
             alt="divider"
           />
           <Typography className={classes.jumbotronDescription} component="p">

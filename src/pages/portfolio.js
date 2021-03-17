@@ -26,19 +26,21 @@ const useStyles = makeStyles((theme) => ({
     jumbotron: {
     backgroundImage: "url('/svg/portfolio1.svg')",
     backgroundRepeat: "no-repeat",
-    backgroundPosition: "right 20% bottom 50px",
+    backgroundPosition: "right 25% bottom 40%",
+    backgroundSize: '300px auto',
   },
   jumbotronTitle: {
     color: "#fff",
-    fontSize: 20,
+    fontSize: 16,
     fontWeight: 500,
     fontFamily: "Roboto",
   },
   jumbotronDescription: {
-    width: "45%",
+    width: "50%",
     fontFamily: "'Roboto slab', serif",
     color: "#fff",
     fontSize: 26,
+    textShadow: 'black 1px 2px 8px',
   },
   section: {
     paddingBottom: 90,
@@ -68,7 +70,7 @@ const IndexPage = () => {
         >
           Portfolio
         </Typography>
-        <img src="/svg/title-divider.svg" alt="divider" />
+        <img src="/svg/portfolio-divider.svg" alt="divider" />
         <Typography
           className={classes.jumbotronDescription}
           component="p"

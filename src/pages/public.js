@@ -17,19 +17,20 @@ const useStyles = makeStyles((theme) => ({
   jumbotron: {
     backgroundImage: "url('/svg/public1.svg')",
     backgroundRepeat: "no-repeat",
-    backgroundPosition: "right 20% bottom 50px",
+    backgroundPosition: "right 20% bottom 136px",
   },
   jumbotronTitle: {
     color: "#fff",
-    fontSize: 20,
+    fontSize: 16,
     fontWeight: 500,
     fontFamily: "Roboto",
   },
   jumbotronDescription: {
-    width: "45%",
+    width: "35%",
     fontFamily: "'Roboto slab', serif",
     color: "#fff",
     fontSize: 26,
+    textShadow: 'black 1px 2px 8px',
   },
   section: {
     paddingBottom: 90,
@@ -39,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   sectionTitle: {
-    fontSize: 38,
+    fontSize: 26,
     fontFamily: "'Roboto slab', serif",
     marginBottom: 30,
   },
@@ -47,13 +48,13 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 24,  
   },
   presenceTitle: {
-    fontSize: 18,
+    fontSize: 16,
+    marginBottom: 6,
   },
   presenceDescription: {
-    marginLeft: '10%',
-    color: '#4D5256',
-    fontSize: 16,
-    marginBottom: 30,
+    color: '#878D91',
+    fontSize: 14,
+    marginBottom: 2,
   }
 }));
 
@@ -69,7 +70,7 @@ const PublicPage = () => {
           </Typography>
           <img
             className={classes.sectionIcon}
-            src="/svg/title-divider.svg"
+            src="/svg/public-divider.svg"
             alt="divider"
           />
           <Typography className={classes.jumbotronDescription} component="p">

@@ -4,7 +4,8 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    border: '1px solid #C4C4C4',
+    background: '#f1f5f5',
+    border: '1px solid rgba(0,0,0,.12)',
     borderRadius: '3px',
     padding: 20,
     marginBottom: 20,
@@ -18,16 +19,17 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 12,
   },
   imgWrapper: {
-    padding: 10,
+    padding: '8px 14px',
     backgroundColor: '#E4E8EB',
-    border: '1px solid black',
+    border: '1px solid rgba(0,0,0,.12)',
     borderRadius: '3px',
-    marginRight: 10,
+    marginRight: 12,
+    height: '53px',
   },
   rewardWrapper: {
   },
   title: {
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: 500, // 400은 표가 잘 안나서 500으로넣음 400으로 안쓰게 된다면 여기에 주석으로 메시지 하나만 달아주세요
   },
   lead: {
@@ -35,6 +37,7 @@ const useStyles = makeStyles((theme) => ({
   },
   description: {
     fontSize: 16,
+    color: "#4D5256",
   },
 }));
 

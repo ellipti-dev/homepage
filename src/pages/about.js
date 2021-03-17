@@ -18,19 +18,21 @@ const useStyles = makeStyles((theme) => ({
   jumbotron: {
     backgroundImage: "url('/svg/about1.svg')",
     backgroundRepeat: "no-repeat",
-    backgroundPosition: "right 20% center",
+    backgroundPosition: "right 25% bottom 40%",
+    backgroundSize: '500px auto',
   },
   jumbotronTitle: {
     color: "#fff",
-    fontSize: 20,
+    fontSize: 16,
     fontWeight: 500,
     fontFamily: "Roboto",
   },
   jumbotronDescription: {
-    width: "45%",
+    width: "48%",
     fontFamily: "'Roboto slab', serif",
     color: "#fff",
     fontSize: 26,
+    textShadow: 'black 1px 2px 8px',
   },
   titleDivider: {
     fill: "#2C74E0",
@@ -132,7 +134,7 @@ const AboutPage = () => {
         <Typography className={classes.jumbotronTitle} component="h1">
           About
         </Typography>
-        <img className={classes.titleDivider} src="/svg/title-divider.svg" alt="divider" />
+        <img className={classes.titleDivider} src="/svg/about-divider.svg" alt="divider" />
         <Typography
           className={classes.jumbotronDescription}
           component="p"

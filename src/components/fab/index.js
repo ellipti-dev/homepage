@@ -56,7 +56,7 @@ const FloatingActionButton = ({ items }) => {
       <Paper
         className={classes.root}
         component='nav'
-        elevation={5}
+        elevation={3}
       >
         <div className={classes.header}>
           <Typography className={classes.title} component="h3">
