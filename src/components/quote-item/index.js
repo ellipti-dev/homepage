@@ -17,13 +17,14 @@ const useStyles = makeStyles((theme) => ({
   },
   icon: {
     position: "absolute",
-    top: theme.spacing(1),
-    right: theme.spacing(1),
+    top: theme.spacing(2),
+    right: theme.spacing(2),
   },
   contentBox: {
     position: "absolute",
-    bottom: theme.spacing(1),
-    left: theme.spacing(1),
+    bottom: theme.spacing(2),
+    left: theme.spacing(2),
+    width: '80%',
   },
   title: {
     fontSize: 18,
@@ -54,8 +55,9 @@ const useStyles = makeStyles((theme) => ({
   },
   oddContentBox: {
     position: "absolute",
-    top: theme.spacing(1),
-    left: theme.spacing(1),
+    top: theme.spacing(2),
+    left: theme.spacing(2),
+    width: '80%',
   },
   oddTitle: {
     color: "#fff",
