@@ -27,20 +27,22 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     fontSize: 18,
-    color: "#000000",
+    color: "#292929",
     fontWeight: 500,
+    lineHeight: 1.2,
+    marginLeft: '1%',
   },
   media: {
     display: "inline-block",
     color: "#FFFFFF",
-    padding: "4px 8px",
-    background: "black",
+    padding: "0 6px",
+    background: "#292929",
     marginBottom: 8,
   },
 
   oddRoot: {
     display: "flex",
-    background: "#2E2E2E",
+    background: "#262626",
 
     // aspect ratio 1:1
     width: "100%",
@@ -57,10 +59,12 @@ const useStyles = makeStyles((theme) => ({
   },
   oddTitle: {
     color: "#fff",
+    fontWeight: 300,
   },
   oddMeida: {
-    color: "#000000",
+    color: "#292929",
     background: "#ffffff",
+    fontWeight: 500,
   },
 }));
 
@@ -72,7 +76,7 @@ const QuoteItem = ({ item, index }) => {
   return (
     <Paper
       component="a"
-      elevation={2}
+      elevation={1}
       className={clsx(classes.root, { [classes.oddRoot]: isOdd })}
       href={item.link}
     >
