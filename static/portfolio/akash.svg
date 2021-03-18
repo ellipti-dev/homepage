@@ -1,18 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 25.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#000000;}
-	.st1{fill:#EFEFEF;}
-</style>
-<g id="레이어_2">
-</g>
-<g id="레이어_1">
-	<g id="Logo">
-		<path class="st0" d="M130.3,25.8l201.6,348.4l67.1-116.1L264.7,25.8C264.7,25.8,130.3,25.8,130.3,25.8z"/>
-		<path class="st1" d="M130.3,264.7L200,374.2h139.3l-69.6-109.5C269.7,264.7,130.3,264.7,130.3,264.7z"/>
-		<path class="st0" d="M70.6,135.3L0.9,254.7l69.7,119.5L210,135.3H70.6z"/>
-	</g>
-</g>
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M130.3 25.8L331.9 374.2L399 258.1L264.7 25.8H130.3Z" fill="black"/>
+<path d="M123 264.7L192.7 374.2H332L269.5 264.7H123Z" fill="#4E4E4E"/>
+<path d="M70.5999 135.3L0.899902 254.7L70.5999 374.2L210 135.3H70.5999Z" fill="black"/>
 </svg>

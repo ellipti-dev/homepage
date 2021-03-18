@@ -40,12 +40,6 @@ const useStyles = makeStyles((theme) => ({
       paddingBottom: 0,
     },
   },
-  sectionNumber: {
-    fontSize: 14,
-    top: -5,
-    left: '-14px',
-    position: 'absolute',
-  },
   sectionTitle: {
     fontFamily: "'Roboto slab', serif",
     fontSize: 26,
@@ -101,7 +95,6 @@ const LabsPage = () => {
               <Grid container spacing={3}>
                 <Grid item container md={3} justify="flex-end">
                   <Typography className={classes.sectionTitle} component="h2">
-                    <sup className={classes.sectionNumber}>1</sup>
                     Research
                   </Typography>
                 </Grid>
@@ -149,53 +142,6 @@ const LabsPage = () => {
                     lead='@ SF DeFi Hackathon 2019'
                     description={'Liquid Staking Position (LSP) NFTs, an additional token that has governance rights & receives rewards.'}
                   />
-                </Grid>
-              </Grid>
-            </Container>
-          </section>
-
-          <section id="investment" className={classes.section}>
-            <Container maxWidth="md">
-              <Grid container spacing={3}>
-                <Grid item container md={3} justify="flex-end">
-                  <Typography className={classes.sectionTitle} component="h2">
-                    <sup className={classes.sectionNumber}>2</sup>
-                    Investment
-                  </Typography>
-                </Grid>
-                <Grid item md={9} />
-                {/* contents */}
-                <Grid item container md={3} justify="flex-end">
-                  <Typography
-                    className={classes.sectionDescription}
-                    component="p"
-                  >
-                    Choose and support the right projects, bringing ideas into
-                    reality
-                  </Typography>
-                </Grid>
-                <Grid item md={9}>
-                  {investment.map((item) => (
-                    <div key={item.title}>
-                      <Typography className={classes.contentTitle} component="h3">
-                        {item.title}
-                      </Typography>
-                      {item.subTitle && (
-                        <Typography
-                          className={classes.contentSubtitle}
-                          component="h4"
-                        >
-                          {item.subTitle}
-                        </Typography>
-                      )}
-                      <Typography
-                        className={classes.contentDescription}
-                        component="p"
-                      >
-                        {item.content}
-                      </Typography>
-                    </div>
-                  ))}
                 </Grid>
               </Grid>
             </Container>
