@@ -4,7 +4,6 @@ module.exports = {
     siteUrl: 'https://google.com',
   },
   plugins: [
-    "gatsby-plugin-smoothscroll",
     "gatsby-plugin-sass",
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
