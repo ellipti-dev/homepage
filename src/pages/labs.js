@@ -180,7 +180,6 @@ const LabsPage = () => {
         <FloatingActionButton
           items={[
             { label: "Research", anchor: "research" },
-            { label: "Investment", anchor: "investment" },
           ]}
         />
       </Layout>
