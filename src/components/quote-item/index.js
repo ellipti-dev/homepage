@@ -81,6 +81,8 @@ const QuoteItem = ({ item, index }) => {
       elevation={1}
       className={clsx(classes.root, { [classes.oddRoot]: isOdd })}
       href={item.link}
+      target="_blank"
+      rel="noopener noreferrer"
     >
       <CallMadeIcon
         className={clsx(classes.icon, { [classes.oddIcon]: isOdd })}
