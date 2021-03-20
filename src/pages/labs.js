@@ -15,10 +15,15 @@ import { research, investment } from "../data/labs";
 const useStyles = makeStyles((theme) => ({
   root: {},
   jumbotron: {
-    backgroundImage: "url('/svg/labs1.svg')",
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "right 20% bottom 90px",
-    backgroundSize: '360px auto',
+
+  },
+  jumbotronGrid: {
+    [theme.breakpoints.up('sm')]: {
+      flexDirection: 'row-reverse',
+    },
+  },
+  jumbotronContent: {
+    textAlign: 'right',
   },
   jumbotronTitle: {
     color: "#fff",
@@ -27,11 +32,24 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Roboto",
   },
   jumbotronDescription: {
-    width: "45%",
     fontFamily: "'Roboto slab', serif",
     color: "#fff",
     fontSize: 26,
     textShadow: 'black 1px 2px 8px',
+  },
+  jumbotronImageWrapper: {
+    display: 'flex',
+    [theme.breakpoints.up('sm')]: {
+      position: 'relative',
+      width: '100%',
+      height: '100%',
+    }
+  },
+  jumbotronImage: {
+    position: 'absolute',
+    left: 0,
+    bottom: '10%',
+    width: 337,
   },
   section: {
     paddingBottom: 90,
@@ -76,17 +94,28 @@ const LabsPage = () => {
     <>
       <Layout>
         <Jumbotron className={classes.jumbotron} isShowArrow>
-          <Typography className={classes.jumbotronTitle} component="h1">
-            Labs
-          </Typography>
-          <img
-            src="/svg/labs-divider.svg"
-            alt="divider"
-          />
-          <Typography className={classes.jumbotronDescription} component="p">
-            Ellipti Labs is research-based fund to invest and empower
-            early-stage blockchain projects, focusing on the long-term growth.
-          </Typography>
+          <Grid container className={classes.jumbotronGrid}>
+            <Grid item xs={12} sm={6}>
+              <div className={classes.jumbotronContent}>
+                <Typography className={classes.jumbotronTitle} component="h1">
+                  Labs
+                </Typography>
+                <img
+                  src="/svg/labs-divider.svg"
+                  alt="divider"
+                />
+                <Typography className={classes.jumbotronDescription} component="p">
+                  Ellipti Labs is research-based fund to invest and empower
+                  early-stage blockchain projects, focusing on the long-term growth.
+                </Typography>
+              </div>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <div className={classes.jumbotronImageWrapper}>
+                <img className={classes.jumbotronImage} src='/svg/labs1.svg' />
+              </div>
+            </Grid>
+          </Grid>
         </Jumbotron>
 
         <Main>

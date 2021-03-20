@@ -15,9 +15,15 @@ import { presence, quote } from "../data/public";
 const useStyles = makeStyles((theme) => ({
   root: {},
   jumbotron: {
-    backgroundImage: "url('/svg/public1.svg')",
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "right 20% bottom 136px",
+
+  },
+  jumbotronGrid: {
+    [theme.breakpoints.up('sm')]: {
+      flexDirection: 'row-reverse',
+    },
+  },
+  jumbotronContent: {
+    textAlign: 'right',
   },
   jumbotronTitle: {
     color: "#fff",
@@ -26,11 +32,24 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Roboto",
   },
   jumbotronDescription: {
-    width: "35%",
     fontFamily: "'Roboto slab', serif",
     color: "#fff",
     fontSize: 26,
     textShadow: 'black 1px 2px 8px',
+  },
+  jumbotronImageWrapper: {
+    display: 'flex',
+    [theme.breakpoints.up('sm')]: {
+      position: 'relative',
+      width: '100%',
+      height: '100%',
+    }
+  },
+  jumbotronImage: {
+    position: 'absolute',
+    left: 0,
+    bottom: 0,
+    width: '95%',
   },
   section: {
     paddingBottom: 90,
@@ -65,19 +84,31 @@ const PublicPage = () => {
     <>
       <Layout>
         <Jumbotron className={classes.jumbotron} isShowArrow>
-          <Typography className={classes.jumbotronTitle} component="h1">
-            Public
-          </Typography>
-          <img
-            className={classes.sectionIcon}
-            src="/svg/public-divider.svg"
-            alt="divider"
-          />
-          <Typography className={classes.jumbotronDescription} component="p">
-            Ellipti shares insights about Blockchain technology and market
-            dynamics
-          </Typography>
+          <Grid container className={classes.jumbotronGrid}>
+            <Grid item xs={12} sm={4}>
+              <div className={classes.jumbotronContent}>
+                <Typography className={classes.jumbotronTitle} component="h1">
+                  Public
+                </Typography>
+                <img
+                  className={classes.sectionIcon}
+                  src="/svg/public-divider.svg"
+                  alt="divider"
+                />
+                <Typography className={classes.jumbotronDescription} component="p">
+                  Ellipti shares insights about Blockchain technology and market
+                  dynamics
+                </Typography>
+              </div>
+            </Grid>
+            <Grid item xs={12} sm={8}>
+              <div className={classes.jumbotronImageWrapper}>
+                <img className={classes.jumbotronImage} src='/svg/public1.svg' />
+              </div>
+            </Grid>
+          </Grid>
         </Jumbotron>
+        
 
         <Main>
           <section id="presence" className={classes.section}>

@@ -16,10 +16,7 @@ import Main from "../components/main";
 const useStyles = makeStyles((theme) => ({
   root: {},
   jumbotron: {
-    backgroundImage: "url('/svg/about1.svg')",
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "right 25% bottom 40%",
-    backgroundSize: '500px auto',
+
   },
   jumbotronTitle: {
     color: "#fff",
@@ -28,11 +25,28 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Roboto",
   },
   jumbotronDescription: {
-    width: "48%",
     fontFamily: "'Roboto slab', serif",
     color: "#fff",
     fontSize: 26,
     textShadow: 'black 1px 2px 8px',
+  },
+  jumbotronImageWrapper: {
+    display: 'flex',
+    [theme.breakpoints.up('sm')]: {
+      position: 'relative',
+      width: '100%',
+      height: '100%',
+    }
+  },
+  jumbotronImage: {
+    position: 'absolute',
+    left: 60,
+    bottom: '-30px',
+    width: '50%',
+
+    [theme.breakpoints.up('sm')]: {
+      width: 484,
+    },
   },
   titleDivider: {
     fill: "#2C74E0",
@@ -131,17 +145,26 @@ const AboutPage = () => {
   return (
     <Layout>
       <Jumbotron className={classes.jumbotron} isShowArrow>
-        <Typography className={classes.jumbotronTitle} component="h1">
-          About
-        </Typography>
-        <img className={classes.titleDivider} src="/svg/about-divider.svg" alt="divider" />
-        <Typography
-          className={classes.jumbotronDescription}
-          component="p"
-        >
-          Ellipti advises on how to fully market the company’s fundamentals and
-          its potential and achieve growth.
-        </Typography>
+        <Grid container>
+          <Grid item xs={12} sm={6}>
+            <Typography className={classes.jumbotronTitle} component="h1">
+              About
+            </Typography>
+            <img className={classes.titleDivider} src="/svg/about-divider.svg" alt="divider" />
+            <Typography
+              className={classes.jumbotronDescription}
+              component="p"
+            >
+              Ellipti advises on how to fully market the company’s fundamentals and
+              its potential and achieve growth.
+            </Typography>
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <div className={classes.jumbotronImageWrapper}>
+              <img className={classes.jumbotronImage} src='/svg/about1.svg' />
+            </div>
+          </Grid>
+        </Grid>
       </Jumbotron>
       
       <Main>

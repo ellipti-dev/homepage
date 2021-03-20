@@ -23,11 +23,8 @@ import {
 
 const useStyles = makeStyles((theme) => ({
   root: {},
-    jumbotron: {
-    backgroundImage: "url('/svg/portfolio1.svg')",
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "right 25% bottom 40%",
-    backgroundSize: '300px auto',
+  jumbotron: {
+
   },
   jumbotronTitle: {
     color: "#fff",
@@ -36,11 +33,28 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Roboto",
   },
   jumbotronDescription: {
-    width: "50%",
     fontFamily: "'Roboto slab', serif",
     color: "#fff",
     fontSize: 26,
     textShadow: 'black 1px 2px 8px',
+  },
+  jumbotronImageWrapper: {
+    display: 'flex',
+    [theme.breakpoints.up('sm')]: {
+      position: 'relative',
+      width: '100%',
+      height: '100%',
+    }
+  },
+  jumbotronImage: {
+    position: 'absolute',
+    right: 0,
+    bottom: '-30px',
+    width: '50%',
+
+    [theme.breakpoints.up('sm')]: {
+      width: 264,
+    },
   },
   section: {
     paddingBottom: 90,
@@ -64,21 +78,30 @@ const IndexPage = () => {
   return (
     <Layout>
       <Jumbotron className={classes.jumbotron} isShowArrow>
-        <Typography
-          className={classes.jumbotronTitle}
-          component="h1"
-        >
-          Portfolio
-        </Typography>
-        <img src="/svg/portfolio-divider.svg" alt="divider" />
-        <Typography
-          className={classes.jumbotronDescription}
-          component="p"
-        >
-          {
-            "Building the solid & sustainable decentralized ecosystem, with the right teams."
-          }
-        </Typography>
+        <Grid container>
+          <Grid item xs={12} sm={6}>
+            <Typography
+              className={classes.jumbotronTitle}
+              component="h1"
+            >
+              Portfolio
+            </Typography>
+            <img src="/svg/portfolio-divider.svg" alt="divider" />
+            <Typography
+              className={classes.jumbotronDescription}
+              component="p"
+            >
+              {
+                "Building the solid & sustainable decentralized ecosystem, with the right teams."
+              }
+            </Typography>
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <div className={classes.jumbotronImageWrapper}>
+              <img className={classes.jumbotronImage} src='/svg/portfolio1.svg' />
+            </div>
+          </Grid>
+        </Grid>
       </Jumbotron>
 
       <Main>

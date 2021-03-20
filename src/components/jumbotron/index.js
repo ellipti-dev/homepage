@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: 128,
     paddingBottom: 64,
     background: '#191919',
-    height: 460,
+    minHeight: 460,
   },
   bottom: {
     position: 'absolute',

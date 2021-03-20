@@ -12,11 +12,41 @@ import Main from "../components/main";
 const useStyles = makeStyles((theme) => ({
   root: {},
   jumbotron: {
-    backgroundImage: "url('/svg/index1.svg')",
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "right 20% bottom 35%",
-    backgroundSize: '400px auto',
-    height: "500px",
+    // breakpint.up은 누적되어서 적용됨 md.up라면 xs.up, sm.up에 있는 것들도 같이 적용되고
+    // 같은 값이라면 해당 크기에 정의된 것이 우선순위에 있음
+    // 미디어 쿼리랑 완전 동일하게 작동함
+    [theme.breakpoints.up('xs')]: {
+      // > 0px
+    },
+    [theme.breakpoints.up('sm')]: {
+      // > 600px
+    },
+    [theme.breakpoints.up('md')]: {
+      // > 960px
+    },
+    [theme.breakpoints.up('lg')]: {
+      // > 1280px
+    },
+    [theme.breakpoints.up('xl')]: {
+      //  > 1920px
+    },
+  },
+  jumbotronImageWrapper: {
+    display: 'flex',
+    [theme.breakpoints.up('sm')]: {
+      position: 'relative',
+      width: '100%',
+      height: '100%',
+    }
+  },
+  jumbotronImage: {
+    position: 'absolute',
+    right: 0,
+    bottom: 0,
+
+    [theme.breakpoints.up('sm')]: {
+      width: 455,
+    },
   },
   beginning_word: {
     marginTop: 20,
@@ -100,16 +130,26 @@ const IndexPage = () => {
   return (
     <Layout className={classes.root}>
       <Jumbotron className={classes.jumbotron}>
-        <Typography className={classes.beginning_word}>
-          WE ARE
-        </Typography>
-        <Typography className={classes.title} component={"h1"}>
-          Building <br /> 
-          with the founders,<br />
-          accelerate <br />
-          the shift
-        </Typography>
+        <Grid container>
+          <Grid item xs={12} sm={6}>
+            <Typography className={classes.beginning_word}>
+              WE ARE
+            </Typography>
+            <Typography className={classes.title} component={"h1"}>
+              Building <br /> 
+              with the founders,<br />
+              accelerate <br />
+              the shift
+            </Typography>
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <div className={classes.jumbotronImageWrapper}>
+              <img className={classes.jumbotronImage} src='/svg/index1.svg' />
+            </div>
+          </Grid>
+        </Grid>
       </Jumbotron>
+
       <section className={classes.visionSection}>
         <Container maxWidth="md" className={classes.vision_width}>
           <Grid container>
