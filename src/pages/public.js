@@ -117,13 +117,13 @@ const PublicPage = () => {
                 Presence
               </Typography>
               {presence.map(item => (
-                <div className={classes.presenceDiv}>
+                <div key={item.title} className={classes.presenceDiv}>
                   <Typography component="h3" className={classes.presenceTitle}>
                     {item.title}
                   </Typography>
 
                   {item.content && item.content.map(subItem => (
-                    <Typography component='p' className={classes.presenceDescription}>
+                    <Typography key={subItem} component='p' className={classes.presenceDescription}>
                       {subItem}
                     </Typography>
                   ))}
@@ -140,7 +140,7 @@ const PublicPage = () => {
               </Typography>
               <Grid container spacing={2}>
                 {quote.map((item, index) => (
-                  <Grid item xs={6} sm={4} md={3}>
+                  <Grid key={item.title} item xs={6} sm={4} md={3}>
                     <QuoteItem item={item} index={index} />
                   </Grid>
                 ))}
