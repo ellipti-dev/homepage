@@ -30,7 +30,6 @@ const useStyles = makeStyles((theme) => ({
     padding: '16px 12px 10px 12px',
   },
   item: {
-    display: 'block',
     fontSize: 12,
     fontWeight: 500,
     color: '#292929',
