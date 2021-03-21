@@ -91,7 +91,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 16,
   },
   divider: {
-    marginBottom: 20,
+    marginBottom: 50,
   },
   fitContent: {
     height: "fit-content",
@@ -107,7 +107,7 @@ const AboutPage = () => {
     miceImg,
   } = useStaticQuery(graphql`
     query {
-      strategyImg: file(relativePath: { eq: "about/strategy.png" }) {
+      strategyImg: file(relativePath: { eq: "about/strategy.jpg" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -179,7 +179,7 @@ const AboutPage = () => {
             >
               {"Cross-border market & growth strategy formulation"}
             </Typography>
-            <Grid className={classes.grid} container spacing={8}>
+            <Grid className={classes.grid} container spacing={4}>
               <Grid item xs={12} sm={6}>
                 <Img
                   fluid={strategyImg.childImageSharp.fluid}
@@ -219,7 +219,7 @@ const AboutPage = () => {
             >
               Robust bridge connecting the strategy and actual execution
             </Typography>
-            <Grid className={classes.grid} container spacing={8}>
+            <Grid className={classes.grid} container spacing={4}>
               <Grid item xs={12} sm={6}>
                 <Img
                   fluid={implementationOperationsImg.childImageSharp.fluid}
@@ -259,7 +259,7 @@ const AboutPage = () => {
             >
               Maximization of exposure with the long-lasting brand
             </Typography>
-            <Grid className={classes.grid} container spacing={8}>
+            <Grid className={classes.grid} container spacing={4}>
               <Grid item xs={12} sm={6}>
                 <Img
                   fluid={publicRelationImg.childImageSharp.fluid}
@@ -298,7 +298,7 @@ const AboutPage = () => {
             >
               Getting much closer with the community
             </Typography>
-            <Grid className={classes.grid} container spacing={8}>
+            <Grid className={classes.grid} container spacing={4}>
               <Grid item xs={12} sm={6}>
                 <Img
                   fluid={miceImg.childImageSharp.fluid}
