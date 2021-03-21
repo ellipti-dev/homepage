@@ -115,7 +115,7 @@ const AboutPage = () => {
         }
       }
       implementationOperationsImg: file(
-        relativePath: { eq: "about/implementation_and_operations.png" }
+        relativePath: { eq: "about/implementation_and_operations.jpg" }
       ) {
         childImageSharp {
           fluid {
@@ -124,7 +124,7 @@ const AboutPage = () => {
         }
       }
       publicRelationImg: file(
-        relativePath: { eq: "about/public_relation.png" }
+        relativePath: { eq: "about/public_relation.jpg" }
       ) {
         childImageSharp {
           fluid {
@@ -132,7 +132,7 @@ const AboutPage = () => {
           }
         }
       }
-      miceImg: file(relativePath: { eq: "about/mice.png" }) {
+      miceImg: file(relativePath: { eq: "about/mice.jpg" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
