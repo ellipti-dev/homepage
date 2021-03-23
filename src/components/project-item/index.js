@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import clsx from 'clsx';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 
@@ -10,6 +11,9 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 3,
     backgroundColor: theme.palette.background.default,
     boxShadow: 'none',
+  },
+  hover: {
+    boxShadow: '0px 1px 2px rgba(0, 0, 0, 0.2), 0px 2px 6px rgba(0, 0, 0, 0.06)',
   },
   imageSection: {
     position: 'relative',
@@ -38,9 +42,6 @@ const useStyles = makeStyles((theme) => ({
 
     '&:hover': {
       // 호버시 감싸는 전체 박스에 그림자 생기기
-      '& $root': {
-        boxShadow: '0 2 6 rgba(0,0,0,.06)',
-      },
       '& $projectName': {
         textDecoration: 'underline',
       },
@@ -64,11 +65,20 @@ const useStyles = makeStyles((theme) => ({
 
 const ProjectItem = ({ item }) => {
   const classes = useStyles();
+  const [isHover, setHover] = useState(false);
   const { name, image, link, type } = item;
+
+  const handleHover = () => {
+    setHover(true);
+  }
+
+  const handleLeave = () => {
+    setHover(false);
+  }
 
   return (
     <Paper
-      className={classes.root}
+      className={clsx(classes.root, { [classes.hover]: isHover })}
     >
       <div className={classes.imageSection}>
         <img src={image} alt={name} />
@@ -78,6 +88,8 @@ const ProjectItem = ({ item }) => {
         href={link}
         target="_blank"
         rel="noopener noreferrer"
+        onMouseEnter={handleHover}
+        onMouseLeave={handleLeave}
       >
         <Typography
           variant="body1"

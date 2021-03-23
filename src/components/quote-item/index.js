@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useMemo} from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import CallMadeIcon from "@material-ui/icons/CallMade";
@@ -14,11 +14,23 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     paddingTop: "100%",
     position: "relative",
+
+    '&:hover': {
+      boxShadow: '0px 1px 2px rgba(0, 0, 0, 0.2), 0px 2px 6px rgba(0, 0, 0, 0.06)',
+
+      '& $icon': {
+        top: theme.spacing(1/2),
+        right: theme.spacing(1/2),
+        color: '#C5FF48',
+      },
+    },
   },
   icon: {
     position: "absolute",
     top: theme.spacing(2),
     right: theme.spacing(2),
+
+    transition: 'top 0.3s ease-out, right 0.3s ease-out',
   },
   contentBox: {
     position: "absolute",
@@ -72,8 +84,8 @@ const useStyles = makeStyles((theme) => ({
 
 const QuoteItem = ({ item, index }) => {
   const classes = useStyles();
-  const randomNumber = Math.floor(Math.random() * (5 - 1));
-  const isOdd = (index + randomNumber) % 3 === 0;
+  const randomNumber = useMemo(() => Math.floor(Math.random() * (5 - 1)), []);
+  const isOdd = useMemo(() => (index + randomNumber) % 3 === 0, [index]);
 
   return (
     <Paper
@@ -85,7 +97,7 @@ const QuoteItem = ({ item, index }) => {
       rel="noopener noreferrer"
     >
       <CallMadeIcon
-        className={clsx(classes.icon, { [classes.oddIcon]: isOdd })}
+        className={clsx({ [classes.oddIcon]: isOdd }, classes.icon,)}
       />
       <div
         className={clsx(classes.contentBox, { [classes.oddContentBox]: isOdd })}
