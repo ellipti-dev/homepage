@@ -33,21 +33,28 @@ const useStyles = makeStyles((theme) => ({
   },
   jumbotronImageWrapper: {
     display: 'flex',
+    justifyContent: 'flex-end',
     position: 'inherit',
     paddingTop: 50,
 
     [theme.breakpoints.up('sm')]: {
+      display: 'block',
+      paddingTop: 0,
       position: 'relative',
       width: '100%',
       height: '100%',
     }
   },
   jumbotronImage: {
+    // 모바일
+    width: '50%',
+    
     [theme.breakpoints.up('sm')]: {
+      // pc
       position: 'absolute',
-      right: 0,
-      bottom: 0,
-      width: 455,
+      right: '-100px',
+      bottom: '-20px',
+      width: 400,
     },
   },
   beginning_word: {
@@ -59,12 +66,16 @@ const useStyles = makeStyles((theme) => ({
     color: "#fff",
   },
   title: {
-    fontSize: "56px",
     color: "#fff",
     fontFamily: '"Roboto Slab", serif',
     fontWeight: 400,
     lineHeight: 1,
     maxWidth: "1000px",
+    fontSize: 28,
+
+    [theme.breakpoints.up('sm')]: {
+      fontSize: "56px",
+    },
     "&:hover": {
       textDecoration: 'underline',
     },
@@ -133,7 +144,7 @@ const IndexPage = () => {
     <Layout className={classes.root}>
       <Jumbotron className={classes.jumbotron}>
         <Grid container>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={7}>
             <Typography className={classes.beginning_word}>
               WE ARE
             </Typography>
@@ -144,7 +155,7 @@ const IndexPage = () => {
               the shift
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={5}>
             <div className={classes.jumbotronImageWrapper}>
               <img className={classes.jumbotronImage} src='/svg/index1.svg' />
             </div>
