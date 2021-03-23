@@ -202,7 +202,7 @@ const IndexPage = () => {
             <div className={classes.valueGridWrapper}>
               <Grid className={classes.valueContainer} container spacing={8}>
                 <Grid className={classes.valueimg} item xs={12} sm={6}>
-                  <img src="/svg/index2.svg" alt="tbd" />
+                  <img src="/svg/index4.svg" alt="tbd" />
                 </Grid>
                 <Grid item xs={12} sm={6}>
                   <Typography
@@ -218,7 +218,7 @@ const IndexPage = () => {
 
               <Grid className={classes.valueContainer} container spacing={8}>
                 <Grid className={classes.valueimg} item xs={12} sm={6}>
-                  <img src="/svg/index2.svg" alt="tbd" />
+                  <img src="/svg/index3.svg" alt="tbd" />
                 </Grid>
                 <Grid item xs={12} sm={6}>
                   <Typography className={classes.valueDescription}>
