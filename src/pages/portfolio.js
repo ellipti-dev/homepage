@@ -40,20 +40,23 @@ const useStyles = makeStyles((theme) => ({
   },
   jumbotronImageWrapper: {
     display: 'flex',
+    paddingTop: 40,
+
     [theme.breakpoints.up('sm')]: {
+      padding: 0,
       position: 'relative',
       width: '100%',
       height: '100%',
     }
   },
   jumbotronImage: {
-    position: 'absolute',
-    right: 0,
-    bottom: '-30px',
     width: '50%',
 
     [theme.breakpoints.up('sm')]: {
       width: 264,
+      position: 'absolute',
+      right: 0,
+      bottom: '-30px',
     },
   },
   section: {

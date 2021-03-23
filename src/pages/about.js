@@ -32,6 +32,8 @@ const useStyles = makeStyles((theme) => ({
   },
   jumbotronImageWrapper: {
     display: 'flex',
+    position: 'inherit',
+
     [theme.breakpoints.up('sm')]: {
       position: 'relative',
       width: '100%',
@@ -39,14 +41,19 @@ const useStyles = makeStyles((theme) => ({
     }
   },
   jumbotronImage: {
-    position: 'absolute',
-    left: 60,
-    bottom: '-30px',
-    width: '50%',
+    // 
+
 
     [theme.breakpoints.up('sm')]: {
       width: 484,
+      position: 'absolute',
+      left: 60,
+      bottom: '-30px',
     },
+    [theme.breakpoints.up('md')]: {
+      width: '80%',
+      maxWidth: 400,
+    }
   },
   titleDivider: {
     fill: "#2C74E0",
@@ -58,14 +65,15 @@ const useStyles = makeStyles((theme) => ({
       paddingBottom: 0,
     },
 
-
-    "&:nth-child(2n)": {
-      textAlign: "right",
-
-      "& $grid": {
-        flexDirection: "row-reverse",
+    [theme.breakpoints.up('sm')]: {
+      "&:nth-child(2n)": {
+        textAlign: "right",
+  
+        "& $grid": {
+          flexDirection: "row-reverse",
+        },
       },
-    },
+    }
   },
   grid: {
     marginTop: 10,

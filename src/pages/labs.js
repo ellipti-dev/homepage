@@ -39,17 +39,22 @@ const useStyles = makeStyles((theme) => ({
   },
   jumbotronImageWrapper: {
     display: 'flex',
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up('md')]: {
       position: 'relative',
       width: '100%',
       height: '100%',
     }
   },
   jumbotronImage: {
-    position: 'absolute',
-    left: 0,
-    bottom: '10%',
-    width: 337,
+    paddingTop: 40,
+
+    [theme.breakpoints.up('md')]: {
+      padding: 0,
+      position: 'absolute',
+      left: 0,
+      bottom: '10%',
+      width: 337,
+    },
   },
   section: {
     paddingBottom: 90,
@@ -62,13 +67,21 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "'Roboto slab', serif",
     fontSize: 26,
     color: "#292929",
-    position: 'relative'
+    position: 'relative',
+    width: '100%',
+
+    [theme.breakpoints.up('md')]: {
+      textAlign: "right",
+    }
   },
   sectionDescription: {
-    textAlign: "right",
     fontSize: 14,
     lineHeight: 1.3,
     color: "#878D91",
+
+    [theme.breakpoints.up('md')]: {
+      textAlign: "right",
+    }
   },
   contentTitle: {
     fontSize: 20,
@@ -95,7 +108,7 @@ const LabsPage = () => {
       <Layout>
         <Jumbotron className={classes.jumbotron} isShowArrow>
           <Grid container className={classes.jumbotronGrid}>
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={12} md={6}>
               <div className={classes.jumbotronContent}>
                 <Typography className={classes.jumbotronTitle} component="h1">
                   Labs
@@ -110,7 +123,7 @@ const LabsPage = () => {
                 </Typography>
               </div>
             </Grid>
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={12} md={6}>
               <div className={classes.jumbotronImageWrapper}>
                 <img className={classes.jumbotronImage} src='/svg/labs1.svg' />
               </div>
@@ -122,14 +135,15 @@ const LabsPage = () => {
           <section id="research" className={classes.section}>
             <Container maxWidth="md">
               <Grid container spacing={3}>
-                <Grid item container md={3} justify="flex-end">
+                <Grid item container xs={12} md={3}>
                   <Typography className={classes.sectionTitle} component="h2">
                     Research
                   </Typography>
                 </Grid>
-                <Grid item md={9} />
+              </Grid>
+              <Grid container spacing={3}>
                 {/* contents */}
-                <Grid item container md={3} justify="flex-end">
+                <Grid item container md={3}>
                   <Typography
                     className={classes.sectionDescription}
                     component="p"

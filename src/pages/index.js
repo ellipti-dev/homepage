@@ -33,6 +33,9 @@ const useStyles = makeStyles((theme) => ({
   },
   jumbotronImageWrapper: {
     display: 'flex',
+    position: 'inherit',
+    paddingTop: 50,
+
     [theme.breakpoints.up('sm')]: {
       position: 'relative',
       width: '100%',
@@ -40,11 +43,10 @@ const useStyles = makeStyles((theme) => ({
     }
   },
   jumbotronImage: {
-    position: 'absolute',
-    right: 0,
-    bottom: 0,
-
     [theme.breakpoints.up('sm')]: {
+      position: 'absolute',
+      right: 0,
+      bottom: 0,
       width: 455,
     },
   },

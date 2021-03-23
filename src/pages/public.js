@@ -39,17 +39,24 @@ const useStyles = makeStyles((theme) => ({
   },
   jumbotronImageWrapper: {
     display: 'flex',
-    [theme.breakpoints.up('sm')]: {
+    paddingTop: 40,
+
+    [theme.breakpoints.up('md')]: {
+      padding: 0,
       position: 'relative',
       width: '100%',
       height: '100%',
     }
   },
   jumbotronImage: {
-    position: 'absolute',
-    left: 0,
-    bottom: 0,
-    width: '95%',
+    width: '80%',
+
+    [theme.breakpoints.up('md')]: {
+      position: 'absolute',
+      left: 0,
+      bottom: 0,
+      width: '95%',
+    }
   },
   section: {
     paddingBottom: 90,
@@ -85,7 +92,7 @@ const PublicPage = () => {
       <Layout>
         <Jumbotron className={classes.jumbotron} isShowArrow>
           <Grid container className={classes.jumbotronGrid}>
-            <Grid item xs={12} sm={4}>
+            <Grid item xs={12} md={4}>
               <div className={classes.jumbotronContent}>
                 <Typography className={classes.jumbotronTitle} component="h1">
                   Public
@@ -101,7 +108,7 @@ const PublicPage = () => {
                 </Typography>
               </div>
             </Grid>
-            <Grid item xs={12} sm={8}>
+            <Grid item xs={12} md={8}>
               <div className={classes.jumbotronImageWrapper}>
                 <img className={classes.jumbotronImage} src='/svg/public1.svg' />
               </div>
