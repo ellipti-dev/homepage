@@ -7,10 +7,16 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 const useStyles = makeStyles((theme) => ({
   root: {
     position: 'relative',
-    paddingTop: 128,
-    paddingBottom: 64,
+    paddingTop: 100,
+    paddingBottom: 40,
     background: '#191919',
-    minHeight: 460,
+    minHeight: 400,
+
+    [theme.breakpoints.up('md')]: {
+      minHeight: 460,
+      paddingTop: 128,
+      paddingBottom: 64,
+    },
   },
   bottom: {
     position: 'absolute',

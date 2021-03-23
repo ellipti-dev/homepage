@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('xs')]: {
       // > 0px
     },
-    [theme.breakpoints.up('md')]: {
+    [theme.breakpoints.up('sm')]: {
       // > 600px
     },
     [theme.breakpoints.up('md')]: {
@@ -35,11 +35,11 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'flex-end',
     position: 'inherit',
-    paddingTop: 50,
+    marginTop: '-60px',
 
     [theme.breakpoints.up('md')]: {
       display: 'block',
-      paddingTop: 0,
+      marginTop: 0,
       position: 'relative',
       width: '100%',
       height: '100%',
@@ -48,6 +48,10 @@ const useStyles = makeStyles((theme) => ({
   jumbotronImage: {
     // 모바일
     width: '50%',
+
+    [theme.breakpoints.up('sm')]: {
+      width: '260px',
+    },
     
     [theme.breakpoints.up('md')]: {
       // pc
@@ -71,7 +75,8 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 400,
     lineHeight: 1,
     maxWidth: "1000px",
-    fontSize: 28,
+    fontSize: 36,
+    textShadow: 'black 1px 2px 8px',
 
     [theme.breakpoints.up('md')]: {
       fontSize: "56px",
@@ -89,9 +94,13 @@ const useStyles = makeStyles((theme) => ({
     }
   },
   visionSection: {
-    padding: '80px 0',
+    padding: '60px 0',
     backgroundColor: "#E4E9EB",
     backgroundImage: "url('/svg/vision-bg.svg')",
+
+    [theme.breakpoints.up('md')]: {
+      padding: '80px 0',
+    },
   },
   vision_width: {
     maxWidth: '860px',
@@ -100,9 +109,11 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 20,
     fontFamily: '"Roboto Slab", serif',
     fontWeight: 500,
+    textAlign: "center",
+    paddingBottom: 12,
 
     [theme.breakpoints.up('md')]: {
-      textAlign: "center",
+      paddingBottom: 0,
     },
   },
   visionDescription: {
