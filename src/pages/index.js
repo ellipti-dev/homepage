@@ -100,6 +100,10 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 20,
     fontFamily: '"Roboto Slab", serif',
     fontWeight: 500,
+
+    [theme.breakpoints.up('md')]: {
+      textAlign: "center",
+    },
   },
   visionDescription: {
     fontSize: 16,
