@@ -92,14 +92,27 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     marginBottom: 20,
   },
-  summitSection: {},
+  summitSection: {
+    textAlign: 'left',
+    padding: '10px 0',
+
+    "&:first-child": {
+      paddingTop: 0,
+    },
+    "&:last-child": {
+      paddingBottom: 0,
+    },
+    "& $grid": {
+      flexDirection: "row !important",
+    },
+  },
   summitTitle: {
     color: "#292929",
     fontWeight: 500,
     fontSize: 16,
   },
   divider: {
-    marginBottom: 50,
+    margin: '20px 0',
   },
   fitContent: {
     height: "fit-content",
@@ -185,7 +198,7 @@ const AboutPage = () => {
               className={classes.sectionDescription}
               component="p"
             >
-              {"Cross-border market & growth strategy formulation"}
+              {"Cross-border marketing & growth strategy formulation"}
             </Typography>
             <Grid className={classes.grid} container spacing={4}>
               <Grid item xs={12} sm={6}>
@@ -324,80 +337,140 @@ const AboutPage = () => {
                 </Typography>
               </Grid>
             </Grid>
-          </Container>
-        </section>
 
-        <section className={classes.summitSection}>
-          <Container maxWidth="md">
             <Divider className={classes.divider} />
-            <Typography
-              className={classes.summitTitle}
-              component="h2"
-            >
-              Provenance Summit 2018
-            </Typography>
-            <Grid className={classes.grid} container spacing={2}>
-              <Grid item xs={12} md={6}>
-                <Typography
-                  className={classes.itemDescription}
-                  component="p"
-                >
-                  Provenance Summit aims to educate startups, enterprises and
-                  governments about the development cycle of blockchain technology
-                  and building a decentralized product.
-                </Typography>
-                <Typography
-                  className={classes.itemDescription}
-                  component="p"
-                >
-                  Brought global industry leaders altogether to learn from the
-                  perspectives of understanding the best practices and
-                  methodologies when it comes to team collaboration and product
-                  development.
-                </Typography>
+            
+            <article className={classes.summitSection}>
+              <Typography
+                className={classes.summitTitle}
+                component="h2"
+              >
+                Provenance Summit 2018
+              </Typography>
+              <Grid className={classes.grid} container spacing={2}>
+                <Grid item xs={12} md={6}>
+                  <Typography
+                    className={classes.itemDescription}
+                    component="p"
+                  >
+                    Provenance Summit aims to educate startups, enterprises and
+                    governments about the development cycle of blockchain technology
+                    and building a decentralized product.
+                  </Typography>
+                  <Typography
+                    className={classes.itemDescription}
+                    component="p"
+                  >
+                    Brought global industry leaders altogether to learn from the
+                    perspectives of understanding the best practices and
+                    methodologies when it comes to team collaboration and product
+                    development.
+                  </Typography>
+                </Grid>
+                <Grid className={classes.fitContent} container item xs={12} md={6} spacing={1}>
+                  <Grid item xs={2}>
+                    <CompanyItem name="EEA" image="/summit/eea.svg" />
+                  </Grid>
+                  <Grid item xs={2}>
+                    <CompanyItem
+                      name="Consensys"
+                      image="/summit/consensys.svg"
+                    />
+                  </Grid>
+                  <Grid item xs={2}>
+                    <CompanyItem name="Parity" image="/summit/parity.svg" />
+                  </Grid>
+                  <Grid item xs={2}>
+                    <CompanyItem name="Bitmain" image="/summit/bitmain.svg" />
+                  </Grid>
+                  <Grid item xs={2}>
+                    <CompanyItem name="Monero" image="/summit/monero.svg" />
+                  </Grid>
+                  <Grid item xs={2}>
+                    <CompanyItem name="Solana" image="/summit/solana.svg" />
+                  </Grid>
+                  <Grid item xs={2}>
+                    <CompanyItem name="Status" image="/summit/status.svg" />
+                  </Grid>
+                  <Grid item xs={2}>
+                    <CompanyItem
+                      name="CryptoKitties"
+                      image="/summit/cryptokitties.svg"
+                    />
+                  </Grid>
+                  <Grid item xs={2}>
+                    <CompanyItem
+                      name="Blockgeeks"
+                      image="/summit/blockgeeks.svg"
+                    />
+                  </Grid>
+                </Grid>
               </Grid>
-              <Grid className={classes.fitContent} container item xs={12} md={6} spacing={1}>
-                <Grid item xs={2}>
-                  <CompanyItem />
+            </article>
+
+            <article className={classes.summitSection}>
+              <Typography
+                className={classes.summitTitle}
+                component="h2"
+              >
+                Korea DeFi Roadshow 2021
+              </Typography>
+              <Grid className={classes.grid} container spacing={2}>
+                <Grid item xs={12} md={6}>
+                  <Typography
+                    className={classes.itemDescription}
+                    component="p"
+                  >
+                    Korea DeFi Roadshow aims to edcuate Korean crypto community about the current status of the DeFi sector and its key players.
+                  </Typography>
+                  <Typography
+                    className={classes.itemDescription}
+                    component="p"
+                  >
+                    Brought the current key teams in DeFi sector to talk about the development progress and insights from running the company to give the better understanding about the best practices in the global market.
+                  </Typography>
                 </Grid>
-                <Grid item xs={2}>
-                  <CompanyItem name="EEA" image="/summit/eea.svg" />
-                </Grid>
-                <Grid item xs={2}>
-                  <CompanyItem
-                    name="Consensys"
-                    image="/summit/consensys.svg"
-                  />
-                </Grid>
-                <Grid item xs={2}>
-                  <CompanyItem name="Parity" image="/summit/parity.svg" />
-                </Grid>
-                <Grid item xs={2}>
-                  <CompanyItem name="Bitmain" image="/summit/bitmain.svg" />
-                </Grid>
-                <Grid item xs={2}>
-                  <CompanyItem name="Monero" image="/summit/monero.svg" />
-                </Grid>
-                <Grid item xs={2}>
-                  <CompanyItem name="Solana" image="/summit/solana.svg" />
-                </Grid>
-                <Grid item xs={2}>
-                  <CompanyItem name="Status" image="/summit/status.svg" />
-                </Grid>
-                <Grid item xs={2}>
-                  <CompanyItem
-                    name="CryptoKitties"
-                    image="/summit/cryptokitties.svg"
-                  />
-                </Grid>
-                <Grid item xs={2}>
-                  <CompanyItem
-                    name="Blockgeeks"
-                    image="/summit/blockgeeks.svg"
-                  />
+                <Grid className={classes.fitContent} container item xs={12} md={6} spacing={1}>
+                  <Grid item xs={2}>
+                    <CompanyItem name="EEA" image="/summit/eea.svg" />
+                  </Grid>
+                  <Grid item xs={2}>
+                    <CompanyItem
+                      name="Consensys"
+                      image="/summit/consensys.svg"
+                    />
+                  </Grid>
+                  <Grid item xs={2}>
+                    <CompanyItem name="Parity" image="/summit/parity.svg" />
+                  </Grid>
+                  <Grid item xs={2}>
+                    <CompanyItem name="Bitmain" image="/summit/bitmain.svg" />
+                  </Grid>
+                  <Grid item xs={2}>
+                    <CompanyItem name="Monero" image="/summit/monero.svg" />
+                  </Grid>
+                  <Grid item xs={2}>
+                    <CompanyItem name="Solana" image="/summit/solana.svg" />
+                  </Grid>
+                  <Grid item xs={2}>
+                    <CompanyItem name="Status" image="/summit/status.svg" />
+                  </Grid>
+                  <Grid item xs={2}>
+                    <CompanyItem
+                      name="CryptoKitties"
+                      image="/summit/cryptokitties.svg"
+                    />
+                  </Grid>
+                  <Grid item xs={2}>
+                    <CompanyItem
+                      name="Blockgeeks"
+                      image="/summit/blockgeeks.svg"
+                    />
+                  </Grid>
                 </Grid>
               </Grid>
-            </Grid>
+            </article>
+            
           </Container>
         </section>
       </Main>

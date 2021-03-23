@@ -12,12 +12,6 @@ export const Defi = [
     type: 'Synthetic Asset'
   },
   {
-    image: "/portfolio/basis_cash.svg",
-    name: "Basis Cash",
-    link: 'https://app.basis.cash',
-    type: 'Algorithmic Stablecoin'
-  },
-  {
     image: "/portfolio/dhedge.svg",
     name: "dHedge",
     link: 'https://www.dhedge.org',
@@ -52,6 +46,36 @@ export const Defi = [
     name: "KAVA",
     link: 'https://www.kava.io',
     type: 'Credit & Lending'
+  },
+  {
+    image: "/portfolio/tidal.svg",
+    name: "Tidal Finance",
+    link: 'https://rinkeby.insurace.io/',
+    type: 'Insurance',
+  },
+  {
+    image: "/portfolio/insurace.svg",
+    name: "InsurAce",
+    link: 'https://rinkeby.insurace.io/',
+    type: 'Insurance',
+  },
+  {
+    image: "/portfolio/bzx.svg",
+    name: "BZX protocol",
+    link: 'https://bzx.network/',
+    type: 'Credit & Lending'
+  },
+  {
+    image: "/portfolio/convergence.svg",
+    name: "Convergence protocol",
+    link: 'https://conv.finance/',
+    type: 'Synthetic Asset'
+  },
+  {
+    image: "/portfolio/zero_swap.svg",
+    name: "Zeroswap",
+    link: 'https://zeroswap.io/',
+    type: 'DEX Aggregator'
   },
 ];
 
@@ -117,6 +141,18 @@ export const Application = [
 ];
 
 export const Infrastructure = [
+  {
+    image: "/portfolio/api3.svg",
+    name: "API3",
+    link: 'https://api3.org/',
+    type: 'Decentralized API'
+  },
+  {
+    image: "/portfolio/dora_factory.svg",
+    name: "DoraFactory",
+    link: 'https://dorafactory.org/',
+    type: 'DAO-as-a-Service'
+  },
   {
     image: "/portfolio/tokamak.svg",
     name: "Tokamak Network",

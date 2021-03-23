@@ -10,7 +10,7 @@ import FloatingActionButton from "../components/fab";
 import Main from "../components/main";
 import Award from "../components/award";
 
-import { research, investment } from "../data/labs";
+import { research } from "../data/labs";
 
 const useStyles = makeStyles((theme) => ({
   root: {},

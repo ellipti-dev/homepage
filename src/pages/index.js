@@ -209,9 +209,7 @@ const IndexPage = () => {
                     className={classes.valueDescription}
                     align={"left"}
                   >
-                    {
-                      "From a project to the company with sustainable growth backed by generalists & specialists."
-                    }
+                    We believe Community, Composability and Sustainability are the key components of blockchain ecosystem.
                   </Typography>
                 </Grid>
               </Grid>
@@ -222,9 +220,7 @@ const IndexPage = () => {
                 </Grid>
                 <Grid item xs={12} sm={6}>
                   <Typography className={classes.valueDescription}>
-                    {
-                      "Ellipti covers overall necessities in the crypto market with the expertise and various experiences."
-                    }
+                    Ellipti focuses on how to make a sustainable growth, covering overall necessities in the crypto market with the expertise and various experiences.
                   </Typography>
                 </Grid>
               </Grid>
@@ -235,9 +231,7 @@ const IndexPage = () => {
                 </Grid>
                 <Grid item xs={12} sm={6}>
                   <Typography className={classes.valueDescription}>
-                    {
-                      "Ellipti advisory & Ellipti labs accelerate teams mainly in the Korean market, further to the other major local markets, aiming to grow the sustainable & strong ecosystem."
-                    }
+                    Ellipti accelerates teams mainly in the Korean market, but further to the wider Asian market, building a strong network between solid founders and teams.
                   </Typography>
                 </Grid>
               </Grid>

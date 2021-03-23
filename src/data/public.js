@@ -7,7 +7,7 @@ export const presence = [
     ],
   },
   {
-    title: "Startup Pitch-race @ Blockshow 2019",
+    title: "Judge @ Blockshow 2019 Startup Pitch-race",
     content: [
       "Ellipti Particiated as a judge with the reputational VCs as Winklevoss/SOSV/Fenbushi at Singapore Blockshow.",
       "Judged and Advised the idea, business model & the execution plan/feasibility.",
@@ -16,7 +16,7 @@ export const presence = [
   {
     title: "Panelist @ PAX Economy TV",
     content: [
-      "LShared insights on various concepts such as Stable coin / STO / Scaling solution…etc.",
+      "Shared insights on various concepts such as Stable coin / STO / Scaling solution…etc.",
       "PAX ETV is a boradcast company focuses on economy with its own local TV channel.",
     ],
   },
@@ -29,9 +29,6 @@ export const presence = [
   {
     title:
       "Mentor @ Blahblock mentoring program (Hosted by Ministry of Science and Technology)",
-  },
-  {
-    title: "Panelist @ PAX Economy TV",
   },
   {
     title:
