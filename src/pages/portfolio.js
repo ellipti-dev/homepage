@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     paddingTop: 40,
 
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up('md')]: {
       padding: 0,
       position: 'relative',
       width: '100%',
@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
   jumbotronImage: {
     width: '50%',
 
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up('md')]: {
       width: 264,
       position: 'absolute',
       right: 0,
@@ -82,7 +82,7 @@ const IndexPage = () => {
     <Layout>
       <Jumbotron className={classes.jumbotron} isShowArrow>
         <Grid container>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} md={6}>
             <Typography
               className={classes.jumbotronTitle}
               component="h1"
@@ -99,7 +99,7 @@ const IndexPage = () => {
               }
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} md={6}>
             <div className={classes.jumbotronImageWrapper}>
               <img className={classes.jumbotronImage} src='/svg/portfolio1.svg' />
             </div>

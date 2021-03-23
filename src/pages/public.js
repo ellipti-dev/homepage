@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
 
   },
   jumbotronGrid: {
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up('md')]: {
       flexDirection: 'row-reverse',
     },
   },

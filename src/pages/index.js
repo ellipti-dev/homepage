@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('xs')]: {
       // > 0px
     },
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up('md')]: {
       // > 600px
     },
     [theme.breakpoints.up('md')]: {
@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'inherit',
     paddingTop: 50,
 
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up('md')]: {
       display: 'block',
       paddingTop: 0,
       position: 'relative',
@@ -49,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
     // 모바일
     width: '50%',
     
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up('md')]: {
       // pc
       position: 'absolute',
       right: '-100px',
@@ -73,7 +73,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "1000px",
     fontSize: 28,
 
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up('md')]: {
       fontSize: "56px",
     },
     "&:hover": {
@@ -82,7 +82,7 @@ const useStyles = makeStyles((theme) => ({
   },
   valueGridWrapper: {
     // sm보다 클때만 보이도록 수정
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up('md')]: {
       backgroundImage: "url('/svg/horizontal-divider.svg')",
       backgroundRepeat: "repeat-y",
       backgroundPosition: "center center",
@@ -144,7 +144,7 @@ const IndexPage = () => {
     <Layout className={classes.root}>
       <Jumbotron className={classes.jumbotron}>
         <Grid container>
-          <Grid item xs={12} sm={7}>
+          <Grid item xs={12} md={7}>
             <Typography className={classes.beginning_word}>
               WE ARE
             </Typography>
@@ -155,7 +155,7 @@ const IndexPage = () => {
               the shift
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={5}>
+          <Grid item xs={12} md={5}>
             <div className={classes.jumbotronImageWrapper}>
               <img className={classes.jumbotronImage} src='/svg/index1.svg' />
             </div>
@@ -166,7 +166,7 @@ const IndexPage = () => {
       <section className={classes.visionSection}>
         <Container maxWidth="md" className={classes.vision_width}>
           <Grid container>
-            <Grid item xs={12} sm={2}>
+            <Grid item xs={12} md={2}>
               <Typography
                 className={classes.visionTitle}
                 component="h2"
@@ -174,7 +174,7 @@ const IndexPage = () => {
                 Vision
               </Typography>
             </Grid>
-            <Grid item xs={12} sm={10}>
+            <Grid item xs={12} md={10}>
               <Typography
                 className={classes.visionDescription}
                 component="p"
@@ -201,10 +201,10 @@ const IndexPage = () => {
 
             <div className={classes.valueGridWrapper}>
               <Grid className={classes.valueContainer} container spacing={8}>
-                <Grid className={classes.valueimg} item xs={12} sm={6}>
+                <Grid className={classes.valueimg} item xs={12} md={6}>
                   <img src="/svg/index4.svg" alt="tbd" />
                 </Grid>
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12} md={6}>
                   <Typography
                     className={classes.valueDescription}
                     align={"left"}
@@ -215,10 +215,10 @@ const IndexPage = () => {
               </Grid>
 
               <Grid className={classes.valueContainer} container spacing={8}>
-                <Grid className={classes.valueimg} item xs={12} sm={6}>
+                <Grid className={classes.valueimg} item xs={12} md={6}>
                   <img src="/svg/index3.svg" alt="tbd" />
                 </Grid>
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12} md={6}>
                   <Typography className={classes.valueDescription}>
                     Ellipti focuses on how to make a sustainable growth, covering overall necessities in the crypto market with the expertise and various experiences.
                   </Typography>
@@ -226,10 +226,10 @@ const IndexPage = () => {
               </Grid>
 
               <Grid className={classes.valueContainer} container spacing={8}>
-                <Grid className={classes.valueimg} item xs={12} sm={6}>
+                <Grid className={classes.valueimg} item xs={12} md={6}>
                   <img src="/svg/index2.svg" alt="tbd" />
                 </Grid>
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12} md={6}>
                   <Typography className={classes.valueDescription}>
                     Ellipti accelerates teams mainly in the Korean market, but further to the wider Asian market, building a strong network between solid founders and teams.
                   </Typography>

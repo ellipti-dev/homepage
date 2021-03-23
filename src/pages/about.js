@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     position: 'inherit',
 
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up('md')]: {
       position: 'relative',
       width: '100%',
       height: '100%',
@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
     // 
 
 
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up('md')]: {
       width: 484,
       position: 'absolute',
       left: 60,
@@ -65,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
       paddingBottom: 0,
     },
 
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up('md')]: {
       "&:nth-child(2n)": {
         textAlign: "right",
   
@@ -167,7 +167,7 @@ const AboutPage = () => {
     <Layout>
       <Jumbotron className={classes.jumbotron} isShowArrow>
         <Grid container>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} md={6}>
             <Typography className={classes.jumbotronTitle} component="h1">
               About
             </Typography>
@@ -180,7 +180,7 @@ const AboutPage = () => {
               its potential and achieve growth.
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} md={6}>
             <div className={classes.jumbotronImageWrapper}>
               <img className={classes.jumbotronImage} src='/svg/about1.svg' />
             </div>
@@ -201,13 +201,13 @@ const AboutPage = () => {
               {"Cross-border marketing & growth strategy formulation"}
             </Typography>
             <Grid className={classes.grid} container spacing={4}>
-              <Grid item xs={12} sm={6}>
+              <Grid item xs={12} md={6}>
                 <Img
                   fluid={strategyImg.childImageSharp.fluid}
                   alt="ellipti's strategy"
                 />
               </Grid>
-              <Grid item xs={12} sm={6}>
+              <Grid item xs={12} md={6}>
                 <Typography
                   className={classes.itemDescription}
                   component="p"
@@ -241,13 +241,13 @@ const AboutPage = () => {
               Robust bridge connecting the strategy and actual execution
             </Typography>
             <Grid className={classes.grid} container spacing={4}>
-              <Grid item xs={12} sm={6}>
+              <Grid item xs={12} md={6}>
                 <Img
                   fluid={implementationOperationsImg.childImageSharp.fluid}
                   alt="ellipti's Implementation and Operations"
                 />
               </Grid>
-              <Grid item xs={12} sm={6}>
+              <Grid item xs={12} md={6}>
                 <Typography
                   className={classes.itemDescription}
                   component="p"
@@ -281,13 +281,13 @@ const AboutPage = () => {
               Maximization of exposure with the long-lasting brand
             </Typography>
             <Grid className={classes.grid} container spacing={4}>
-              <Grid item xs={12} sm={6}>
+              <Grid item xs={12} md={6}>
                 <Img
                   fluid={publicRelationImg.childImageSharp.fluid}
                   alt="ellipti's strategy"
                 />
               </Grid>
-              <Grid item xs={12} sm={6}>
+              <Grid item xs={12} md={6}>
                 <Typography
                   className={classes.itemDescription}
                   component="p"
@@ -320,13 +320,13 @@ const AboutPage = () => {
               Getting much closer with the community
             </Typography>
             <Grid className={classes.grid} container spacing={4}>
-              <Grid item xs={12} sm={6}>
+              <Grid item xs={12} md={6}>
                 <Img
                   fluid={miceImg.childImageSharp.fluid}
                   alt="ellipti's strategy"
                 />
               </Grid>
-              <Grid item xs={12} sm={6}>
+              <Grid item xs={12} md={6}>
                 <Typography
                   className={classes.itemDescription}
                   component="p"
