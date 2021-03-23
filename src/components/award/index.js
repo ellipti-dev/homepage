@@ -1,30 +1,48 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from '@material-ui/core/Typography';
+import CallMadeIcon from "@material-ui/icons/CallMade";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    background: '#f1f5f5',
     border: '1px solid rgba(0,0,0,.12)',
     borderRadius: '3px',
     padding: 20,
-    marginBottom: 20,
+    marginBottom: 10,
+    display: 'block',
+    color: '#4D5256',
+    textDecoration: 'none',
 
     '&:last-child': {
-      marginBottom: 0,
+      marginBottom: 60,
+    },
+    '&:hover': {
+      boxShadow: '0px 1px 2px rgba(0, 0, 0, 0.2), 0px 2px 6px rgba(0, 0, 0, 0.06)',
+
+      '& $arrow': {
+        color: 'black',
+      },
     }
   },
   header: {
     display: 'flex',
+    justifyContent: 'space-between',
+  },
+  arrow: {
+    color: '#E4E8EB'
+  },
+  contentHeader: {
+    display: 'flex',
     marginBottom: 12,
   },
   imgWrapper: {
-    padding: '8px 14px',
-    backgroundColor: '#E4E8EB',
-    border: '1px solid rgba(0,0,0,.12)',
-    borderRadius: '3px',
     marginRight: 12,
-    height: '53px',
+    height: '48px',
+    width: '48px',
+
+    '& img': {
+      width: '100%',
+    }
   },
   rewardWrapper: {
   },
@@ -45,29 +63,39 @@ const useStyles = makeStyles((theme) => ({
 const Award = ({
   title,
   lead,
-  description
+  description,
+  icon='/svg/ribon.svg',
+  link='google.com',
  }) => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <a  
+      className={classes.root}
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <div className={classes.header}>
-        <div className={classes.imgWrapper}>
-          <img src='/svg/ribon.svg' alt='award' />
+        <div className={classes.contentHeader}>
+          <div className={classes.imgWrapper}>
+            <img src={icon} alt={'icon'} />
+          </div>
+          <div className={classes.rewardWrapper}>
+            <Typography className={classes.title} component="h3">
+              {title}
+            </Typography>
+            <Typography className={classes.lead} component="p">
+              {lead}
+            </Typography>
+          </div>   
         </div>
-        <div className={classes.rewardWrapper}>
-          <Typography className={classes.title} component="h3">
-            {title}
-          </Typography>
-          <Typography className={classes.lead} component="p">
-            {lead}
-          </Typography>
-        </div>   
+        <CallMadeIcon className={classes.arrow} />
       </div>
       <Typography className={classes.description} component="p">
         {description}
       </Typography>
-    </div>
+    </a>
   )
 }
 

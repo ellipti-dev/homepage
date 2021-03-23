@@ -63,6 +63,9 @@ const useStyles = makeStyles((theme) => ({
       paddingBottom: 0,
     },
   },
+  otherSection: {
+    marginTop: 60,
+  },
   sectionTitle: {
     fontFamily: "'Roboto slab', serif",
     fontSize: 26,
@@ -96,7 +99,7 @@ const useStyles = makeStyles((theme) => ({
   contentDescription: {
     fontSize: 16,
     color: "#4D5256",
-    marginBottom: 20,
+    marginBottom: 30,
   },
 }));
 
@@ -154,7 +157,7 @@ const LabsPage = () => {
                   </Typography>
                 </Grid>
                 <Grid item md={9}>
-                  {research.map((item) => (
+                  {research.filter(raw => raw.type === 'notable').map((item) => (
                     <div key={item.title}>
                       <Typography className={classes.contentTitle} component="h3">
                         {item.title}
@@ -176,15 +179,43 @@ const LabsPage = () => {
                     </div>
                   ))}
                   <Award
+                    icon='/svg/medium.svg'
                     title='1st Prize'
                     lead='@ HackAtom Seoul 2019'
                     description='Over-collateralized staking derivatives with a SDK Uniswap module over IBC and a fully supported UX.'
+                    link='https://blog.cosmos.network/defi-hackathon-the-top-7-projects-changing-the-game-in-finance-e66cb9af1c7f'
                   />
                   <Award
                     title='1st Prize'
                     lead='@ SF DeFi Hackathon 2019'
                     description={'Liquid Staking Position (LSP) NFTs, an additional token that has governance rights & receives rewards.'}
+                    icon='/svg/youtube.svg'
+                    link='https://www.youtube.com/watch?v=d7zNjoSgGww'
                   />
+
+                  <section className={classes.otherSection}>
+                    {research.filter(raw => raw.type !== 'notable').map((item) => (
+                      <article key={item.title}>
+                        <Typography className={classes.contentTitle} component="h3">
+                          {item.title}
+                        </Typography>
+                        {item.subTitle && (
+                          <Typography
+                            className={classes.contentSubtitle}
+                            component="h4"
+                          >
+                            {item.subTitle}
+                          </Typography>
+                        )}
+                        <Typography
+                          className={classes.contentDescription}
+                          component="p"
+                        >
+                          {item.content}
+                        </Typography>
+                      </article>
+                    ))}
+                  </section>
                 </Grid>
               </Grid>
             </Container>
