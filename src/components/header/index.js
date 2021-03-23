@@ -1,14 +1,16 @@
 import React, { useState } from "react";
+import clsx from 'clsx';
 import { Link } from "gatsby";
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
-import Button from "@material-ui/core/Button";
-import MenuItem from "@material-ui/core/MenuItem";
-import Menu from "@material-ui/core/Menu";
-import MoreIcon from "@material-ui/icons/MoreVert";
+import Collapse from '@material-ui/core/Collapse';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
 import Container from "@material-ui/core/Container";
+import SubjectIcon from '../icons/subject';
+import CloseIcon from '../icons/close';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -56,7 +58,38 @@ const useStyles = makeStyles((theme) => ({
     color: "#fff",
     borderBottom: "1px solid #fff",
   },
-  mobileMenuItem: {},
+  mobileMenu: {
+    position: 'fixed',
+    zIndex: 10000,
+    top: 56,
+    width: '100%',
+    backgroundColor: 'black',
+    borderTop: '1px solid white',
+  },
+  mobileMenuItem: {
+    display: 'flex',
+    justifyContent: 'flex-end',
+    color: 'rgba(255, 255, 255, 0.7)',
+    fontWeight: 300,
+
+    '&:hover': {
+      color: 'white',
+      fontWeight: 400,
+    },
+  },
+  activeMobileMenu: {
+    color: 'white',
+    fontWeight: 400,
+
+    '&:before': {
+      content: '""',
+      marginRight: 5,
+      width: 8,
+      height: 1,
+      display: 'block',
+      backgroundColor: 'white',
+    }
+  },
   sectionDesktop: {
     display: "none",
     [theme.breakpoints.up("md")]: {
@@ -86,44 +119,56 @@ export default function Header() {
 
   const mobileMenuId = "primary-search-account-menu-mobile";
   const renderMobileMenu = (
-    <Menu
-      anchorEl={mobileMoreAnchorEl}
-      anchorOrigin={{ vertical: "top", horizontal: "right" }}
+    <Collapse
       id={mobileMenuId}
-      keepMounted
-      transformOrigin={{ vertical: "top", horizontal: "right" }}
-      open={isMobileMenuOpen}
-      onClose={handleMobileMenuClose}
+      className={classes.mobileMenu}
+      in={isMobileMenuOpen}
+      timeout="auto"
+      unmountOnExit
+      component='nav'
+
     >
-      <MenuItem
-        className={classes.mobileMenuItem}
-        component={Link}
-        to={"/about"}
-      >
-        About
-      </MenuItem>
-      <MenuItem
-        className={classes.mobileMenuItem}
-        component={Link}
-        to={"/portfolio"}
-      >
-        Portfolio
-      </MenuItem>
-      <MenuItem
-        className={classes.mobileMenuItem}
-        component={Link}
-        to={"/labs"}
-      >
-        Labs
-      </MenuItem>
-      <MenuItem
-        className={classes.mobileMenuItem}
-        component={Link}
-        to={"/public"}
-      >
-        Public
-      </MenuItem>
-    </Menu>
+      <Container>
+        <List>
+          <ListItem
+            button
+            className={classes.mobileMenuItem}
+            activeClassName={classes.activeMobileMenu}
+            component={Link}
+            to={"/about"}
+          >
+            About
+          </ListItem>
+          <ListItem
+            button
+            className={classes.mobileMenuItem}
+            activeClassName={classes.activeMobileMenu}
+            component={Link}
+            to={"/portfolio"}
+          >
+            Portfolio
+          </ListItem>
+          <ListItem
+            button
+            className={classes.mobileMenuItem}
+            activeClassName={classes.activeMobileMenu}
+            component={Link}
+            to={"/labs"}
+          >
+            Labs
+          </ListItem>
+          <ListItem
+            button
+            className={classes.mobileMenuItem}
+            activeClassName={classes.activeMobileMenu}
+            component={Link}
+            to={"/public"}
+          >
+            Public
+          </ListItem>
+        </List>
+      </Container>
+    </Collapse>
   );
 
   return (
@@ -188,9 +233,9 @@ export default function Header() {
                 aria-label="show more"
                 aria-controls={mobileMenuId}
                 aria-haspopup="true"
-                onClick={handleMobileMenuOpen}
+                onClick={isMobileMenuOpen ? handleMobileMenuClose : handleMobileMenuOpen}
               >
-                <MoreIcon />
+                {isMobileMenuOpen ? <CloseIcon /> : <SubjectIcon/> }
               </IconButton>
             </div>
           </Toolbar>
