@@ -6,6 +6,15 @@
 <path d="M84 105.12C107.196 105.12 126 86.316 126 63.12C126 39.924 107.196 21.12 84 21.12C60.804 21.12 42 39.924 42 63.12C42 86.316 60.804 105.12 84 105.12Z" stroke="#1D1D1D" stroke-width="2"/>
 <path d="M84 22.12V105.12" stroke="#1D1D1D" stroke-dasharray="2 2"/>
 <path d="M125.5 63.62H42.5" stroke="#1D1D1D" stroke-dasharray="2 2"/>
+<path d="M430.354 44.3536C430.549 44.1583 430.549 43.8417 430.354 43.6464L427.172 40.4645C426.976 40.2692 426.66 40.2692 426.464 40.4645C426.269 40.6597 426.269 40.9763 426.464 41.1716L429.293 44L426.464 46.8284C426.269 47.0237 426.269 47.3403 426.464 47.5355C426.66 47.7308 426.976 47.7308 427.172 47.5355L430.354 44.3536ZM419 44.5L430 44.5L430 43.5L419 43.5L419 44.5Z" fill="#1D1D1D"/>
+<rect y="0.642634" width="32.8479" height="32.8479" transform="matrix(0.946972 0.321317 -0.946972 0.321317 386.609 60.4361)" stroke="#1D1D1D" stroke-width="2" stroke-dasharray="2 2"/>
+<rect y="0.642634" width="32.8479" height="32.8479" transform="matrix(0.946972 0.321317 -0.946972 0.321317 386.609 66.7854)" stroke="#1D1D1D" stroke-width="2"/>
+<rect y="0.642634" width="32.8479" height="32.8479" transform="matrix(0.946972 0.321317 -0.946972 0.321317 386.609 74.0417)" stroke="#1D1D1D" stroke-width="2"/>
+<rect x="295" y="25" width="18" height="18" fill="#1D1D1D"/>
+<rect x="293.5" y="41.5" width="3" height="3" fill="white" stroke="#1D1D1D"/>
+<rect x="293.5" y="23.5" width="3" height="3" fill="white" stroke="#1D1D1D"/>
+<rect x="311.5" y="41.5" width="3" height="3" fill="white" stroke="#1D1D1D"/>
+<rect x="311.5" y="23.5" width="3" height="3" fill="white" stroke="#1D1D1D"/>
 </g>
 <defs>
 <clipPath id="clip0">
