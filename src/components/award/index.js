@@ -7,20 +7,17 @@ const useStyles = makeStyles((theme) => ({
   root: {
     border: '1px solid rgba(0,0,0,.12)',
     borderRadius: '3px',
-    padding: 20,
-    marginBottom: 10,
+    padding: 18,
+    marginBottom: 8,
     display: 'block',
     color: '#4D5256',
     textDecoration: 'none',
-
-    '&:last-child': {
-      marginBottom: 60,
-    },
+    
     '&:hover': {
-      boxShadow: '0px 1px 2px rgba(0, 0, 0, 0.2), 0px 2px 6px rgba(0, 0, 0, 0.06)',
+      boxShadow: '0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 6px rgba(0, 0, 0, 0.06)',
 
       '& $arrow': {
-        color: 'black',
+        color: '#878D91',
       },
     }
   },
@@ -29,14 +26,16 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'space-between',
   },
   arrow: {
-    color: '#E4E8EB'
+    color: '#D4D8DC',
+    fontSize: 16,
+
   },
   contentHeader: {
     display: 'flex',
-    marginBottom: 12,
+    marginBottom: 6,
   },
   imgWrapper: {
-    marginRight: 12,
+    marginRight: 15,
     height: '48px',
     width: '48px',
 
@@ -47,15 +46,15 @@ const useStyles = makeStyles((theme) => ({
   rewardWrapper: {
   },
   title: {
-    fontSize: 18,
+    fontSize: 16,
     fontWeight: 500, // 400은 표가 잘 안나서 500으로넣음 400으로 안쓰게 된다면 여기에 주석으로 메시지 하나만 달아주세요
   },
   lead: {
-    fontSize: 16,
+    fontSize: 14,
   },
   description: {
-    fontSize: 16,
-    color: "#4D5256",
+    fontSize: 14,
+    color: "#878D91",
   },
 }));
 

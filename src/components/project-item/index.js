@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: 'none',
   },
   hover: {
-    boxShadow: '0px 1px 2px rgba(0, 0, 0, 0.2), 0px 2px 6px rgba(0, 0, 0, 0.06)',
+    boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.2), 0px 2px 6px rgba(0, 0, 0, 0.08)',
   },
   imageSection: {
     position: 'relative',

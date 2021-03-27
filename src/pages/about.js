@@ -110,7 +110,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 16,
   },
   divider: {
-    margin: '20px 0',
+    margin: '30px 0 20px',
   },
   fitContent: {
     height: "fit-content",

@@ -148,7 +148,10 @@ const useStyles = makeStyles((theme) => ({
   valueimg: {
     display: 'flex',
     justifyContent: 'center',
-    height: 180,
+
+    '& img': {
+      width: '100%',
+    }
   },
 }));
 
@@ -215,9 +218,9 @@ const IndexPage = () => {
             </Typography>
 
             <div className={classes.valueGridWrapper}>
-              <Grid className={classes.valueContainer} container spacing={8}>
+              <Grid className={classes.valueContainer} container spacing={6}>
                 <Grid className={classes.valueimg} item xs={12} md={6}>
-                  <img src="/svg/index4.svg" alt="tbd" />
+                  <img src="/svg/index2.svg" alt="tbd" />
                 </Grid>
                 <Grid item xs={12} md={6}>
                   <Typography
@@ -229,7 +232,7 @@ const IndexPage = () => {
                 </Grid>
               </Grid>
 
-              <Grid className={classes.valueContainer} container spacing={8}>
+              <Grid className={classes.valueContainer} container spacing={6}>
                 <Grid className={classes.valueimg} item xs={12} md={6}>
                   <img src="/svg/index3.svg" alt="tbd" />
                 </Grid>
@@ -240,9 +243,9 @@ const IndexPage = () => {
                 </Grid>
               </Grid>
 
-              <Grid className={classes.valueContainer} container spacing={8}>
+              <Grid className={classes.valueContainer} container spacing={6}>
                 <Grid className={classes.valueimg} item xs={12} md={6}>
-                  <img src="/svg/index2.svg" alt="tbd" />
+                  <img src="/svg/index4.svg" alt="tbd" />
                 </Grid>
                 <Grid item xs={12} md={6}>
                   <Typography className={classes.valueDescription}>
