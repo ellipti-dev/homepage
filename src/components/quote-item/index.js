@@ -14,14 +14,15 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     paddingTop: "100%",
     position: "relative",
+    boxShadow: 'none',
 
     '&:hover': {
-      boxShadow: '0px 1px 2px rgba(0, 0, 0, 0.2), 0px 2px 6px rgba(0, 0, 0, 0.06)',
+      boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.4), 0px 6px 12px rgba(0, 0, 0, 0.12)',
 
       '& $icon': {
         top: theme.spacing(1/2),
         right: theme.spacing(1/2),
-        color: '#C5FF48',
+        color: '#FFE924',
       },
     },
   },
@@ -30,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     top: theme.spacing(2),
     right: theme.spacing(2),
 
-    transition: 'top 0.3s ease-out, right 0.3s ease-out',
+    transition: 'top 0.2s ease-out, right 0.2s ease-out',
   },
   contentBox: {
     position: "absolute",
