@@ -18,12 +18,18 @@ const useStyles = makeStyles((theme) => ({
 
   },
   jumbotronGrid: {
+    flexDirection: 'row',
+
     [theme.breakpoints.up('md')]: {
       flexDirection: 'row-reverse',
     },
   },
   jumbotronContent: {
-    textAlign: 'right',
+    textAlign: 'left',
+
+    [theme.breakpoints.up('md')]: {
+      textAlign: 'right',
+    },
   },
   jumbotronTitle: {
     color: "#fff",
@@ -39,21 +45,27 @@ const useStyles = makeStyles((theme) => ({
   },
   jumbotronImageWrapper: {
     display: 'flex',
+    justifyContent: 'flex-end',
+    marginTop: '-10px',
+    paddingBottom: '10px',
+
     [theme.breakpoints.up('md')]: {
       position: 'relative',
       width: '100%',
       height: '100%',
+      marginTop: 0,
+      paddingBottom: 0,
     }
   },
   jumbotronImage: {
-    paddingTop: 40,
+    width: '50%',
 
     [theme.breakpoints.up('md')]: {
       padding: 0,
       position: 'absolute',
       left: 0,
-      bottom: '10%',
-      width: 337,
+      bottom: '42px',
+      width: 380,
     },
   },
   section: {
@@ -111,7 +123,7 @@ const LabsPage = () => {
       <Layout>
         <Jumbotron className={classes.jumbotron} isShowArrow>
           <Grid container className={classes.jumbotronGrid}>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={5}>
               <div className={classes.jumbotronContent}>
                 <Typography className={classes.jumbotronTitle} component="h1">
                   Labs
@@ -126,7 +138,7 @@ const LabsPage = () => {
                 </Typography>
               </div>
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={7}>
               <div className={classes.jumbotronImageWrapper}>
                 <img className={classes.jumbotronImage} src='/svg/labs1.svg' />
               </div>

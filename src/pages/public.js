@@ -18,12 +18,18 @@ const useStyles = makeStyles((theme) => ({
 
   },
   jumbotronGrid: {
+    flexDirection: 'row',
+
     [theme.breakpoints.up('md')]: {
       flexDirection: 'row-reverse',
     },
   },
   jumbotronContent: {
-    textAlign: 'right',
+    textAlign: 'left',
+
+    [theme.breakpoints.up('md')]: {
+      textAlign: 'right',
+    },
   },
   jumbotronTitle: {
     color: "#fff",
@@ -39,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
   },
   jumbotronImageWrapper: {
     display: 'flex',
-    paddingTop: 40,
+    justifyContent: 'flex-end',
 
     [theme.breakpoints.up('md')]: {
       padding: 0,
@@ -49,13 +55,13 @@ const useStyles = makeStyles((theme) => ({
     }
   },
   jumbotronImage: {
-    width: '80%',
+    width: '68%',
 
     [theme.breakpoints.up('md')]: {
       position: 'absolute',
       left: 0,
       bottom: 0,
-      width: '95%',
+      width: '100%',
     }
   },
   section: {

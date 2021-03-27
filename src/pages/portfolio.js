@@ -37,26 +37,38 @@ const useStyles = makeStyles((theme) => ({
     color: "#fff",
     fontSize: 26,
     textShadow: 'black 1px 2px 8px',
+    width: '100%',
+
+    [theme.breakpoints.up('sm')]: {
+      width: '80%',
+    },
+
+    [theme.breakpoints.up('md')]: {
+      width: '100%',
+    }
   },
   jumbotronImageWrapper: {
     display: 'flex',
-    paddingTop: 40,
+    justifyContent: 'flex-end',
+    position: 'inherit',
+    marginTop: '-20px',
 
     [theme.breakpoints.up('md')]: {
       padding: 0,
       position: 'relative',
       width: '100%',
       height: '100%',
+      marginTop: 0,
     }
   },
   jumbotronImage: {
-    width: '50%',
+    width: '30%',
 
     [theme.breakpoints.up('md')]: {
-      width: 264,
+      width: 300,
       position: 'absolute',
-      right: 0,
-      bottom: '-30px',
+      right: 30,
+      bottom: '-70px',
     },
   },
   section: {
