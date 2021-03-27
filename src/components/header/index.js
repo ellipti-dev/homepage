@@ -63,8 +63,8 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 10000,
     top: 56,
     width: '100%',
-    backgroundColor: 'black',
-    borderTop: '1px solid white',
+    backgroundColor: '#292929',
+    borderTop: '1px solid rgba(255,255,255,.2)',
   },
   mobileMenuItem: {
     display: 'flex',
@@ -74,7 +74,6 @@ const useStyles = makeStyles((theme) => ({
 
     '&:hover': {
       color: 'white',
-      fontWeight: 400,
     },
   },
   activeMobileMenu: {
@@ -83,9 +82,9 @@ const useStyles = makeStyles((theme) => ({
 
     '&:before': {
       content: '""',
-      marginRight: 5,
-      width: 8,
-      height: 1,
+      marginRight: 6,
+      width: 10,
+      height: 2,
       display: 'block',
       backgroundColor: 'white',
     }

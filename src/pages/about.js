@@ -32,28 +32,26 @@ const useStyles = makeStyles((theme) => ({
   },
   jumbotronImageWrapper: {
     display: 'flex',
+    justifyContent: 'flex-end',
     position: 'inherit',
+    marginTop: '-60px',
 
     [theme.breakpoints.up('md')]: {
       position: 'relative',
       width: '100%',
       height: '100%',
+      marginTop: 0,
     }
   },
   jumbotronImage: {
-    // 
-
+    width: '60%',
 
     [theme.breakpoints.up('md')]: {
-      width: 484,
+      width: 480,
       position: 'absolute',
-      left: 60,
+      left: 30,
       bottom: '-30px',
     },
-    [theme.breakpoints.up('md')]: {
-      width: '80%',
-      maxWidth: 400,
-    }
   },
   titleDivider: {
     fill: "#2C74E0",
@@ -176,7 +174,7 @@ const AboutPage = () => {
               className={classes.jumbotronDescription}
               component="p"
             >
-              Ellipti advises on how to fully market the company’s fundamentals and
+              Ellipti advises on how to fully market the company’s <br></br> fundamentals and
               its potential and achieve growth.
             </Typography>
           </Grid>
