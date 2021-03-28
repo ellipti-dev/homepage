@@ -419,7 +419,7 @@ const AboutPage = () => {
                     className={classes.itemDescription}
                     component="p"
                   >
-                    Korea DeFi Roadshow aims to edcuate Korean crypto community about the current status of the DeFi sector and its key players.
+                    Korea DeFi Roadshow aims to educate Korean crypto community about the current status of the DeFi sector and its key players.
                   </Typography>
                   <Typography
                     className={classes.itemDescription}
