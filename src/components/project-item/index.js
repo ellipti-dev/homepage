@@ -11,10 +11,22 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 3,
     backgroundColor: theme.palette.background.default,
     boxShadow: 'none',
+    display: 'block',
+    cursor: 'pointer',
+    textDecoration: 'none',
+
+    '&:hover': {
+      boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.2), 0px 2px 6px rgba(0, 0, 0, 0.08)',  
+
+      '& $projectName': {
+        textDecoration: 'underline',
+      },
+      '& $projectCategory': {
+        textDecoration: 'underline',
+      }
+    }
   },
-  hover: {
-    boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.2), 0px 2px 6px rgba(0, 0, 0, 0.08)',
-  },
+
   imageSection: {
     position: 'relative',
     height: '100%',
@@ -39,16 +51,6 @@ const useStyles = makeStyles((theme) => ({
     height: 74,
     cursor: 'pointer',
     textDecoration: 'none',
-
-    '&:hover': {
-      // 호버시 감싸는 전체 박스에 그림자 생기기
-      '& $projectName': {
-        textDecoration: 'underline',
-      },
-      '& $projectCategory': {
-        textDecoration: 'underline',
-      }
-    }
   },
   projectName: {
     fontSize: 14,
@@ -65,31 +67,23 @@ const useStyles = makeStyles((theme) => ({
 
 const ProjectItem = ({ item }) => {
   const classes = useStyles();
-  const [isHover, setHover] = useState(false);
   const { name, image, link, type } = item;
-
-  const handleHover = () => {
-    setHover(true);
-  }
-
-  const handleLeave = () => {
-    setHover(false);
-  }
 
   return (
     <Paper
-      className={clsx(classes.root, { [classes.hover]: isHover })}
+      className={classes.root}
+      component='a'
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
     >
       <div className={classes.imageSection}>
         <img src={image} alt={name} />
       </div>
-      <a 
+      <div 
         className={classes.projectNameSection}
-        href={link}
         target="_blank"
         rel="noopener noreferrer"
-        onMouseEnter={handleHover}
-        onMouseLeave={handleLeave}
       >
         <Typography
           variant="body1"
@@ -105,7 +99,7 @@ const ProjectItem = ({ item }) => {
         >
           {type}
         </Typography>
-      </a>
+      </div>
     </Paper>
   )
 }
