@@ -40,11 +40,15 @@ const useStyles = makeStyles((theme) => ({
     width: '80%',
   },
   title: {
-    fontSize: 18,
     color: "#292929",
     fontWeight: 500,
     lineHeight: 1.2,
     marginLeft: '1%',
+    fontSize: 14,
+
+    [theme.breakpoints.up('sm')]: {
+      fontSize: 18,
+    }
   },
   media: {
     display: "inline-block",
@@ -52,6 +56,11 @@ const useStyles = makeStyles((theme) => ({
     padding: "0 6px",
     background: "#292929",
     marginBottom: 8,
+    fontSize: 14,
+
+    [theme.breakpoints.up('sm')]: {
+      fontSize: 16,
+    }
   },
 
   oddRoot: {
