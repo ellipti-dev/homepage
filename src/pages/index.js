@@ -120,6 +120,11 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 16,
     fontWeight: 400,
     color: '#4D5256',
+    textAlign: "center",
+
+    [theme.breakpoints.up('md')]: {
+      textAlign: "left",
+    },
   },
   valueTitle: {
     fontSize: 20,
