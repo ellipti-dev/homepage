@@ -77,27 +77,28 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 30,
   },
   featuredPresenceDiv: {
-    marginBottom: 50,
+    marginBottom: 16,
   },
   presenceRole: {
     color: '#292929',
     fontFamily: '"Roboto", "Roboto Slab"',
-    fontSize: 18,
+    fontSize: 16,
     display: 'flex',
     alignItems: 'center',
 
     '& img': {
-      marginRight: 13,
+      width: 14,
+      marginRight: 10,
     }
   },
   presenceTitle: {
     fontSize: 16,
-    marginBottom: 6,
+    marginBottom: 8,
   },
   presenceDescription: {
     color: '#878D91',
     fontSize: 14,
-    marginBottom: 2,
+    marginBottom: 6,
   }
 }));
 
@@ -174,7 +175,7 @@ const PublicPage = () => {
               ))}
 
               {presence.map(item => (
-                <Grid container spacing={4} key={featuredPresence.keys}>
+                <Grid className={classes.featuredPresenceDiv} container spacing={4} key={featuredPresence.keys}>
                   <Grid item xs={12} sm={3}>
                     <Typography component="h3" className={classes.presenceRole}>
                       <img src='/svg/blank-dot.svg' alt='dot' />
