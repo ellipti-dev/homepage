@@ -1,4 +1,4 @@
-import React, {useMemo} from "react";
+import React, { useMemo } from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import CallMadeIcon from "@material-ui/icons/CallMade";
@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
 
     // aspect ratio 1:1
     width: "100%",
-    paddingTop: "100%",
+    paddingTop: "90%",
     position: "relative",
     boxShadow: 'none',
 
@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
 
     // aspect ratio 1:1
     width: "100%",
-    paddingTop: "100%",
+    paddingTop: "90%",
     position: "relative",
   },
   oddIcon: {
@@ -85,17 +85,19 @@ const useStyles = makeStyles((theme) => ({
 
 const QuoteItem = ({ item, index }) => {
   const classes = useStyles();
-  const randomNumber = useMemo(() => Math.floor(Math.random() * (5 - 1)), []);
-  const isOdd = useMemo(() => (index + randomNumber) % 3 === 0, [index]);
+  const randomNumber = useMemo(() => Math.floor(Math.random() * (3 - 1)), []);
+  const isOdd = useMemo(() => (index + randomNumber) % 2 === 0, [index]);
+  const isBackgroundImg = useMemo(() => !!item.image, [item.image]);
 
   return (
     <Paper
       component="a"
       elevation={1}
       className={clsx(classes.root, { [classes.oddRoot]: isOdd })}
+      style={isBackgroundImg ? { backgroundImage: `url('${item.image}')` } : { }}
       href={item.link}
       target="_blank"
-      rel="noopener noreferrer"
+      rel="noopener noreferrer" 
     >
       <CallMadeIcon
         className={clsx({ [classes.oddIcon]: isOdd }, classes.icon,)}
@@ -106,12 +108,20 @@ const QuoteItem = ({ item, index }) => {
         <Typography
           component="span"
           className={clsx(classes.media, { [classes.oddMeida]: isOdd })}
+          style={isBackgroundImg 
+            ? { backgroundColor: '#fff', color: '#292929', fontWeight: 500 } 
+            : { }
+          }
         >
           {item.media}
         </Typography>
         <Typography
           component="h3"
           className={clsx(classes.title, { [classes.oddTitle]: isOdd })}
+          style={isBackgroundImg 
+            ? { color: '#fff', fontWeight: 300 } 
+            : { }
+          }
         >
           {item.title}
         </Typography>

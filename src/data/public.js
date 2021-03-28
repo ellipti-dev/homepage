@@ -61,6 +61,7 @@ export const quote = [
     title: "What's the right way for token project to end its operation?",
     media: "Decenter",
     link: "https://decenter.kr/NewsView/1Z2RF35H94",
+    image: "/quote/quote3.jpg",
   },
   {
     title: "DeFi at crossroads, what'd be its future?",
@@ -81,6 +82,7 @@ export const quote = [
     title: "DeFi bonanza? Maybe worse than ICO bubble",
     media: "Coindesk Korea",
     link: "https://www.coindeskkorea.com/news/articleView.html?idxno=71480",
+    image: "/quote/quote2.jpg",
   },
   {
     title: "Why Uniswap socks worths $6,000?",
@@ -129,6 +131,7 @@ export const quote = [
     title: "What's behind the recent alt rally? DeFi boom",
     media: "Decenter",
     link: "https://decenter.kr/NewsView/22HG0Q6G2W",
+    image: "/quote/quote1.jpg",
   },
   {
     title: "Talking about the future of Digital Asset",
