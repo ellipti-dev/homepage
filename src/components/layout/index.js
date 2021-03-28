@@ -3,7 +3,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 
 import Header from '../../components/header';
 import Footer from '../../components/footer';
-// import SEO from '../../components/seo';
+import SEO from '../../components/seo';
 import '@fontsource/roboto';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
@@ -20,6 +20,7 @@ function Layout({ children }) {
 
   return (
     <>
+      <SEO />
       <CssBaseline />
       <Header />
       {children}

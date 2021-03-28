@@ -1,7 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: "ellipti",
-    siteUrl: 'https://google.com',
+    title: "Ellipti",
+    description: 'Ellipti is a cross-border accelerator (based in Korea)',
+    siteUrl: 'https://www.ellipti.io',
+    image: '/ellipti-og.png',
+    titleTemplate: "%s | Ellipti",
+    twitterUsername: 'elliptiofficial',
   },
   plugins: [
     "gatsby-plugin-sass",
