@@ -430,39 +430,39 @@ const AboutPage = () => {
                 </Grid>
                 <Grid className={classes.fitContent} container item xs={12} md={6} spacing={1}>
                   <Grid item xs={2}>
-                    <CompanyItem name="EEA" image="/summit/eea.svg" />
+                    <CompanyItem name="1inch" image="/roadshow/1inch.svg" />
+                  </Grid>
+                  <Grid item xs={2}>
+                    <CompanyItem name="Compound" image="/roadshow/compound.svg" />
+                  </Grid>
+                  <Grid item xs={2}>
+                    <CompanyItem name="MakerDAO" image="/roadshow/maker_dao.svg" />
+                  </Grid>
+                  <Grid item xs={2}>
+                    <CompanyItem name="Injective Protocol" image="/roadshow/injective.svg" />
+                  </Grid>
+                  <Grid item xs={2}>
+                    <CompanyItem name="Mirror Protocol" image="/roadshow/mirror.svg" />
+                  </Grid>
+                  <Grid item xs={2}>
+                    <CompanyItem name="Linear Finance" image="/roadshow/linear.svg" />
                   </Grid>
                   <Grid item xs={2}>
                     <CompanyItem
-                      name="Consensys"
-                      image="/summit/consensys.svg"
-                    />
-                  </Grid>
-                  <Grid item xs={2}>
-                    <CompanyItem name="Parity" image="/summit/parity.svg" />
-                  </Grid>
-                  <Grid item xs={2}>
-                    <CompanyItem name="Bitmain" image="/summit/bitmain.svg" />
-                  </Grid>
-                  <Grid item xs={2}>
-                    <CompanyItem name="Monero" image="/summit/monero.svg" />
-                  </Grid>
-                  <Grid item xs={2}>
-                    <CompanyItem name="Solana" image="/summit/solana.svg" />
-                  </Grid>
-                  <Grid item xs={2}>
-                    <CompanyItem name="Status" image="/summit/status.svg" />
-                  </Grid>
-                  <Grid item xs={2}>
-                    <CompanyItem
-                      name="CryptoKitties"
-                      image="/summit/cryptokitties.svg"
+                      name="Starkware"
+                      image="/roadshow/starkware.svg"
                     />
                   </Grid>
                   <Grid item xs={2}>
                     <CompanyItem
-                      name="Blockgeeks"
-                      image="/summit/blockgeeks.svg"
+                      name="Polygon"
+                      image="/roadshow/polygon.svg"
+                    />
+                  </Grid>
+                  <Grid item xs={2}>
+                    <CompanyItem
+                      name="dydx"
+                      image="/roadshow/dydx.svg"
                     />
                   </Grid>
                 </Grid>
