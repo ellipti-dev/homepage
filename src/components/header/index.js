@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import clsx from 'clsx';
 import { Link } from "gatsby";
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
@@ -129,6 +128,15 @@ export default function Header() {
     >
       <Container>
         <List>
+          <ListItem
+            button
+            className={classes.mobileMenuItem}
+            activeClassName={classes.activeMobileMenu}
+            component={Link}
+            to={"/"}
+          >
+            Home
+          </ListItem>
           <ListItem
             button
             className={classes.mobileMenuItem}
