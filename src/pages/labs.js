@@ -8,7 +8,6 @@ import Jumbotron from "../components/jumbotron";
 import Container from "@material-ui/core/Container";
 
 import Layout from "../components/layout";
-import FloatingActionButton from "../components/fab";
 import Main from "../components/main";
 import Award from "../components/award";
 import LabsItem from '../components/labs-item';
@@ -76,8 +75,14 @@ const useStyles = makeStyles((theme) => ({
       paddingBottom: 0,
     },
   },
-  otherSection: {
-    marginTop: 60,
+  labsSection: {
+    marginBottom: 30,
+  },
+  awardSection: {
+    marginBottom: 20,
+  },
+  ImgSection: {
+    marginBottom: 0,
   },
   sectionTitle: {
     fontFamily: "'Roboto slab', serif",
@@ -176,27 +181,7 @@ const LabsPage = () => {
                   </Typography>
                 </Grid>
                 <Grid item md={9}>
-                  <LabsItem
-                    title={"Everett Protocol"}
-                    subTitle={"Staking Derivatives for better PoS"}
-                    content={"Everett Protocol allows users to create 'shadow tokens' called bAtoms that is fully backed by their staking position to solve the problem: “What if delegators could receive staking rewards and “What if delegators could receive staking rewards and be incentivized to pool their assets into DeFi simultaneously?” Ellipti came up with the answer: bAtoms, staking positions collateralized shadow token that delegators can use to pool into DeFi protocols."}
-                  />
-                  <Award
-                    icon='/svg/medium.svg'
-                    title='1st Prize'
-                    lead='@ HackAtom Seoul 2019'
-                    description='Over-collateralized staking derivatives with a SDK Uniswap module over IBC and a fully supported UX.'
-                    link='https://blog.cosmos.network/defi-hackathon-the-top-7-projects-changing-the-game-in-finance-e66cb9af1c7f'
-                  />
-                  <Award
-                    title='1st Prize'
-                    lead='@ SF DeFi Hackathon 2019'
-                    description={'Liquid Staking Position (LSP) NFTs, an additional token that has governance rights & receives rewards.'}
-                    icon='/svg/youtube.svg'
-                    link='https://www.youtube.com/watch?v=d7zNjoSgGww'
-                  />
-
-                  <section className={classes.otherSection}>
+                  <section className={classes.labsSection}>
                     <LabsItem
                       title={"DeFi Report @ Coinone"}
                       content={"Under the partnership with Coinone, sourced comprehensive report as a snapshot of DeFi ecosystem's growth with insights to the Korean crypto community."}
@@ -205,6 +190,31 @@ const LabsPage = () => {
                       title={"News Commentary @ Crypto media"}
                       content={"Provided analysis & commentary on macro/micro issues in the blockchain market to crypto medias such as Coindesk Korea, Join:D"}
                     />
+                    <LabsItem
+                      title={"Everett Protocol"}
+                      subTitle={"Staking Derivatives for better PoS"}
+                      content={"Everett Protocol allows users to create 'shadow tokens' called bAtoms that is fully backed by their staking position to solve the problem: “What if delegators could receive staking rewards and “What if delegators could receive staking rewards and be incentivized to pool their assets into DeFi simultaneously?” Ellipti came up with the answer: bAtoms, staking positions collateralized shadow token that delegators can use to pool into DeFi protocols."}
+                    />
+                  </section>
+
+                  <section className={classes.awardSection}>
+                    <Award
+                      icon='/svg/medium.svg'
+                      title='1st Prize'
+                      lead='@ HackAtom Seoul 2019'
+                      description='Over-collateralized staking derivatives with a SDK Uniswap module over IBC and a fully supported UX.'
+                      link='https://blog.cosmos.network/defi-hackathon-the-top-7-projects-changing-the-game-in-finance-e66cb9af1c7f'
+                    />
+                    <Award
+                      title='1st Prize'
+                      lead='@ SF DeFi Hackathon 2019'
+                      description={'Liquid Staking Position (LSP) NFTs, an additional token that has governance rights & receives rewards.'}
+                      icon='/svg/youtube.svg'
+                      link='https://www.youtube.com/watch?v=d7zNjoSgGww'
+                    />
+                  </section>
+                  
+                  <section className={classes.ImgSection}>
                     <Grid container spacing={1}>
                       <Grid item xs={12} sm={6}>
                         <Img
@@ -220,17 +230,12 @@ const LabsPage = () => {
                       </Grid>
                     </Grid>
                   </section>
+
                 </Grid>
               </Grid>
             </Container>
           </section>
         </Main>
-
-        <FloatingActionButton
-          items={[
-            { label: "Research", anchor: "research" },
-          ]}
-        />
       </Layout>
     </>
   );
