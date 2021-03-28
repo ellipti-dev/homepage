@@ -1,4 +1,6 @@
 import * as React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
@@ -9,8 +11,7 @@ import Layout from "../components/layout";
 import FloatingActionButton from "../components/fab";
 import Main from "../components/main";
 import Award from "../components/award";
-
-import { research } from "../data/labs";
+import LabsItem from '../components/labs-item';
 
 const useStyles = makeStyles((theme) => ({
   root: {},
@@ -98,26 +99,32 @@ const useStyles = makeStyles((theme) => ({
       textAlign: "right",
     }
   },
-  contentTitle: {
-    fontSize: 20,
-    fontWeight: 500,
-    marginBottom: 4,
-  },
-  contentSubtitle: {
-    fontSize: 16,
-    fontWeight: 500,
-    marginBottom: 4,
-  },
-  contentDescription: {
-    fontSize: 16,
-    color: "#4D5256",
-    marginBottom: 30,
-  },
 }));
 
 // markup
 const LabsPage = () => {
   const classes = useStyles();
+  const {
+    newsCommentaryImage1,
+    newsCommentaryImage2,
+  } = useStaticQuery(graphql`
+    query {
+      newsCommentaryImage1: file(relativePath: { eq: "labs/research1.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      newsCommentaryImage2: file(relativePath: { eq: "labs/research2.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
   return (
     <>
       <Layout>
@@ -169,27 +176,11 @@ const LabsPage = () => {
                   </Typography>
                 </Grid>
                 <Grid item md={9}>
-                  {research.filter(raw => raw.type === 'notable').map((item) => (
-                    <div key={item.title}>
-                      <Typography className={classes.contentTitle} component="h3">
-                        {item.title}
-                      </Typography>
-                      {item.subTitle && (
-                        <Typography
-                          className={classes.contentSubtitle}
-                          component="h4"
-                        >
-                          {item.subTitle}
-                        </Typography>
-                      )}
-                      <Typography
-                        className={classes.contentDescription}
-                        component="p"
-                      >
-                        {item.content}
-                      </Typography>
-                    </div>
-                  ))}
+                  <LabsItem
+                    title={"Everett Protocol"}
+                    subTitle={"Staking Derivatives for better PoS"}
+                    content={"Everett Protocol allows users to create 'shadow tokens' called bAtoms that is fully backed by their staking position to solve the problem: “What if delegators could receive staking rewards and “What if delegators could receive staking rewards and be incentivized to pool their assets into DeFi simultaneously?” Ellipti came up with the answer: bAtoms, staking positions collateralized shadow token that delegators can use to pool into DeFi protocols."}
+                  />
                   <Award
                     icon='/svg/medium.svg'
                     title='1st Prize'
@@ -206,27 +197,28 @@ const LabsPage = () => {
                   />
 
                   <section className={classes.otherSection}>
-                    {research.filter(raw => raw.type !== 'notable').map((item) => (
-                      <article key={item.title}>
-                        <Typography className={classes.contentTitle} component="h3">
-                          {item.title}
-                        </Typography>
-                        {item.subTitle && (
-                          <Typography
-                            className={classes.contentSubtitle}
-                            component="h4"
-                          >
-                            {item.subTitle}
-                          </Typography>
-                        )}
-                        <Typography
-                          className={classes.contentDescription}
-                          component="p"
-                        >
-                          {item.content}
-                        </Typography>
-                      </article>
-                    ))}
+                    <LabsItem
+                      title={"DeFi Report @ Coinone"}
+                      content={"Under the partnership with Coinone, sourced comprehensive report as a snapshot of DeFi ecosystem's growth with insights to the Korean crypto community."}
+                    />
+                    <LabsItem
+                      title={"News Commentary @ Crypto media"}
+                      content={"Provided analysis & commentary on macro/micro issues in the blockchain market to crypto medias such as Coindesk Korea, Join:D"}
+                    />
+                    <Grid container spacing={1}>
+                      <Grid item xs={12} sm={6}>
+                        <Img
+                          fluid={newsCommentaryImage1.childImageSharp.fluid}
+                          alt='ellipti cosmos'
+                        />
+                      </Grid>
+                      <Grid item xs={12} sm={6}>
+                        <Img
+                          fluid={newsCommentaryImage2.childImageSharp.fluid}
+                          alt='ellipti comsmos'
+                        />
+                      </Grid>
+                    </Grid>
                   </section>
                 </Grid>
               </Grid>
