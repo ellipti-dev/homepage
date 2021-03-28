@@ -10,7 +10,7 @@ import Layout from "../components/layout";
 import FloatingActionButton from "../components/fab";
 import Main from "../components/main";
 
-import { presence, quote } from "../data/public";
+import { featuredPresence, presence, quote } from "../data/public";
 
 const useStyles = makeStyles((theme) => ({
   root: {},
@@ -76,8 +76,19 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "'Roboto slab', serif",
     marginBottom: 30,
   },
-  presenceDiv: {
-    marginBottom: 24,  
+  featuredPresenceDiv: {
+    marginBottom: 50,
+  },
+  presenceRole: {
+    color: '#292929',
+    fontFamily: '"Roboto", "Roboto Slab"',
+    fontSize: 18,
+    display: 'flex',
+    alignItems: 'center',
+
+    '& img': {
+      marginRight: 13,
+    }
   },
   presenceTitle: {
     fontSize: 16,
@@ -121,7 +132,7 @@ const PublicPage = () => {
             </Grid>
           </Grid>
         </Jumbotron>
-        
+
 
         <Main>
           <section id="presence" className={classes.section}>
@@ -129,18 +140,59 @@ const PublicPage = () => {
               <Typography className={classes.sectionTitle} component="h2">
                 Presence
               </Typography>
-              {presence.map(item => (
-                <div key={item.title} className={classes.presenceDiv}>
-                  <Typography component="h3" className={classes.presenceTitle}>
-                    {item.title}
-                  </Typography>
-
-                  {item.content && item.content.map(subItem => (
-                    <Typography key={subItem} component='p' className={classes.presenceDescription}>
-                      {subItem}
+              {featuredPresence.map(item => (
+                <Grid
+                  key={featuredPresence.keys}
+                  className={classes.featuredPresenceDiv}
+                  container
+                  spacing={4}
+                >
+                  <Grid item xs={12} sm={3}>
+                    <Typography component="h3" className={classes.presenceRole}>
+                      <img src='/svg/presence-dot.svg' alt='dot' />
+                      {item.role}
                     </Typography>
-                  ))}
-                </div>
+                  </Grid>
+                  <Grid item xs={12} sm={8}>
+                    <Typography
+                      component='p'
+                      className={classes.presenceTitle}
+                    >
+                      {item.title}
+                    </Typography>
+                    {item.content.map(contentItem => (
+                      <Typography
+                        key={contentItem}
+                        component='p'
+                        className={classes.presenceDescription}
+                      >
+                        {contentItem}
+                      </Typography>
+                    ))}
+                  </Grid>
+                </Grid>
+              ))}
+
+              {presence.map(item => (
+                <Grid container spacing={4} key={featuredPresence.keys}>
+                  <Grid item xs={12} sm={3}>
+                    <Typography component="h3" className={classes.presenceRole}>
+                      <img src='/svg/blank-dot.svg' alt='dot' />
+                      {item.role}
+                    </Typography>
+                  </Grid>
+                  <Grid item xs={12} sm={8}>
+                    {item.content.map(contentItem => (
+                      <Typography
+                        key={contentItem}
+                        component='p'
+                        className={classes.presenceTitle}
+                      >
+                        {contentItem}
+                      </Typography>
+                    ))}
+                  </Grid>
+                </Grid>
               ))}
             </Container>
           </section>

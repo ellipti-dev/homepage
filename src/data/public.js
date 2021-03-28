@@ -1,56 +1,53 @@
-export const presence = [
+export const featuredPresence = [
   {
-    title: "Investor Relations @ Traditional VC venture program",
+    role: "Investor Relations",
+    title: "@ Traditional VC venture program",
     content: [
       "Led client’s participation in the Bigbang Angels Venture program for its expansion in the Korean market & investment pitch.",
       "Being main communication channel: Participated Malta Blockchain week business trip & meetings, pitched to the crowd of traditional VCs and proceeded with the follow-up meetings.",
     ],
   },
   {
-    title: "Judge @ Blockshow 2019 Startup Pitch-race",
+    role: 'Startup Pitch-race',
+    title: "Judge @ Blockshow 2019",
     content: [
       "Ellipti Particiated as a judge with the reputational VCs as Winklevoss/SOSV/Fenbushi at Singapore Blockshow.",
       "Judged and Advised the idea, business model & the execution plan/feasibility.",
     ],
   },
   {
-    title: "Panelist @ PAX Economy TV",
+    role: "Panelist",
+    title: "@ PAX Economy TV",
     content: [
       "Shared insights on various concepts such as Stable coin / STO / Scaling solution…etc.",
       "PAX ETV is a boradcast company focuses on economy with its own local TV channel.",
     ],
   },
-  {
-    title: "Speaker @ Congress Policy Seminar 2021 (Hosted by Blockmedia)",
+];
+
+export const presence = [
+ {
+   role: 'Speaker',
+   content: [
+      '@ Congress Policy Seminar 2021 (Hosted by Blockmedia)',
+      '@ Blockchain week 2020 (Hosted by Ministry of Science and Technology)',
+      '@ Dystopians Labs Liquidity 2020',
+      '@ ETHCON Seoul 2019',
+      '@ WBF 2018',
+   ],
   },
   {
-    title: "Speaker @ The Conference 2020 (Hosted by Maeil Economy)",
+    role: 'Mentor',
+    content: [
+      '@ Blahblock mentoring program (Hosted by Ministry of Science and Technology)',
+      '@ Founders in Jeju (Hosted by Decenter)',
+    ]
   },
   {
-    title:
-      "Mentor @ Blahblock mentoring program (Hosted by Ministry of Science and Technology)",
-  },
-  {
-    title:
-      "Speaker @ Blockchain week 2020 (Hosted by Ministry of Science and Technology)",
-  },
-  {
-    title: "Speaker @ Dystopians Labs Liquidity 2020",
-  },
-  {
-    title: "Mentor @ Founders in Jeju (Hosted by Decenter)",
-  },
-  {
-    title: "Moderator @ ETHplanet Summercamp",
-  },
-  {
-    title: "Pitch day @ Belgium Embassy in Korea",
-  },
-  {
-    title: "Speaker @ ETHCON Seoul 2019",
-  },
-  {
-    title: "Speaker @ WBF 2018",
+    role: 'Pitch day',
+    content: [
+      '@ Belgium Embassy in Korea'
+    ],
   },
 ];
 
