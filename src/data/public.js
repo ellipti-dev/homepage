@@ -9,7 +9,7 @@ export const featuredPresence = [
   },
   {
     role: 'Startup Pitch-race',
-    title: "Judge @ Blockshow 2019",
+    title: "@ Blockshow 2019",
     content: [
       "Ellipti Particiated as a judge with the reputational VCs as Winklevoss/SOSV/Fenbushi at Singapore Blockshow.",
       "Judged and Advised the idea, business model & the execution plan/feasibility.",

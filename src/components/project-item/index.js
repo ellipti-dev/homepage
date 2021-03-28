@@ -57,6 +57,7 @@ const useStyles = makeStyles((theme) => ({
     color: '#292929',
     fontWeight: 500,
     marginBottom: 4,
+    lineHeight: 1,
   },
   projectCategory: {
     fontSize: 12,
