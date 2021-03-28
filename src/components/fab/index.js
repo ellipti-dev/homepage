@@ -7,7 +7,7 @@ import Hidden from '@material-ui/core/Hidden';
 const useStyles = makeStyles((theme) => ({
   root: {
     position: "fixed",
-    top: 450,
+    top: 440,
     right: theme.spacing(3),
     width: 120,
     borderRadius: '3px',
