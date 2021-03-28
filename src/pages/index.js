@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('sm')]: {
       width: '260px',
     },
-    
+
     [theme.breakpoints.up('md')]: {
       // pc
       position: 'absolute',
@@ -61,10 +61,10 @@ const useStyles = makeStyles((theme) => ({
       width: 400,
     },
   },
-  beginning_word: {
+  beginningWord: {
     marginTop: 20,
 
-    fontSize : 14,
+    fontSize: 14,
     fontFamily: "Roboto",
     fontWeight: 500,
     color: "#fff",
@@ -102,7 +102,7 @@ const useStyles = makeStyles((theme) => ({
       padding: '80px 0',
     },
   },
-  vision_width: {
+  visionWidth: {
     maxWidth: '860px',
   },
   visionTitle: {
@@ -121,13 +121,6 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 400,
     color: '#4D5256',
   },
-
-  valueSection: {
-    '& $valueContainer:nth-child(2n+1)': {
-    },
-    '& $valueContainer:nth-child(2n) img': {
-    }
-  },
   valueTitle: {
     fontSize: 20,
     fontFamily: '"Roboto Slab", serif',
@@ -142,10 +135,8 @@ const useStyles = makeStyles((theme) => ({
   },
   valueContainer: {
     marginTop: 30,
-    alignItems: 'center',
-    justifyContent: 'center',
   },
-  valueimg: {
+  valueImg: {
     display: 'flex',
     justifyContent: 'center',
 
@@ -163,11 +154,11 @@ const IndexPage = () => {
       <Jumbotron className={classes.jumbotron}>
         <Grid container>
           <Grid item xs={12} md={7}>
-            <Typography className={classes.beginning_word}>
+            <Typography className={classes.beginningWord}>
               WE ARE
             </Typography>
             <Typography className={classes.title} component={"h1"}>
-              Building <br /> 
+              Building <br />
               with the founders,<br />
               accelerate <br />
               the shift
@@ -182,7 +173,7 @@ const IndexPage = () => {
       </Jumbotron>
 
       <section className={classes.visionSection}>
-        <Container maxWidth="md" className={classes.vision_width}>
+        <Container maxWidth="md" className={classes.visionWidth}>
           <Grid container>
             <Grid item xs={12} md={2}>
               <Typography
@@ -206,59 +197,84 @@ const IndexPage = () => {
         </Container>
       </section>
       <Main>
-        <section className={classes.valueSection}>
-          <Container maxWidth="md">
-            <Typography
-              className={classes.valueTitle}
-              component="h2"
-              align={"center"}
+        <Container maxWidth="md" component='section'>
+          <Typography
+            className={classes.valueTitle}
+            component="h2"
+            align={"center"}
+          >
+            What is <br />
+            Ellipti’s value proposition?
+          </Typography>
+
+          <div className={classes.valueGridWrapper}>
+            <Grid
+              className={classes.valueContainer}
+              container
+              justify="center"
+              alignItems="center"
+              spacing={4}
             >
-              What is <br />
-              Ellipti’s value proposition?
-            </Typography>
-
-            <div className={classes.valueGridWrapper}>
-              <Grid className={classes.valueContainer} container spacing={6}>
-                <Grid className={classes.valueimg} item xs={12} md={6}>
-                  <img src="/svg/index2.svg" alt="tbd" />
-                </Grid>
-                <Grid item xs={12} md={6}>
-                  <Typography
-                    className={classes.valueDescription}
-                    align={"left"}
-                  >
-                    We believe Community, Composability and Sustainability are the key components of blockchain ecosystem.
-                  </Typography>
-                </Grid>
+              <Grid item xs={12} md={6}>
+                <div className={classes.valueImg}>
+                  <img
+                    src="/svg/index2.svg"
+                    alt="We believe Community, Composability and Sustainability are the key components of blockchain ecosystem."
+                  />
+                </div>
               </Grid>
-
-              <Grid className={classes.valueContainer} container spacing={6}>
-                <Grid className={classes.valueimg} item xs={12} md={6}>
-                  <img src="/svg/index3.svg" alt="tbd" />
-                </Grid>
-                <Grid item xs={12} md={6}>
-                  <Typography className={classes.valueDescription}>
-                    Ellipti focuses on how to make a sustainable growth, covering overall necessities in the crypto market with the expertise and various experiences.
-                  </Typography>
-                </Grid>
+              <Grid item xs={12} md={6}>
+                <Typography
+                  className={classes.valueDescription}
+                  align={"left"}
+                >
+                  We believe Community, Composability and Sustainability are the key components of blockchain ecosystem.
+                </Typography>
               </Grid>
+            </Grid>
 
-              <Grid className={classes.valueContainer} container spacing={6}>
-                <Grid className={classes.valueimg} item xs={12} md={6}>
-                  <img src="/svg/index4.svg" alt="tbd" />
-                </Grid>
-                <Grid item xs={12} md={6}>
-                  <Typography className={classes.valueDescription}>
-                    Ellipti accelerates teams mainly in the Korean market, but further to the wider Asian market, building a strong network between solid founders and teams.
-                  </Typography>
-                </Grid>
+            <Grid
+              className={classes.valueContainer}
+              container
+              justify="center"
+              alignItems="center"
+              spacing={4}
+            >
+              <Grid item xs={12} md={6}>
+                <div className={classes.valueImg}>
+                  <img src="/svg/index3.svg" alt="ellipti make a sustainable growth" />
+                </div>
               </Grid>
-            </div>
-          </Container>
-        </section>
+              <Grid item xs={12} md={6}>
+                <Typography className={classes.valueDescription}>
+                  Ellipti focuses on how to make a sustainable growth, covering overall necessities in the crypto market with the expertise and various experiences.
+                </Typography>
+              </Grid>
+            </Grid>
 
+            <Grid
+              className={classes.valueContainer}
+              container
+              justify="center"
+              alignItems="center"
+              spacing={4}
+            >
+              <Grid item xs={12} md={6}>
+                <div className={classes.valueImg}>
+                  <img src="/svg/index4.svg" alt="ellipti accelerates" />
+                </div>
+              </Grid>
+              <Grid item xs={12} md={6}>
+                <Typography className={classes.valueDescription}>
+                  Ellipti accelerates teams mainly in the Korean market, but further to the wider Asian market, building a strong network between solid founders and teams.
+                </Typography>
+              </Grid>
+            </Grid>
+          </div>
+
+        </Container>
       </Main>
-    </Layout>
+    </Layout >
   );
 };
 
