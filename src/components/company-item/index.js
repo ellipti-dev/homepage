@@ -11,7 +11,8 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(1),
     position: 'relative',
     height: '100%',
-    backgroundColor: '#000',
+    backgroundColor: '#191919',
+    borderRadius: 2,
 
     '& img': {
       width: '100%',
