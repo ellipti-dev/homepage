@@ -1,8 +1,9 @@
+
 # 설치
 
 ```bash
 $ git clone
-$ cd ellipti
+$ cd homepage
 $ yarn
 ```
 
