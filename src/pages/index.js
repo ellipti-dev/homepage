@@ -233,8 +233,8 @@ const IndexPage = () => {
                   className={classes.valueDescription}
                   align={"left"}
                 >
-                  Blockchain market is ever-changing, it’s important to execute the right strategies on the best timing.<br /><br />
-                  Focusing on the importance of actual ‘execution’, Ellipti engages from start to end, we will assess the current status, bring up the right strategy, and carry out with the team to achieve its full potential.
+                  <b>Who we are</b><br /><br />
+                  Starting its path from community, Ellipti focuses on how to make a sustainable growth with the right market analysis, covering overall necessities in the crypto market with the expertise and various experiences.
                 </Typography>
               </Grid>
             </Grid>
@@ -253,8 +253,8 @@ const IndexPage = () => {
               </Grid>
               <Grid item xs={12} md={6}>
                 <Typography className={classes.valueDescription}>
-                  We believe community, composability and sustainability are the key components of the blockchain ecosystem.<br /><br />
-                  Starting its path from community, Ellipti focuses on how to make a sustainable growth with the right market analysis, covering overall necessities in the crypto market with the expertise and various experiences.
+                  <b>Our direction</b><br /><br />
+                  Focusing on the importance of actual ‘execution’, Ellipti engages from start to end, we will assess the current status, bring up the right strategy, and carry out with the team to achieve its full potential.
                 </Typography>
               </Grid>
             </Grid>
@@ -273,8 +273,8 @@ const IndexPage = () => {
               </Grid>
               <Grid item xs={12} md={6}>
                 <Typography className={classes.valueDescription}>
-                  Different layers in crypto interconnect with each other, growing the synergies exponentially.<br /><br />
-                  Ellipti accelerates teams’ growth mainly in the Korean market and APAC region, building a strong network between solid founders and teams.
+                  <b>How we do</b><br /><br />
+                  Ellipti accelerates teams’ growth mainly in the Korean market and further to APAC market, building a strong network between solid founders and teams.
                 </Typography>
               </Grid>
             </Grid>
