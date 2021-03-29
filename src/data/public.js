@@ -4,15 +4,15 @@ export const featuredPresence = [
     title: "@ Traditional VC venture program",
     content: [
       "Led client’s participation in the Bigbang Angels Venture program for its expansion in the Korean market & investment pitch.",
-      "Being main communication channel: Participated Malta Blockchain week business trip & meetings, pitched to the crowd of traditional VCs and proceeded with the follow-up meetings.",
+      "Being a main communication channel: Participated Malta Blockchain week business trip & meetings, pitched to the crowd of traditional VCs and proceeded with the follow-up meetings.",
     ],
   },
   {
     role: 'Startup Pitch-race',
     title: "@ Blockshow 2019",
     content: [
-      "Ellipti Particiated as a judge with the reputational VCs as Winklevoss/SOSV/Fenbushi at Singapore Blockshow.",
-      "Judged and Advised the idea, business model & the execution plan/feasibility.",
+      "Ellipti participated as a judge with the reputational VCs as Winklevoss/SOSV/Fenbushi at Singapore Blockshow.",
+      "Judged and advised the idea, business model & the execution plan/feasibility.",
     ],
   },
   {

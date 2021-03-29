@@ -233,7 +233,8 @@ const IndexPage = () => {
                   className={classes.valueDescription}
                   align={"left"}
                 >
-                  We believe Community, Composability and Sustainability are the key components of blockchain ecosystem.
+                  Blockchain market is ever-changing, it’s important to execute the right strategies on the best timing.<br /><br />
+                  Focusing on the importance of actual ‘execution’, Ellipti engages from start to end, we will assess the current status, bring up the right strategy, and carry out with the team to achieve its full potential.
                 </Typography>
               </Grid>
             </Grid>
@@ -252,7 +253,8 @@ const IndexPage = () => {
               </Grid>
               <Grid item xs={12} md={6}>
                 <Typography className={classes.valueDescription}>
-                  Ellipti focuses on how to make a sustainable growth, covering overall necessities in the crypto market with the expertise and various experiences.
+                  We believe community, composability and sustainability are the key components of the blockchain ecosystem.<br /><br />
+                  Starting its path from community, Ellipti focuses on how to make a sustainable growth with the right market analysis, covering overall necessities in the crypto market with the expertise and various experiences.
                 </Typography>
               </Grid>
             </Grid>
@@ -271,7 +273,8 @@ const IndexPage = () => {
               </Grid>
               <Grid item xs={12} md={6}>
                 <Typography className={classes.valueDescription}>
-                  Ellipti accelerates teams mainly in the Korean market, but further to the wider Asian market, building a strong network between solid founders and teams.
+                  Different layers in crypto interconnect with each other, growing the synergies exponentially.<br /><br />
+                  Ellipti accelerates teams’ growth mainly in the Korean market and APAC region, building a strong network between solid founders and teams.
                 </Typography>
               </Grid>
             </Grid>

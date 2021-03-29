@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Ellipti",
-    description: 'Ellipti is a cross-border accelerator (based in Korea)',
+    description: 'Ellipti is a cross-border accelerator, building with the solid founders and teams in the Korean market and APAC region',
     siteUrl: 'https://www.ellipti.io',
     image: '/ellipti-og.png',
     titleTemplate: "%s | Ellipti",

@@ -121,8 +121,7 @@ const PublicPage = () => {
                   alt="divider"
                 />
                 <Typography className={classes.jumbotronDescription} component="p">
-                  Ellipti shares insights about blockchain technology and market
-                  dynamics
+                  Ellipti shares insights about blockchain technology and market dynamics
                 </Typography>
               </div>
             </Grid>
