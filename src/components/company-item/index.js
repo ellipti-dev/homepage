@@ -11,6 +11,8 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(1),
     position: 'relative',
     height: '100%',
+    backgroundColor: '#191919',
+    borderRadius: 2,
 
     '& img': {
       width: '100%',
@@ -24,6 +26,19 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.secondary.main,
     fontSize: '0.85rem',
     fontFamily: '"Fraunces", "Helvetica", "Arial", serif',
+  },
+  // blank
+  blankWrapper: {
+    padding: 2,
+
+  },
+  blankRect: {
+    border: '3px dotted black',
+
+    // aspect ratio 1:1
+    width: "100%",
+    paddingTop: "100%",
+    position: "relative",
   }
 }));
 
@@ -32,18 +47,18 @@ const CompanyItem = ({
   image,
 }) => {
   const classes = useStyles();
+  if (name) {
   return (
-    <>
       <Paper className={classes.root}>
         <img src={image} alt={name} />
       </Paper>
-      {/* <Typography
-        variant="body1"
-        className={classes.span}
-      >
-        {name}
-      </Typography> */}
-    </>
+    )
+  }
+
+  return (
+    <div className={classes.blankWrapper}>
+      <div className={classes.blankRect} />
+    </div>
   )
 }
 

@@ -1,0 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
+section:before {
+  padding-top: 60px;
+  margin-top: -60px;
+  content: "";
+  display:block;
+}

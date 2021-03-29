@@ -12,45 +12,40 @@ const theme = createMuiTheme({
       main: '#03dac6',
       drak: '#35e1d1',
     },
-    type: 'dark',
+    text: {
+      primary: '#292929',
+      secondary: '#4D5256',
+    }
   },
   typography: {
-    fontFamily: '"Epilogue"',
+    fontFamily: '"Roboto", "Roboto Slab"',
+    htmlFontSize: 14,
     h1: {
-      fontFamily: '"Roboto Slab", "Helvetica", "Arial", serif',
       fontWeight: 100,
       fontSize: "6rem",
       lineHeight: 1.167,
-      color: '#fff',
     },
     h2: {
-      fontFamily: '"Roboto Slab", "Helvetica", "Arial", serif',
       fontWeight: 300,
-      color: 'rgba(255, 255, 255, 0.9)',
     },
     h3: {
-      fontFamily: '"Roboto Slab", "Helvetica", "Arial", serif',
       fontWeight: 300,
-      color: 'rgba(255, 255, 255, 0.85)',
     },
     h4: {
-      fontFamily: '"Roboto Slab", "Helvetica", "Arial", serif',
       fontWeight: 300,
-      color: '#fff',
     },
     body1: {
-      fontFamily: '"Epilogue", "Helvetica", "Arial", sans-serif',
       fontWeight: 400,
       fontSize: "1rem",
       lineHeight: 1.5,
-      color: 'rgba(255, 255, 255, 0.7)',
     },
     body2: {
-      fontFamily: '"Epilogue", "Helvetica", "Arial", sans-serif',
       fontWeight: 400,
       fontSize: "1rem",
       lineHeight: 1.5,
-      color: 'rgba(255, 255, 255, 0.7)',
+    },
+    button: {
+      textTransform: 'none'
     }
   },
   shape: {
