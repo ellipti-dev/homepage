@@ -10,6 +10,7 @@ import Jumbotron from "../components/jumbotron";
 import ProjectItem from "../components/project-item";
 import FloatingActionButton from "../components/fab";
 import Main from "../components/main";
+import SEO from '../components/seo';
 
 import {
   Defi,
@@ -92,6 +93,10 @@ const IndexPage = () => {
 
   return (
     <Layout>
+      <SEO
+        title='Portfolio'
+        description={'Building the solid & sustainable decentralized ecosystem, with the right teams.'}
+      />
       <Jumbotron className={classes.jumbotron} isShowArrow>
         <Grid container>
           <Grid item xs={12} md={6}>
@@ -113,7 +118,11 @@ const IndexPage = () => {
           </Grid>
           <Grid item xs={12} md={6}>
             <div className={classes.jumbotronImageWrapper}>
-              <img className={classes.jumbotronImage} src='/svg/portfolio1.svg' />
+              <img
+                className={classes.jumbotronImage}
+                src='/svg/portfolio1.svg'
+                alt='portfolio'
+              />
             </div>
           </Grid>
         </Grid>

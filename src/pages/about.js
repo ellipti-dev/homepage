@@ -12,6 +12,7 @@ import Jumbotron from "../components/jumbotron";
 import CompanyItem from "../components/company-item";
 import FloatingActionButton from "../components/fab";
 import Main from "../components/main";
+import SEO from '../components/seo';
 
 const useStyles = makeStyles((theme) => ({
   root: {},
@@ -163,13 +164,21 @@ const AboutPage = () => {
 
   return (
     <Layout>
+      <SEO
+        title='About'
+        description='Ellipti advises on how to fully market the company’s fundamentals and its potential and achieve growth.'
+      />
       <Jumbotron className={classes.jumbotron} isShowArrow>
         <Grid container>
           <Grid item xs={12} md={6}>
             <Typography className={classes.jumbotronTitle} component="h1">
               About
             </Typography>
-            <img className={classes.titleDivider} src="/svg/about-divider.svg" alt="divider" />
+            <img
+              className={classes.titleDivider}
+              src="/svg/about-divider.svg"
+              alt="divider"
+            />
             <Typography
               className={classes.jumbotronDescription}
               component="p"

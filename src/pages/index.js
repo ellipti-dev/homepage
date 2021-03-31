@@ -171,7 +171,11 @@ const IndexPage = () => {
           </Grid>
           <Grid item xs={12} md={5}>
             <div className={classes.jumbotronImageWrapper}>
-              <img className={classes.jumbotronImage} src='/svg/index1.svg' />
+              <img
+                className={classes.jumbotronImage}
+                src='/svg/index1.svg'
+                alt='accelerate'
+              />
             </div>
           </Grid>
         </Grid>
