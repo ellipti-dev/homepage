@@ -1,5 +1,35 @@
 export const Defi = [
   {
+    image: "/portfolio/zero_swap.svg",
+    name: "Zeroswap",
+    link: 'https://zeroswap.io/',
+    type: 'DEX Aggregator'
+  },
+  {
+    image: "/portfolio/tidal.svg",
+    name: "Tidal Finance",
+    link: 'https://rinkeby.insurace.io/',
+    type: 'Insurance',
+  },
+  {
+    image: "/portfolio/insurace.svg",
+    name: "InsurAce",
+    link: 'https://rinkeby.insurace.io/',
+    type: 'Insurance',
+  },
+  {
+    image: "/portfolio/convergence.svg",
+    name: "Convergence protocol",
+    link: 'https://conv.finance/',
+    type: 'Synthetic Asset'
+  },
+  {
+    image: "/portfolio/bzx.svg",
+    name: "BZX protocol",
+    link: 'https://bzx.network/',
+    type: 'Credit & Lending'
+  },
+  {
     image: "/portfolio/dydx.svg",
     name: "dYdX",
     link: 'https://dydx.exchange',
@@ -46,36 +76,6 @@ export const Defi = [
     name: "KAVA",
     link: 'https://www.kava.io',
     type: 'Credit & Lending'
-  },
-  {
-    image: "/portfolio/tidal.svg",
-    name: "Tidal Finance",
-    link: 'https://rinkeby.insurace.io/',
-    type: 'Insurance',
-  },
-  {
-    image: "/portfolio/insurace.svg",
-    name: "InsurAce",
-    link: 'https://rinkeby.insurace.io/',
-    type: 'Insurance',
-  },
-  {
-    image: "/portfolio/bzx.svg",
-    name: "BZX protocol",
-    link: 'https://bzx.network/',
-    type: 'Credit & Lending'
-  },
-  {
-    image: "/portfolio/convergence.svg",
-    name: "Convergence protocol",
-    link: 'https://conv.finance/',
-    type: 'Synthetic Asset'
-  },
-  {
-    image: "/portfolio/zero_swap.svg",
-    name: "Zeroswap",
-    link: 'https://zeroswap.io/',
-    type: 'DEX Aggregator'
   },
 ];
 
