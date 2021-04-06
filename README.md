@@ -8,7 +8,7 @@ $ cd homepage
 $ yarn install
 ```
 
-# 실행
+# run
 ```bash
 $ cd homepage
 
