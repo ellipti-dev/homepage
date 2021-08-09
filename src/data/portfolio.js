@@ -77,6 +77,42 @@ export const Defi = [
     link: 'https://www.kava.io',
     type: 'Credit & Lending'
   },
+  {
+    image: "/portfolio/hord.svg",
+    name: "HORD",
+    link: 'https://www.hord.app',
+    type: 'Asset Management'
+  },
+  {
+    image: "/portfolio/sovryn.svg",
+    name: "Sovryn",
+    link: 'https://sovryn.app/',
+    type: 'Credit & Lending'
+  },
+  {
+    image: "/portfolio/burnt.svg",
+    name: "Burnt Finance",
+    link: 'https://burnt.com',
+    type: 'Synthetic Asset'
+  },
+  {
+    image: "/portfolio/vega.svg",
+    name: "VEGA",
+    link: 'https://vega.xyz',
+    type: 'Derivatives'
+  },
+  {
+    image: "/portfolio/impossible.svg",
+    name: "Impossible Finance",
+    link: 'https://impossible.finance',
+    type: 'Asset Management'
+  },
+  {
+    image: "/portfolio/algomint.svg",
+    name: "Algomint",
+    link: 'https://www.algomint.io',
+    type: 'Synthetic Asset'
+  },
 ];
 
 export const Data = [
@@ -97,7 +133,7 @@ export const Data = [
     image: "/portfolio/human.svg",
     name: "Human Protocol",
     link: 'https://hmt.ai',
-    type: 'Labor markets'
+    type: 'Data Economy Platform'
   },
   {
     image: "/portfolio/lambda.svg",
@@ -110,6 +146,12 @@ export const Data = [
     name: "Ocean Protocol",
     link: 'https://oceanprotocol.com',
     type: 'Data Marketplace'
+  },
+  {
+    image: "/portfolio/lithium.svg",
+    name: "Lithium Finance",
+    link: 'https://lith.finance',
+    type: 'Collective-Intelligence Oracle'
   },
 ];
 
@@ -137,6 +179,18 @@ export const Application = [
     name: "Contentos",
     link: 'https://www.contentos.io',
     type: 'Content Platform'
+  },
+  {
+    image: "/portfolio/doingud.svg",
+    name: "DoinGUD",
+    link: 'https://doingud.com',
+    type: 'Creator Marketplace'
+  },
+  {
+    image: "/portfolio/coinburp.svg",
+    name: "Coinburp",
+    link: 'https://www.coinburp.com',
+    type: 'DeFi & NFT focused wallet'
   },
 ];
 
@@ -191,6 +245,18 @@ export const Privacy = [
     name: "Dash",
     link: 'https://www.dash.org',
     type: 'Privacy Currency'
+  },
+  {
+    image: "/portfolio/platon.svg",
+    name: "PlatON",
+    link: 'https://platon.network/en/',
+    type: 'Privacy for AI'
+  },
+  {
+    image: "/portfolio/panther.svg",
+    name: "Panther Protocol",
+    link: 'https://www.pantherprotocol.io',
+    type: 'Privacy for DeFi'
   },
 ];
 
@@ -258,5 +324,11 @@ export const Analytics = [
     name: "Dapp.com",
     link: 'https://www.dapp.com/',
     type: 'dApp Analytics',
+  },
+  {
+    image: "/portfolio/deepdao.svg",
+    name: "DeepDAO",
+    link: 'https://deepdao.io',
+    type: 'DAO Analytics',
   }
 ]
