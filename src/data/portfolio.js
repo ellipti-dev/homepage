@@ -1,5 +1,41 @@
 export const Defi = [
   {
+    image: "/portfolio/algomint.svg",
+    name: "Algomint",
+    link: 'https://www.algomint.io',
+    type: 'Synthetic Asset'
+  },
+  {
+    image: "/portfolio/impossible.svg",
+    name: "Impossible Finance",
+    link: 'https://impossible.finance',
+    type: 'Asset Management'
+  },
+  {
+    image: "/portfolio/vega.svg",
+    name: "VEGA",
+    link: 'https://vega.xyz',
+    type: 'Derivatives'
+  },
+  {
+    image: "/portfolio/burnt.svg",
+    name: "Burnt Finance",
+    link: 'https://burnt.com',
+    type: 'Synthetic Asset'
+  },
+  {
+    image: "/portfolio/sovryn.svg",
+    name: "Sovryn",
+    link: 'https://sovryn.app/',
+    type: 'Credit & Lending'
+  },
+  {
+    image: "/portfolio/hord.svg",
+    name: "HORD",
+    link: 'https://www.hord.app',
+    type: 'Asset Management'
+  },
+  {
     image: "/portfolio/zero_swap.svg",
     name: "Zeroswap",
     link: 'https://zeroswap.io/',
@@ -76,42 +112,6 @@ export const Defi = [
     name: "KAVA",
     link: 'https://www.kava.io',
     type: 'Credit & Lending'
-  },
-  {
-    image: "/portfolio/hord.svg",
-    name: "HORD",
-    link: 'https://www.hord.app',
-    type: 'Asset Management'
-  },
-  {
-    image: "/portfolio/sovryn.svg",
-    name: "Sovryn",
-    link: 'https://sovryn.app/',
-    type: 'Credit & Lending'
-  },
-  {
-    image: "/portfolio/burnt.svg",
-    name: "Burnt Finance",
-    link: 'https://burnt.com',
-    type: 'Synthetic Asset'
-  },
-  {
-    image: "/portfolio/vega.svg",
-    name: "VEGA",
-    link: 'https://vega.xyz',
-    type: 'Derivatives'
-  },
-  {
-    image: "/portfolio/impossible.svg",
-    name: "Impossible Finance",
-    link: 'https://impossible.finance',
-    type: 'Asset Management'
-  },
-  {
-    image: "/portfolio/algomint.svg",
-    name: "Algomint",
-    link: 'https://www.algomint.io',
-    type: 'Synthetic Asset'
   },
 ];
 
