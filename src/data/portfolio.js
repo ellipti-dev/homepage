@@ -117,6 +117,12 @@ export const Defi = [
 
 export const Data = [
   {
+    image: "/portfolio/lithium.svg",
+    name: "Lithium Finance",
+    link: 'https://lith.finance',
+    type: 'Collective-Intelligence Oracle'
+  },
+  {
     image: "/portfolio/cere.svg",
     name: "Cere Network",
     link: 'https://www.cere.network',
@@ -147,15 +153,21 @@ export const Data = [
     link: 'https://oceanprotocol.com',
     type: 'Data Marketplace'
   },
-  {
-    image: "/portfolio/lithium.svg",
-    name: "Lithium Finance",
-    link: 'https://lith.finance',
-    type: 'Collective-Intelligence Oracle'
-  },
 ];
 
 export const Application = [
+  {
+    image: "/portfolio/coinburp.svg",
+    name: "Coinburp",
+    link: 'https://www.coinburp.com',
+    type: 'DeFi & NFT focused wallet'
+  },
+  {
+    image: "/portfolio/doingud.svg",
+    name: "DoinGUD",
+    link: 'https://doingud.com',
+    type: 'Creator Marketplace'
+  },
   {
     image: "/portfolio/efforce.svg",
     name: "Efforce",
@@ -179,18 +191,6 @@ export const Application = [
     name: "Contentos",
     link: 'https://www.contentos.io',
     type: 'Content Platform'
-  },
-  {
-    image: "/portfolio/doingud.svg",
-    name: "DoinGUD",
-    link: 'https://doingud.com',
-    type: 'Creator Marketplace'
-  },
-  {
-    image: "/portfolio/coinburp.svg",
-    name: "Coinburp",
-    link: 'https://www.coinburp.com',
-    type: 'DeFi & NFT focused wallet'
   },
 ];
 
@@ -235,6 +235,18 @@ export const Infrastructure = [
 
 export const Privacy = [
   {
+    image: "/portfolio/panther.svg",
+    name: "Panther Protocol",
+    link: 'https://www.pantherprotocol.io',
+    type: 'Privacy for DeFi'
+  },
+  {
+    image: "/portfolio/platon.svg",
+    name: "PlatON",
+    link: 'https://platon.network/en/',
+    type: 'Privacy for AI'
+  },
+  {
     image: "/portfolio/beam.svg",
     name: "Beam",
     link: 'https://beam.mw',
@@ -245,18 +257,6 @@ export const Privacy = [
     name: "Dash",
     link: 'https://www.dash.org',
     type: 'Privacy Currency'
-  },
-  {
-    image: "/portfolio/platon.svg",
-    name: "PlatON",
-    link: 'https://platon.network/en/',
-    type: 'Privacy for AI'
-  },
-  {
-    image: "/portfolio/panther.svg",
-    name: "Panther Protocol",
-    link: 'https://www.pantherprotocol.io',
-    type: 'Privacy for DeFi'
   },
 ];
 
@@ -320,15 +320,15 @@ export const Layer1 = [
 
 export const Analytics = [
   {
+    image: "/portfolio/deepdao.svg",
+    name: "DeepDAO",
+    link: 'https://deepdao.io',
+    type: 'DAO Analytics',
+  },
+  {
     image: "/portfolio/dappcom.svg",
     name: "Dapp.com",
     link: 'https://www.dapp.com/',
     type: 'dApp Analytics',
   },
-  {
-    image: "/portfolio/deepdao.svg",
-    name: "DeepDAO",
-    link: 'https://deepdao.io',
-    type: 'DAO Analytics',
-  }
 ]
