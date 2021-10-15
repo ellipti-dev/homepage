@@ -1,5 +1,41 @@
 export const Defi = [
   {
+    image: "/portfolio/Hats_Finance.svg",
+    name: "Hats Finance",
+    link: 'https://hats.finance',
+    type: 'Insurance'
+  },
+  {
+    image: "/portfolio/Evrynet.svg",
+    name: "Evrynet",
+    link: 'https://evrynet.io',
+    type: 'Credit & Lending'
+  },
+  {
+    image: "/portfolio/Near_Pad.svg",
+    name: "NearPAD",
+    link: 'https://nearpad.io',
+    type: 'Asset Management'
+  },
+  {
+    image: "/portfolio/Minterest.svg",
+    name: "Minterest",
+    link: 'http://minterest.com',
+    type: 'Credit & Lending'
+  },
+  {
+    image: "/portfolio/Handle.fi.svg",
+    name: "Handle Finance",
+    link: 'https://handle.fi',
+    type: 'Synthetic Asset'
+  },
+  {
+    image: "/portfolio/clover_finance.svg",
+    name: "Clover Finance",
+    link: 'https://clover.finance',
+    type: 'Asset Management'
+  },
+  {
     image: "/portfolio/algomint.svg",
     name: "Algomint",
     link: 'https://www.algomint.io',
@@ -116,6 +152,18 @@ export const Defi = [
 ];
 
 export const Data = [
+  {
+    image: "/portfolio/Subquery.svg",
+    name: "Subquery",
+    link: 'https://subquery.network',
+    type: 'Data Indexing Protocol'
+  },
+  {
+    image: "/portfolio/Koii_Network.svg",
+    name: "Open KOI",
+    link: 'https://koii.network',
+    type: 'Data Economy Platform'
+  },
   {
     image: "/portfolio/lithium.svg",
     name: "Lithium Finance",
